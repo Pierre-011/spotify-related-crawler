@@ -1,4 +1,3 @@
-```python
 #!/usr/bin/env python3
 """
 Spotify Related Artists crawler.
@@ -1285,4 +1284,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-```
