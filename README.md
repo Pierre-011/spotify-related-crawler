@@ -1,17 +1,17 @@
 # Spotify Related Artists Crawler
 
-Crawler automatique basé EXCLUSIVEMENT sur le site web public de Spotify.
+Crawler automatique basé **EXCLUSIVEMENT sur le site web public de Spotify**.
 
 ## Principe
 
 Le projet n'utilise pas :
 
-- Spotify Web API
-- Spotipy
-- token Spotify
-- Client ID / Client Secret
+* Spotify Web API
+* Spotipy
+* token Spotify
+* Client ID / Client Secret
 
-Il utilise uniquement Playwright + Chromium pour ouvrir les pages Spotify comme un navigateur et inspecter le DOM/HTML rendu par JavaScript.
+Il utilise uniquement **Playwright + Chromium** pour ouvrir les pages Spotify comme un navigateur et inspecter le DOM/HTML rendu par JavaScript.
 
 Pour chaque artiste :
 
@@ -19,11 +19,11 @@ Pour chaque artiste :
 2. attend le rendu JavaScript
 3. inspecte les liens `/artist/ID`
 4. extrait les IDs des artistes liés
-5. compare ces IDs à `data/artists.json`
+5. compare ces IDs à `data/artistes.json`
 6. ouvre la page `/artist/ID` des nouveaux artistes
 7. inspecte le DOM/HTML rendu
 8. extrait les informations disponibles
-9. ajoute le profil à `artists.json`
+9. ajoute le profil à `artistes.json`
 10. ajoute le nouvel artiste à la file d'exploration
 11. sauvegarde immédiatement
 12. continue avec le suivant
@@ -32,10 +32,10 @@ Pour chaque artiste :
 
 `data/state.json` contient :
 
-- `queue`: artistes restant à explorer
-- `processed`: artistes déjà parcourus
-- `stats`: statistiques
-- `last_run`: date de la dernière sauvegarde
+* `queue`: artistes restant à explorer
+* `processed`: artistes déjà parcourus
+* `stats`: statistiques
+* `last_run`: date de la dernière sauvegarde
 
 Ainsi, une exécution GitHub Actions peut s'arrêter puis reprendre sans repartir de zéro.
 
@@ -43,22 +43,50 @@ Ainsi, une exécution GitHub Actions peut s'arrêter puis reprendre sans reparti
 
 Le workflow `.github/workflows/crawler.yml` :
 
-- peut être lancé manuellement ;
-- est planifié toutes les 15 minutes ;
-- lance Chromium en mode headless ;
-- exécute le crawler pendant environ 9 minutes ;
-- sauvegarde `artists.json` et `state.json` ;
-- commit les modifications dans le dépôt.
+* peut être lancé manuellement ;
+* est planifié toutes les 15 minutes ;
+* lance Chromium en mode headless ;
+* exécute le crawler pendant environ 9 minutes ;
+* sauvegarde `artistes.json` et `state.json` ;
+* commit les modifications dans le dépôt.
 
 GitHub Actions n'est pas un processus infini : la continuité est obtenue par des exécutions successives + la file persistante.
 
 ## GitHub Pages
 
-`index.html` est une interface statique qui lit `data/artists.json` et `data/state.json` depuis le même dépôt.
+`index.html` est une interface statique qui lit `data/artistes.json` et `data/state.json` depuis le même dépôt.
 
 Dans GitHub :
 
-Settings → Pages → Deploy from a branch → choisir `main` et `/ (root)`.
+**Settings → Pages → Deploy from a branch → choisir `main` et `/ (root)`**
+
+## Structure des données
+
+Le fichier principal des artistes est :
+
+```text
+data/artistes.json
+```
+
+L'état du crawler est enregistré dans :
+
+```text
+data/state.json
+```
+
+L'arborescence attendue est donc :
+
+```text
+.
+├── data/
+│   ├── artistes.json
+│   └── state.json
+├── index.html
+├── ...
+└── .github/
+    └── workflows/
+        └── crawler.yml
+```
 
 ## Important
 
