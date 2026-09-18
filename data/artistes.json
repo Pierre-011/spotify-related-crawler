@@ -353514,6 +353514,33 @@
       },
       "first_seen": "2026-09-18T19:26:28+00:00",
       "last_seen": "2026-09-18T19:26:28+00:00"
+    },
+    "1qeu2eTSSQ2exfvsaP9Znp": {
+      "id": "1qeu2eTSSQ2exfvsaP9Znp",
+      "name": "22LR",
+      "url": "https://open.spotify.com/intl-fr/artist/1qeu2eTSSQ2exfvsaP9Znp",
+      "uri": "spotify:artist:1qeu2eTSSQ2exfvsaP9Znp",
+      "followers": null,
+      "monthly_listeners": 58,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b5127b7cbc2562e3424588872",
+        "https://i.scdn.co/image/ab67616d00004851df20abd90469e53f246ce850",
+        "https://i.scdn.co/image/ab67616d00001e02df20abd90469e53f246ce850",
+        "https://i.scdn.co/image/ab6761610000101f5127b7cbc2562e3424588872",
+        "https://i.scdn.co/image/ab6761610000517406662a95aa53b3f8589d6869",
+        "https://i.scdn.co/image/ab6761610000517465a1401ceb7416cc724971c5",
+        "https://i.scdn.co/image/ab67616d00001e0285e7c07571b97be239f019cf",
+        "https://i.scdn.co/image/ab6761610000517449ff613905287537797ca086",
+        "https://i.scdn.co/image/ab67616d00001e0268a619a1dfb5d511ae8d49fb",
+        "https://i.scdn.co/image/ab67616100005174cfd6360f2bf4f4c0afb0207d"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1qeu2eTSSQ2exfvsaP9Znp"
+      },
+      "first_seen": "2026-09-18T19:42:14+00:00",
+      "last_seen": "2026-09-18T19:42:14+00:00"
     }
   }
 }
