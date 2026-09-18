@@ -353703,6 +353703,33 @@
       },
       "first_seen": "2026-09-18T20:07:40+00:00",
       "last_seen": "2026-09-18T20:07:40+00:00"
+    },
+    "7Gi9jZeIrnUCPFea9nHQdq": {
+      "id": "7Gi9jZeIrnUCPFea9nHQdq",
+      "name": "Gream Jack",
+      "url": "https://open.spotify.com/intl-fr/artist/7Gi9jZeIrnUCPFea9nHQdq",
+      "uri": "spotify:artist:7Gi9jZeIrnUCPFea9nHQdq",
+      "followers": null,
+      "monthly_listeners": 15,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048513ab2263cc5b39f7732cb2b05",
+        "https://i.scdn.co/image/ab67616d000048510b61a5334f2afd43bb1e1701",
+        "https://i.scdn.co/image/ab67616d00001e020b61a5334f2afd43bb1e1701",
+        "https://i.scdn.co/image/ab67616d00001e0207162f1ebb913f0a4f04eaf7",
+        "https://i.scdn.co/image/ab67616d00001e029ac5f583e0018985d9c81aff",
+        "https://i.scdn.co/image/ab67616d00001e024e5baea2d1d60dd373c515e4",
+        "https://i.scdn.co/image/ab67616d00001e023ab2263cc5b39f7732cb2b05",
+        "https://i.scdn.co/image/ab67616d00001e027c6eb376751baad97f09a7f3",
+        "https://i.scdn.co/image/ab67616d00001e0241ab0442d0bb9ab8eaac7b39",
+        "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/7Gi9jZeIrnUCPFea9nHQdq/fr"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7Gi9jZeIrnUCPFea9nHQdq"
+      },
+      "first_seen": "2026-09-18T20:23:22+00:00",
+      "last_seen": "2026-09-18T20:23:22+00:00"
     }
   }
 }
