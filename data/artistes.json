@@ -353730,6 +353730,60 @@
       },
       "first_seen": "2026-09-18T20:23:22+00:00",
       "last_seen": "2026-09-18T20:23:22+00:00"
+    },
+    "1bTXh3mrHImnkYDuYW83we": {
+      "id": "1bTXh3mrHImnkYDuYW83we",
+      "name": "Yortii x I$i",
+      "url": "https://open.spotify.com/intl-fr/artist/1bTXh3mrHImnkYDuYW83we",
+      "uri": "spotify:artist:1bTXh3mrHImnkYDuYW83we",
+      "followers": null,
+      "monthly_listeners": 10,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048514967320d01591da44393de8a",
+        "https://i.scdn.co/image/ab67616d00004851a752dc40b2e12b17a515c89d",
+        "https://i.scdn.co/image/ab67616d00004851d56a1b675b747cb0ae2eb30d",
+        "https://i.scdn.co/image/ab67616d000048516ce839a167bba70354fc0317",
+        "https://i.scdn.co/image/ab67616d000048513d13a85f26c33f8f14ae4fe4",
+        "https://i.scdn.co/image/ab67616d00001e024967320d01591da44393de8a",
+        "https://i.scdn.co/image/ab67616d00001e02d56a1b675b747cb0ae2eb30d",
+        "https://i.scdn.co/image/ab67616d00001e026ce839a167bba70354fc0317",
+        "https://i.scdn.co/image/ab67616d00001e02a752dc40b2e12b17a515c89d",
+        "https://i.scdn.co/image/ab67616d00001e023d13a85f26c33f8f14ae4fe4"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1bTXh3mrHImnkYDuYW83we"
+      },
+      "first_seen": "2026-09-18T21:08:26+00:00",
+      "last_seen": "2026-09-18T21:08:26+00:00"
+    },
+    "1q3uUTwHt6YJuZyD5v0KA5": {
+      "id": "1q3uUTwHt6YJuZyD5v0KA5",
+      "name": "PAWEL HILANE",
+      "url": "https://open.spotify.com/intl-fr/artist/1q3uUTwHt6YJuZyD5v0KA5",
+      "uri": "spotify:artist:1q3uUTwHt6YJuZyD5v0KA5",
+      "followers": null,
+      "monthly_listeners": 2637,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b724c6856bdbe5993cd094e7a",
+        "https://i.scdn.co/image/ab67616d00004851144c04efa5228f1a41b69922",
+        "https://image-cdn-ak.spotifycdn.com/image/ab676170000059106e6e61cab863f0f92583133c",
+        "https://i.scdn.co/image/ab6761610000101f724c6856bdbe5993cd094e7a",
+        "https://i.scdn.co/image/ab67616d00001e02144c04efa5228f1a41b69922",
+        "https://i.scdn.co/image/ab67616100005174934726c9d7bd0a65406e6977",
+        "https://i.scdn.co/image/ab67616100005174a2ce4e96f46203f68a08a39a",
+        "https://i.scdn.co/image/ab6761610000517421bc7855929d9d3f0a6a2e84",
+        "https://i.scdn.co/image/ab67616100005174b43e412bc9e75cc88d3623cf",
+        "https://i.scdn.co/image/ab67616100005174b9309d242f1fa915cea0e439"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1q3uUTwHt6YJuZyD5v0KA5"
+      },
+      "first_seen": "2026-09-18T21:10:10+00:00",
+      "last_seen": "2026-09-18T21:10:10+00:00"
     }
   }
 }
