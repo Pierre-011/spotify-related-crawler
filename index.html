@@ -1,84 +1,112 @@
-```html
 <!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Spotify Related Artists</title>
-
+<title>Nouveaux artistes Spotify</title>
 <style>
 body{
   font-family:system-ui,sans-serif;
   max-width:1200px;
   margin:0 auto;
-  padding:24px
+  padding:24px;
+  background:#fafafa;
 }
-
 header{
   display:flex;
   justify-content:space-between;
   gap:20px;
   align-items:center;
-  flex-wrap:wrap
+  flex-wrap:wrap;
 }
-
+h1{
+  margin-bottom:6px;
+}
 .stats{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   gap:12px;
-  margin:24px 0
+  margin:24px 0;
 }
-
 .card{
+  background:white;
   border:1px solid #ddd;
   border-radius:12px;
-  padding:16px
+  padding:16px;
 }
-
 .value{
   font-size:28px;
-  font-weight:700
+  font-weight:700;
 }
-
 input{
   width:100%;
   box-sizing:border-box;
   padding:12px;
   border:1px solid #bbb;
-  border-radius:8px
+  border-radius:8px;
+  background:white;
 }
-
 table{
   width:100%;
   border-collapse:collapse;
-  margin-top:16px
+  margin-top:16px;
+  background:white;
+  border:1px solid #ddd;
+  border-radius:12px;
+  overflow:hidden;
 }
-
-th,td{
-  padding:10px;
+th,
+td{
+  padding:12px;
   border-bottom:1px solid #ddd;
-  text-align:left
+  text-align:left;
 }
-
+th{
+  background:#f5f5f5;
+}
+tr:last-child td{
+  border-bottom:none;
+}
 a{
-  color:inherit
+  color:inherit;
 }
-
 .small{
   color:#666;
-  font-size:13px
+  font-size:13px;
+}
+.badge{
+  display:inline-block;
+  margin-left:8px;
+  padding:3px 8px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:700;
+  background:#e8f5e9;
+  color:#2e7d32;
+}
+.empty{
+  text-align:center;
+  padding:40px;
+  color:#666;
+}
+.refresh{
+  margin-top:10px;
+  font-size:13px;
+  color:#666;
 }
 </style>
 </head>
-
 <body>
-
 <header>
   <div>
-    <h1>Spotify Related Artists</h1>
-    <div class="small" id="last">Chargement…</div>
+    <h1>Nouveaux artistes Spotify</h1>
+    <div class="small" id="last">
+      Chargement…
+    </div>
+    <div class="refresh">
+      Actualisation automatique toutes les 30 secondes
+    </div>
   </div>
-
   <div style="min-width:280px">
     <input
       id="search"
@@ -86,174 +114,362 @@ a{
     >
   </div>
 </header>
-
 <section class="stats">
-
   <div class="card">
-    <div class="small">Artistes</div>
-    <div class="value" id="count">—</div>
+    <div class="small">
+      Nouveaux artistes
+    </div>
+    <div
+      class="value"
+      id="newCount"
+    >
+      —
+    </div>
   </div>
-
   <div class="card">
-    <div class="small">Parcourus</div>
-    <div class="value" id="processed">—</div>
+    <div class="small">
+      Total artistes
+    </div>
+    <div
+      class="value"
+      id="totalCount"
+    >
+      —
+    </div>
   </div>
-
   <div class="card">
-    <div class="small">En attente</div>
-    <div class="value" id="queue">—</div>
+    <div class="small">
+      Parcourus
+    </div>
+    <div
+      class="value"
+      id="processed"
+    >
+      —
+    </div>
   </div>
-
   <div class="card">
-    <div class="small">Ajoutés</div>
-    <div class="value" id="added">—</div>
+    <div class="small">
+      En attente
+    </div>
+    <div
+      class="value"
+      id="queue"
+    >
+      —
+    </div>
   </div>
-
   <div class="card">
-    <div class="small">Erreurs</div>
-    <div class="value" id="errors">—</div>
+    <div class="small">
+      Erreurs
+    </div>
+    <div
+      class="value"
+      id="errors"
+    >
+      —
+    </div>
   </div>
-
 </section>
-
 <table>
   <thead>
     <tr>
       <th>Artiste</th>
       <th>ID</th>
       <th>Auditeurs mensuels</th>
+      <th>Ajouté</th>
       <th>Spotify</th>
     </tr>
   </thead>
-
   <tbody id="rows"></tbody>
 </table>
-
 <script>
-
+/*
+ * ------------------------------------------------------------
+ * CONFIGURATION
+ * ------------------------------------------------------------
+ *
+ * Le crawler tourne toutes les 15 minutes.
+ *
+ * On considère donc comme "nouveaux" les artistes dont
+ * first_seen date de moins de 30 minutes.
+ *
+ * Tu peux modifier cette valeur si nécessaire.
+ */
+const NEW_WINDOW_MINUTES = 30;
 let artists = {};
 let state = {};
-
+/*
+ * ------------------------------------------------------------
+ * CHARGEMENT DES DONNÉES
+ * ------------------------------------------------------------
+ */
 async function load(){
-
-  const [a, s] = await Promise.all([
-
-    fetch(
-      'data/artistes.json?' + Date.now()
-    ).then(r => r.json()),
-
-    fetch(
-      'data/state.json?' + Date.now()
-    ).then(r => r.json())
-
-  ]);
-
-  artists = a.artists || {};
-  state = s || {};
-
-  render();
+  try{
+    const [a, s] = await Promise.all([
+      fetch(
+        'data/artistes.json?' + Date.now()
+      ).then(r => {
+        if(!r.ok){
+          throw new Error(
+            'Impossible de charger artistes.json'
+          );
+        }
+        return r.json();
+      }),
+      fetch(
+        'data/state.json?' + Date.now()
+      ).then(r => {
+        if(!r.ok){
+          throw new Error(
+            'Impossible de charger state.json'
+          );
+        }
+        return r.json();
+      })
+    ]);
+    artists = a.artists || {};
+    state = s || {};
+    render();
+  }catch(error){
+    console.error(error);
+    document.getElementById(
+      'last'
+    ).textContent =
+      'Erreur : ' + error.message;
+  }
 }
-
-function render(){
-
-  const q = (
-    document.getElementById('search').value || ''
-  ).toLowerCase();
-
-  const list = Object.values(artists)
-
-    .filter(x =>
-      (x.name || '').toLowerCase().includes(q) ||
-      (x.id || '').toLowerCase().includes(q)
+/*
+ * ------------------------------------------------------------
+ * DÉTECTION DES NOUVEAUX ARTISTES
+ * ------------------------------------------------------------
+ */
+function isNewArtist(artist){
+  if(!artist.first_seen){
+    return false;
+  }
+  const firstSeen =
+    new Date(artist.first_seen);
+  if(
+    Number.isNaN(
+      firstSeen.getTime()
     )
-
-    .sort((a, b) =>
-      (a.name || '').localeCompare(
-        b.name || ''
+  ){
+    return false;
+  }
+  const now = new Date();
+  const ageMinutes =
+    (
+      now.getTime()
+      -
+      firstSeen.getTime()
+    )
+    /
+    1000
+    /
+    60;
+  return (
+    ageMinutes >= 0 &&
+    ageMinutes <= NEW_WINDOW_MINUTES
+  );
+}
+/*
+ * ------------------------------------------------------------
+ * RENDU DE LA PAGE
+ * ------------------------------------------------------------
+ */
+function render(){
+  const q = (
+    document.getElementById(
+      'search'
+    ).value || ''
+  ).toLowerCase();
+  /*
+   * On ne garde QUE les artistes récemment ajoutés.
+   */
+  const newArtists =
+    Object.values(artists)
+      .filter(
+        artist =>
+          isNewArtist(artist)
       )
-    );
-
+      .filter(
+        artist =>
+          (artist.name || '')
+            .toLowerCase()
+            .includes(q)
+          ||
+          (artist.id || '')
+            .toLowerCase()
+            .includes(q)
+      )
+      /*
+       * Les plus récemment ajoutés
+       * apparaissent en premier.
+       */
+      .sort(
+        (a,b) =>
+          new Date(
+            b.first_seen || 0
+          )
+          -
+          new Date(
+            a.first_seen || 0
+          )
+      );
+  /*
+   * ----------------------------------------------------------
+   * STATISTIQUES
+   * ----------------------------------------------------------
+   */
   document.getElementById(
-    'count'
-  ).textContent = Object.keys(
-    artists
-  ).length;
-
+    'newCount'
+  ).textContent =
+    newArtists.length;
+  document.getElementById(
+    'totalCount'
+  ).textContent =
+    Object.keys(
+      artists
+    ).length;
   document.getElementById(
     'processed'
-  ).textContent = (
-    state.processed || []
-  ).length;
-
+  ).textContent =
+    (
+      state.processed || []
+    ).length;
   document.getElementById(
     'queue'
-  ).textContent = (
-    state.queue || []
-  ).length;
-
-  document.getElementById(
-    'added'
-  ).textContent = (
-    state.stats || {}
-  ).added || 0;
-
+  ).textContent =
+    (
+      state.queue || []
+    ).length;
   document.getElementById(
     'errors'
-  ).textContent = (
-    state.stats || {}
-  ).errors || 0;
-
+  ).textContent =
+    (
+      state.stats || {}
+    ).errors || 0;
   document.getElementById(
     'last'
   ).textContent =
     'Dernière sauvegarde : ' +
-    (state.last_run || '—');
-
+    (
+      state.last_run || '—'
+    );
+  /*
+   * ----------------------------------------------------------
+   * TABLEAU VIDE
+   * ----------------------------------------------------------
+   */
+  if(newArtists.length === 0){
+    document.getElementById(
+      'rows'
+    ).innerHTML = `
+      <tr>
+        <td
+          colspan="5"
+          class="empty"
+        >
+          Aucun nouvel artiste
+          dans les ${NEW_WINDOW_MINUTES} dernières minutes.
+        </td>
+      </tr>
+    `;
+    return;
+  }
+  /*
+   * ----------------------------------------------------------
+   * TABLEAU DES NOUVEAUX ARTISTES
+   * ----------------------------------------------------------
+   */
   document.getElementById(
     'rows'
-  ).innerHTML = list.map(x => `
-
-    <tr>
-
-      <td>
-        <strong>
+  ).innerHTML = newArtists.map(
+    artist => `
+      <tr>
+        <td>
+          <strong>
+            ${escapeHtml(
+              artist.name ||
+              'Sans nom'
+            )}
+          </strong>
+          <span class="badge">
+            NOUVEAU
+          </span>
+        </td>
+        <td class="small">
           ${escapeHtml(
-            x.name || 'Sans nom'
+            artist.id || ''
           )}
-        </strong>
-      </td>
-
-      <td class="small">
-        ${escapeHtml(x.id || '')}
-      </td>
-
-      <td>
-        ${
-          x.monthly_listeners == null
-            ? '—'
-            : Number(
-                x.monthly_listeners
-              ).toLocaleString('fr-FR')
-        }
-      </td>
-
-      <td>
-        <a
-          href="${escapeAttr(x.url || '#')}"
-          target="_blank"
-          rel="noopener"
-        >
-          Ouvrir
-        </a>
-      </td>
-
-    </tr>
-
-  `).join('');
+        </td>
+        <td>
+          ${
+            artist.monthly_listeners == null
+              ? '—'
+              : Number(
+                  artist.monthly_listeners
+                ).toLocaleString(
+                  'fr-FR'
+                )
+          }
+        </td>
+        <td class="small">
+          ${formatDate(
+            artist.first_seen
+          )}
+        </td>
+        <td>
+          <a
+            href="${escapeAttr(
+              artist.url || '#'
+            )}"
+            target="_blank"
+            rel="noopener"
+          >
+            Ouvrir
+          </a>
+        </td>
+      </tr>
+    `
+  ).join('');
 }
-
+/*
+ * ------------------------------------------------------------
+ * FORMATAGE DE LA DATE
+ * ------------------------------------------------------------
+ */
+function formatDate(value){
+  if(!value){
+    return '—';
+  }
+  const date =
+    new Date(value);
+  if(
+    Number.isNaN(
+      date.getTime()
+    )
+  ){
+    return '—';
+  }
+  return date.toLocaleString(
+    'fr-FR',
+    {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    }
+  );
+}
+/*
+ * ------------------------------------------------------------
+ * PROTECTION HTML
+ * ------------------------------------------------------------
+ */
 function escapeHtml(s){
-
   return String(s).replace(
     /[&<>"']/g,
     c => ({
@@ -265,37 +481,46 @@ function escapeHtml(s){
     }[c])
   );
 }
-
+/*
+ * ------------------------------------------------------------
+ * PROTECTION DES ATTRIBUTS HTML
+ * ------------------------------------------------------------
+ */
 function escapeAttr(s){
-
-  return String(s).replace(
-    /"/g,
-    '&quot;'
-  );
+  return String(s)
+    .replace(
+      /"/g,
+      '&quot;'
+    );
 }
-
+/*
+ * ------------------------------------------------------------
+ * RECHERCHE
+ * ------------------------------------------------------------
+ */
 document
-  .getElementById('search')
+  .getElementById(
+    'search'
+  )
   .addEventListener(
     'input',
     render
   );
-
-load().catch(
-  e =>
-    document.getElementById(
-      'last'
-    ).textContent =
-      'Erreur : ' + e
-);
-
+/*
+ * ------------------------------------------------------------
+ * PREMIER CHARGEMENT
+ * ------------------------------------------------------------
+ */
+load();
+/*
+ * ------------------------------------------------------------
+ * ACTUALISATION AUTOMATIQUE
+ * ------------------------------------------------------------
+ */
 setInterval(
   load,
   30000
 );
-
 </script>
-
 </body>
 </html>
-```
