@@ -353541,6 +353541,114 @@
       },
       "first_seen": "2026-09-18T19:42:14+00:00",
       "last_seen": "2026-09-18T19:42:14+00:00"
+    },
+    "3vc1FuQVZgpUWnJCg3M2Nm": {
+      "id": "3vc1FuQVZgpUWnJCg3M2Nm",
+      "name": "KAMIKØ",
+      "url": "https://open.spotify.com/intl-fr/artist/3vc1FuQVZgpUWnJCg3M2Nm",
+      "uri": "spotify:artist:3vc1FuQVZgpUWnJCg3M2Nm",
+      "followers": null,
+      "monthly_listeners": 2064,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b7d1229524deda41d89786b4f",
+        "https://i.scdn.co/image/ab67616d00004851b978d573bc29a5928fa19dcf",
+        "https://i.scdn.co/image/ab67616d000048517e525ae3620816ab57c40bc7",
+        "https://i.scdn.co/image/ab67616d00004851fd981addb7ac5d523e8171e4",
+        "https://i.scdn.co/image/ab67616d00004851f9731be0dbc8b759592242fb",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67617000005910152a60617a8117c408236e8c",
+        "https://i.scdn.co/image/ab6761610000101f7d1229524deda41d89786b4f",
+        "https://i.scdn.co/image/ab67616d00001e02b978d573bc29a5928fa19dcf",
+        "https://i.scdn.co/image/ab67616d00001e02f9731be0dbc8b759592242fb",
+        "https://i.scdn.co/image/ab67616d00001e027e525ae3620816ab57c40bc7"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3vc1FuQVZgpUWnJCg3M2Nm"
+      },
+      "first_seen": "2026-09-18T19:48:15+00:00",
+      "last_seen": "2026-09-18T19:48:15+00:00"
+    },
+    "1ab8nXDaYxZ6A2J2zYzCoO": {
+      "id": "1ab8nXDaYxZ6A2J2zYzCoO",
+      "name": "Hadembi",
+      "url": "https://open.spotify.com/intl-fr/artist/1ab8nXDaYxZ6A2J2zYzCoO",
+      "uri": "spotify:artist:1ab8nXDaYxZ6A2J2zYzCoO",
+      "followers": null,
+      "monthly_listeners": 46,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b9d2c954c8606448892aa7e20",
+        "https://i.scdn.co/image/ab67616d000048517c57d4ecd0730ec7cc6f1842",
+        "https://i.scdn.co/image/ab67616d0000485189afe998eb141a41b1e61f80",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67617000005910b62380d52b6f2f8723569c75",
+        "https://i.scdn.co/image/ab6761610000101f9d2c954c8606448892aa7e20",
+        "https://i.scdn.co/image/ab67616d00001e027c57d4ecd0730ec7cc6f1842",
+        "https://i.scdn.co/image/ab67616d00001e023f62e3551a9efe3cfefe5315",
+        "https://i.scdn.co/image/ab67616d00001e026c4d732162dd0ca043482515",
+        "https://i.scdn.co/image/ab67616d00001e02352d08744eb544dcd858d953",
+        "https://i.scdn.co/image/ab67616d00001e020d08f246f1e338cc37af1baf"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1ab8nXDaYxZ6A2J2zYzCoO"
+      },
+      "first_seen": "2026-09-18T19:50:13+00:00",
+      "last_seen": "2026-09-18T19:50:13+00:00"
+    },
+    "1eAD0BSZjj0bGsyXDd9f8S": {
+      "id": "1eAD0BSZjj0bGsyXDd9f8S",
+      "name": "Lezon",
+      "url": "https://open.spotify.com/intl-fr/artist/1eAD0BSZjj0bGsyXDd9f8S",
+      "uri": "spotify:artist:1eAD0BSZjj0bGsyXDd9f8S",
+      "followers": null,
+      "monthly_listeners": null,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616100005174ea2080f3cbbfba762a3327d4",
+        "https://i.scdn.co/image/ab676161000051749eff1935cf53d055f786322c",
+        "https://i.scdn.co/image/ab67616d00001e02b2d2e19ee7b8df7b942c916f",
+        "https://i.scdn.co/image/ab676161000051741968c3669f544257c5a68288",
+        "https://i.scdn.co/image/ab676161000051742e5b8cdd706d4436db840258",
+        "https://i.scdn.co/image/ab67616100005174a6333f023d94b026d93973ce",
+        "https://i.scdn.co/image/ab676161000051741039c8fccb3025a32acc1d70",
+        "https://i.scdn.co/image/ab67616d00001e02ac71df97d1e1b3c3203ea14a",
+        "https://i.scdn.co/image/ab67616100005174ee129b323acc37fe61e18090",
+        "https://i.scdn.co/image/ab6761610000517458862488168a7ece329fc382"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1eAD0BSZjj0bGsyXDd9f8S"
+      },
+      "first_seen": "2026-09-18T19:53:08+00:00",
+      "last_seen": "2026-09-18T19:53:08+00:00"
+    },
+    "1oXcn2Rb00fjmFIe3RUm7r": {
+      "id": "1oXcn2Rb00fjmFIe3RUm7r",
+      "name": "Ti Chacal",
+      "url": "https://open.spotify.com/intl-fr/artist/1oXcn2Rb00fjmFIe3RUm7r",
+      "uri": "spotify:artist:1oXcn2Rb00fjmFIe3RUm7r",
+      "followers": null,
+      "monthly_listeners": 1482,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b24c2f4760bd59d32c2a65b40",
+        "https://i.scdn.co/image/ab67616d00004851ac3aacffbb3b28ba273aa4ef",
+        "https://i.scdn.co/image/ab67616d00004851fd2a0deb7510beee596f38e7",
+        "https://i.scdn.co/image/ab67616d0000485172aa3d7fbdec024e5a981821",
+        "https://i.scdn.co/image/ab67616d000048513c562e4f0f8c7226971ef547",
+        "https://i.scdn.co/image/ab67616d00001e02fd2a0deb7510beee596f38e7",
+        "https://i.scdn.co/image/ab6761610000101f24c2f4760bd59d32c2a65b40",
+        "https://i.scdn.co/image/ab67616d00001e02647e810bb32898b0dda9365e",
+        "https://i.scdn.co/image/ab67616d00001e02ac3aacffbb3b28ba273aa4ef",
+        "https://i.scdn.co/image/ab67616d00001e023c562e4f0f8c7226971ef547"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1oXcn2Rb00fjmFIe3RUm7r"
+      },
+      "first_seen": "2026-09-18T19:55:05+00:00",
+      "last_seen": "2026-09-18T19:55:05+00:00"
     }
   }
 }
