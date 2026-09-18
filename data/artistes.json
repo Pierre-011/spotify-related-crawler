@@ -353946,6 +353946,60 @@
       },
       "first_seen": "2026-09-18T21:43:28+00:00",
       "last_seen": "2026-09-18T21:43:28+00:00"
+    },
+    "4eCtzrp1uhzk5b8a3o5kKl": {
+      "id": "4eCtzrp1uhzk5b8a3o5kKl",
+      "name": "green23",
+      "url": "https://open.spotify.com/intl-fr/artist/4eCtzrp1uhzk5b8a3o5kKl",
+      "uri": "spotify:artist:4eCtzrp1uhzk5b8a3o5kKl",
+      "followers": null,
+      "monthly_listeners": 23206,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a35b111f4ceed0d8d4d8b0e6f5",
+        "https://i.scdn.co/image/ab67616d000048515b111f4ceed0d8d4d8b0e6f5",
+        "https://i.scdn.co/image/ab67616d00001e025b111f4ceed0d8d4d8b0e6f5",
+        "https://i.scdn.co/image/ab6761610000517468cca4e7cfa5c0180e332291",
+        "https://i.scdn.co/image/ab67616d00001e022be696e5609c9cfd8a19c254",
+        "https://i.scdn.co/image/ab67616d00001e0259cd54d33a7bfce1a0f106f3",
+        "https://i.scdn.co/image/ab676161000051742ed937a6f8518db65c2c33af",
+        "https://i.scdn.co/image/ab67616100005174d1bcb6305466fccd43427e89",
+        "https://i.scdn.co/image/ab676161000051740fd0013fff47cb164b7319b1",
+        "https://i.scdn.co/image/ab67616100005174c2b96e095675eb7a004b6d96"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4eCtzrp1uhzk5b8a3o5kKl"
+      },
+      "first_seen": "2026-09-18T21:51:47+00:00",
+      "last_seen": "2026-09-18T21:51:47+00:00"
+    },
+    "7gV93Lri9FLuYJciVLmuzL": {
+      "id": "7gV93Lri9FLuYJciVLmuzL",
+      "name": "L3NNY",
+      "url": "https://open.spotify.com/intl-fr/artist/7gV93Lri9FLuYJciVLmuzL",
+      "uri": "spotify:artist:7gV93Lri9FLuYJciVLmuzL",
+      "followers": null,
+      "monthly_listeners": 88,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bf35fac68e6980cb0cfc95495",
+        "https://i.scdn.co/image/ab67616d00004851052dd66464425a227a2c17bc",
+        "https://i.scdn.co/image/ab67616d00001e02052dd66464425a227a2c17bc",
+        "https://i.scdn.co/image/ab6761610000517408744a72e943dbaedddbd7e2",
+        "https://i.scdn.co/image/ab67616100005174e45d0724388d7e36584943f9",
+        "https://i.scdn.co/image/ab67616100005174a06647372e1f9f3d9d01c725",
+        "https://i.scdn.co/image/ab67616d00001e02579cca81929762062e2f092b",
+        "https://i.scdn.co/image/ab676161000051742685596eb682feb625933fc0",
+        "https://i.scdn.co/image/ab67616100005174133066e563912b8e403a07e0",
+        "https://i.scdn.co/image/ab676161000051744ebd53431ecb88e7a8806a62"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7gV93Lri9FLuYJciVLmuzL"
+      },
+      "first_seen": "2026-09-18T21:53:28+00:00",
+      "last_seen": "2026-09-18T21:53:28+00:00"
     }
   }
 }
