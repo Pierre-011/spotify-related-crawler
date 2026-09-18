@@ -353865,6 +353865,87 @@
       },
       "first_seen": "2026-09-18T21:25:11+00:00",
       "last_seen": "2026-09-18T21:25:11+00:00"
+    },
+    "7gGvlB1czxuK02ZxCmQDTo": {
+      "id": "7gGvlB1czxuK02ZxCmQDTo",
+      "name": "Kourame",
+      "url": "https://open.spotify.com/intl-fr/artist/7gGvlB1czxuK02ZxCmQDTo",
+      "uri": "spotify:artist:7gGvlB1czxuK02ZxCmQDTo",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048515293556f96f55cf80d7a8098",
+        "https://i.scdn.co/image/ab67616d00004851d508ba7a252a71bfaffd7eb7",
+        "https://i.scdn.co/image/ab67616d00001e02d508ba7a252a71bfaffd7eb7",
+        "https://i.scdn.co/image/ab67616d00001e025293556f96f55cf80d7a8098",
+        "https://i.scdn.co/image/ab67616d00001e0266df91642f4f54c8cd26d87b",
+        "https://i.scdn.co/image/ab676161000051743504df1a9539bc8cc8c8dfff",
+        "https://i.scdn.co/image/ab67616d00001e025a3508bb1f402a5e88b5cd40",
+        "https://i.scdn.co/image/ab67616d00001e02a5d0a96069d7a99c14442a26",
+        "https://i.scdn.co/image/ab676161000051742dbdae460e7817ecfb82f424",
+        "https://i.scdn.co/image/ab67616d00001e024bf3313266f62c3d883f03d0"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7gGvlB1czxuK02ZxCmQDTo"
+      },
+      "first_seen": "2026-09-18T21:36:26+00:00",
+      "last_seen": "2026-09-18T21:36:26+00:00"
+    },
+    "5oM3Y6ncIadugqRUDPp0WP": {
+      "id": "5oM3Y6ncIadugqRUDPp0WP",
+      "name": "333Mvnu",
+      "url": "https://open.spotify.com/intl-fr/artist/5oM3Y6ncIadugqRUDPp0WP",
+      "uri": "spotify:artist:5oM3Y6ncIadugqRUDPp0WP",
+      "followers": null,
+      "monthly_listeners": 56,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000485131e8e58f716033cabb6cd169",
+        "https://i.scdn.co/image/ab67616d00004851e0a118ef2d0312fe2bc08fbe",
+        "https://i.scdn.co/image/ab67616d00001e02e0a118ef2d0312fe2bc08fbe",
+        "https://i.scdn.co/image/ab67616d00001e0231e8e58f716033cabb6cd169",
+        "https://i.scdn.co/image/ab6761610000939ba490c065110798eaad881a87",
+        "https://i.scdn.co/image/ab676161000051744300575e4061578a1329df1a",
+        "https://i.scdn.co/image/ab676161000051745a6a7ab8637211e3b3c591c8",
+        "https://i.scdn.co/image/ab676161000051742af023dc1558cce7b40efd16",
+        "https://i.scdn.co/image/ab67616100005174ef616ce7f7310e3296769995",
+        "https://i.scdn.co/image/ab67616100005174c6c50687bd5a076759d631c0"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5oM3Y6ncIadugqRUDPp0WP"
+      },
+      "first_seen": "2026-09-18T21:41:10+00:00",
+      "last_seen": "2026-09-18T21:41:10+00:00"
+    },
+    "7trN4q6m3bYs1MGEiVAv27": {
+      "id": "7trN4q6m3bYs1MGEiVAv27",
+      "name": "Harbujit",
+      "url": "https://open.spotify.com/intl-fr/artist/7trN4q6m3bYs1MGEiVAv27",
+      "uri": "spotify:artist:7trN4q6m3bYs1MGEiVAv27",
+      "followers": null,
+      "monthly_listeners": 350,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3c2995a031d080717b0418f6c",
+        "https://i.scdn.co/image/ab67616d00004851c2995a031d080717b0418f6c",
+        "https://i.scdn.co/image/ab67616d00004851becd7b176695b2f1dda752b0",
+        "https://i.scdn.co/image/ab67616d00001e02becd7b176695b2f1dda752b0",
+        "https://i.scdn.co/image/ab67616d00001e02c2995a031d080717b0418f6c",
+        "https://i.scdn.co/image/ab67616100005174e809763e7b6250bbc2d22d02",
+        "https://i.scdn.co/image/ab67616d00001e02c70c18749029561f9e99f1db",
+        "https://i.scdn.co/image/ab676161000051745743a0b919366b36ed14f1cc",
+        "https://i.scdn.co/image/ab67616d00001e0266b546e4640dc4efd2d5c124",
+        "https://i.scdn.co/image/ab676161000051744e1da7a0d365e174c1830add"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7trN4q6m3bYs1MGEiVAv27"
+      },
+      "first_seen": "2026-09-18T21:43:28+00:00",
+      "last_seen": "2026-09-18T21:43:28+00:00"
     }
   }
 }
