@@ -1,4 +1,3 @@
-```yaml
 name: Spotify Related Artists Crawler
 
 on:
@@ -55,4 +54,3 @@ jobs:
             git commit -m "Update discovered artists"
             git push
           fi
-```
