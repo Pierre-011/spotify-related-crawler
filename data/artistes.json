@@ -354000,6 +354000,33 @@
       },
       "first_seen": "2026-09-18T21:53:28+00:00",
       "last_seen": "2026-09-18T21:53:28+00:00"
+    },
+    "67TYHCNnXtbsHykldsZlWb": {
+      "id": "67TYHCNnXtbsHykldsZlWb",
+      "name": "Ethan Kauffman",
+      "url": "https://open.spotify.com/intl-fr/artist/67TYHCNnXtbsHykldsZlWb",
+      "uri": "spotify:artist:67TYHCNnXtbsHykldsZlWb",
+      "followers": null,
+      "monthly_listeners": 16,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b320a5da439bcdf0443a9f360",
+        "https://i.scdn.co/image/ab67616d00004851ecf85a3c890529d94b2e6528",
+        "https://i.scdn.co/image/ab67616d000048515e9c821f1c1170487b935170",
+        "https://i.scdn.co/image/ab67616d00004851ce28e56bd8cece09c7d2abd6",
+        "https://i.scdn.co/image/ab67616d00001e02ecf85a3c890529d94b2e6528",
+        "https://i.scdn.co/image/ab67616d00001e025e9c821f1c1170487b935170",
+        "https://i.scdn.co/image/ab67616d00001e02ce28e56bd8cece09c7d2abd6",
+        "https://i.scdn.co/image/ab67616d00001e023ec6231acdfb033091177803",
+        "https://i.scdn.co/image/ab676161000051747893eae0160dd2c45d833d92",
+        "https://i.scdn.co/image/ab67616d00001e020b19bed595e4671f4f3c8745"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/67TYHCNnXtbsHykldsZlWb"
+      },
+      "first_seen": "2026-09-18T22:26:51+00:00",
+      "last_seen": "2026-09-18T22:26:51+00:00"
     }
   }
 }
