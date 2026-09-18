@@ -353649,6 +353649,60 @@
       },
       "first_seen": "2026-09-18T19:55:05+00:00",
       "last_seen": "2026-09-18T19:55:05+00:00"
+    },
+    "6WHlpdQSGgQ2NrcU7ufy7e": {
+      "id": "6WHlpdQSGgQ2NrcU7ufy7e",
+      "name": "Sabil",
+      "url": "https://open.spotify.com/intl-fr/artist/6WHlpdQSGgQ2NrcU7ufy7e",
+      "uri": "spotify:artist:6WHlpdQSGgQ2NrcU7ufy7e",
+      "followers": null,
+      "monthly_listeners": null,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000517408bcbb1e946ae72953e9201a",
+        "https://i.scdn.co/image/ab67616d00001e0279ada9a8b86c7e59f29b56bc",
+        "https://i.scdn.co/image/ab67616100005174f08bebdddcf101ea84e6db0b",
+        "https://i.scdn.co/image/ab67616100005174f85ce903ad2a499ff07d4a07",
+        "https://i.scdn.co/image/ab67616d00001e0200b5c6f46781603846ef4c52",
+        "https://i.scdn.co/image/ab67616d00001e02ced59b38368131a697fb59dd",
+        "https://i.scdn.co/image/ab67616d00001e02118117dd58c56c6432fc527e",
+        "https://i.scdn.co/image/ab67616d00001e02fecbba28290f21f08a2ea6fa",
+        "https://i.scdn.co/image/ab67616d00001e0250daadb21d946df6e7c7a57b",
+        "https://cdn.cookielaw.org/logos/static/ot_company_logo.png"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6WHlpdQSGgQ2NrcU7ufy7e"
+      },
+      "first_seen": "2026-09-18T20:06:02+00:00",
+      "last_seen": "2026-09-18T20:06:02+00:00"
+    },
+    "3vyO0zga8k3jiJQkWQJrco": {
+      "id": "3vyO0zga8k3jiJQkWQJrco",
+      "name": "Goldn",
+      "url": "https://open.spotify.com/intl-fr/artist/3vyO0zga8k3jiJQkWQJrco",
+      "uri": "spotify:artist:3vyO0zga8k3jiJQkWQJrco",
+      "followers": null,
+      "monthly_listeners": 6,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851064d3ed9996299fae1db2469",
+        "https://i.scdn.co/image/ab67616d00004851922c2e1873fe5419eb74a251",
+        "https://i.scdn.co/image/ab67616d00004851b7f38f7817bab55fcc0685c4",
+        "https://i.scdn.co/image/ab67616d0000485196b1a86ceb8ee8a227d07a67",
+        "https://i.scdn.co/image/ab67616d000048519a74dfecd2c51c686e8f258f",
+        "https://i.scdn.co/image/ab67616d00001e02317da65382307ed59ed97404",
+        "https://i.scdn.co/image/ab67616d00001e029a74dfecd2c51c686e8f258f",
+        "https://i.scdn.co/image/ab67616d00001e0296b1a86ceb8ee8a227d07a67",
+        "https://i.scdn.co/image/ab67616d00001e02922c2e1873fe5419eb74a251",
+        "https://i.scdn.co/image/ab67616d00001e02b7f38f7817bab55fcc0685c4"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3vyO0zga8k3jiJQkWQJrco"
+      },
+      "first_seen": "2026-09-18T20:07:40+00:00",
+      "last_seen": "2026-09-18T20:07:40+00:00"
     }
   }
 }
