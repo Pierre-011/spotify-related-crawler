@@ -1,75 +1,301 @@
+```html
 <!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Spotify Related Artists</title>
+
 <style>
-body{font-family:system-ui,sans-serif;max-width:1200px;margin:0 auto;padding:24px}
-header{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:24px 0}
-.card{border:1px solid #ddd;border-radius:12px;padding:16px}
-.value{font-size:28px;font-weight:700}
-input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #bbb;border-radius:8px}
-table{width:100%;border-collapse:collapse;margin-top:16px}
-th,td{padding:10px;border-bottom:1px solid #ddd;text-align:left}
-a{color:inherit}
-.small{color:#666;font-size:13px}
+body{
+  font-family:system-ui,sans-serif;
+  max-width:1200px;
+  margin:0 auto;
+  padding:24px
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+  flex-wrap:wrap
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:12px;
+  margin:24px 0
+}
+
+.card{
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:16px
+}
+
+.value{
+  font-size:28px;
+  font-weight:700
+}
+
+input{
+  width:100%;
+  box-sizing:border-box;
+  padding:12px;
+  border:1px solid #bbb;
+  border-radius:8px
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:16px
+}
+
+th,td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  text-align:left
+}
+
+a{
+  color:inherit
+}
+
+.small{
+  color:#666;
+  font-size:13px
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div>
-<h1>Spotify Related Artists</h1>
-<div class="small" id="last">Chargement…</div>
-</div>
-<div style="min-width:280px"><input id="search" placeholder="Rechercher un artiste…"></div>
+  <div>
+    <h1>Spotify Related Artists</h1>
+    <div class="small" id="last">Chargement…</div>
+  </div>
+
+  <div style="min-width:280px">
+    <input
+      id="search"
+      placeholder="Rechercher un artiste…"
+    >
+  </div>
 </header>
+
 <section class="stats">
-<div class="card"><div class="small">Artistes</div><div class="value" id="count">—</div></div>
-<div class="card"><div class="small">Parcourus</div><div class="value" id="processed">—</div></div>
-<div class="card"><div class="small">En attente</div><div class="value" id="queue">—</div></div>
-<div class="card"><div class="small">Ajoutés</div><div class="value" id="added">—</div></div>
-<div class="card"><div class="small">Erreurs</div><div class="value" id="errors">—</div></div>
+
+  <div class="card">
+    <div class="small">Artistes</div>
+    <div class="value" id="count">—</div>
+  </div>
+
+  <div class="card">
+    <div class="small">Parcourus</div>
+    <div class="value" id="processed">—</div>
+  </div>
+
+  <div class="card">
+    <div class="small">En attente</div>
+    <div class="value" id="queue">—</div>
+  </div>
+
+  <div class="card">
+    <div class="small">Ajoutés</div>
+    <div class="value" id="added">—</div>
+  </div>
+
+  <div class="card">
+    <div class="small">Erreurs</div>
+    <div class="value" id="errors">—</div>
+  </div>
+
 </section>
+
 <table>
-<thead><tr><th>Artiste</th><th>ID</th><th>Auditeurs mensuels</th><th>Spotify</th></tr></thead>
-<tbody id="rows"></tbody>
+  <thead>
+    <tr>
+      <th>Artiste</th>
+      <th>ID</th>
+      <th>Auditeurs mensuels</th>
+      <th>Spotify</th>
+    </tr>
+  </thead>
+
+  <tbody id="rows"></tbody>
 </table>
+
 <script>
-let artists={}, state={};
+
+let artists = {};
+let state = {};
+
 async function load(){
-  const [a,s]=await Promise.all([
-    fetch('data/artists.json?'+Date.now()).then(r=>r.json()),
-    fetch('data/state.json?'+Date.now()).then(r=>r.json())
+
+  const [a, s] = await Promise.all([
+
+    fetch(
+      'data/artistes.json?' + Date.now()
+    ).then(r => r.json()),
+
+    fetch(
+      'data/state.json?' + Date.now()
+    ).then(r => r.json())
+
   ]);
-  artists=a.artists||{}; state=s||{};
+
+  artists = a.artists || {};
+  state = s || {};
+
   render();
 }
+
 function render(){
-  const q=(document.getElementById('search').value||'').toLowerCase();
-  const list=Object.values(artists)
-    .filter(x=>(x.name||'').toLowerCase().includes(q)||(x.id||'').toLowerCase().includes(q))
-    .sort((a,b)=>(a.name||'').localeCompare(b.name||''));
-  document.getElementById('count').textContent=Object.keys(artists).length;
-  document.getElementById('processed').textContent=(state.processed||[]).length;
-  document.getElementById('queue').textContent=(state.queue||[]).length;
-  document.getElementById('added').textContent=(state.stats||{}).added||0;
-  document.getElementById('errors').textContent=(state.stats||{}).errors||0;
-  document.getElementById('last').textContent='Dernière sauvegarde : '+(state.last_run||'—');
-  document.getElementById('rows').innerHTML=list.map(x=>`
+
+  const q = (
+    document.getElementById('search').value || ''
+  ).toLowerCase();
+
+  const list = Object.values(artists)
+
+    .filter(x =>
+      (x.name || '').toLowerCase().includes(q) ||
+      (x.id || '').toLowerCase().includes(q)
+    )
+
+    .sort((a, b) =>
+      (a.name || '').localeCompare(
+        b.name || ''
+      )
+    );
+
+  document.getElementById(
+    'count'
+  ).textContent = Object.keys(
+    artists
+  ).length;
+
+  document.getElementById(
+    'processed'
+  ).textContent = (
+    state.processed || []
+  ).length;
+
+  document.getElementById(
+    'queue'
+  ).textContent = (
+    state.queue || []
+  ).length;
+
+  document.getElementById(
+    'added'
+  ).textContent = (
+    state.stats || {}
+  ).added || 0;
+
+  document.getElementById(
+    'errors'
+  ).textContent = (
+    state.stats || {}
+  ).errors || 0;
+
+  document.getElementById(
+    'last'
+  ).textContent =
+    'Dernière sauvegarde : ' +
+    (state.last_run || '—');
+
+  document.getElementById(
+    'rows'
+  ).innerHTML = list.map(x => `
+
     <tr>
-      <td><strong>${escapeHtml(x.name||'Sans nom')}</strong></td>
-      <td class="small">${escapeHtml(x.id||'')}</td>
-      <td>${x.monthly_listeners==null?'—':Number(x.monthly_listeners).toLocaleString('fr-FR')}</td>
-      <td><a href="${escapeAttr(x.url||'#')}" target="_blank" rel="noopener">Ouvrir</a></td>
-    </tr>`).join('');
+
+      <td>
+        <strong>
+          ${escapeHtml(
+            x.name || 'Sans nom'
+          )}
+        </strong>
+      </td>
+
+      <td class="small">
+        ${escapeHtml(x.id || '')}
+      </td>
+
+      <td>
+        ${
+          x.monthly_listeners == null
+            ? '—'
+            : Number(
+                x.monthly_listeners
+              ).toLocaleString('fr-FR')
+        }
+      </td>
+
+      <td>
+        <a
+          href="${escapeAttr(x.url || '#')}"
+          target="_blank"
+          rel="noopener"
+        >
+          Ouvrir
+        </a>
+      </td>
+
+    </tr>
+
+  `).join('');
 }
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
-function escapeAttr(s){return String(s).replace(/"/g,'&quot;')}
-document.getElementById('search').addEventListener('input',render);
-load().catch(e=>document.getElementById('last').textContent='Erreur : '+e);
-setInterval(load,30000);
+
+function escapeHtml(s){
+
+  return String(s).replace(
+    /[&<>"']/g,
+    c => ({
+      '&':'&amp;',
+      '<':'&lt;',
+      '>':'&gt;',
+      '"':'&quot;',
+      "'":'&#039;'
+    }[c])
+  );
+}
+
+function escapeAttr(s){
+
+  return String(s).replace(
+    /"/g,
+    '&quot;'
+  );
+}
+
+document
+  .getElementById('search')
+  .addEventListener(
+    'input',
+    render
+  );
+
+load().catch(
+  e =>
+    document.getElementById(
+      'last'
+    ).textContent =
+      'Erreur : ' + e
+);
+
+setInterval(
+  load,
+  30000
+);
+
 </script>
+
 </body>
 </html>
+```
