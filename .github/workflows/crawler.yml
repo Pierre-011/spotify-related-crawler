@@ -3,7 +3,7 @@ name: Spotify Related Artists Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
@@ -14,8 +14,13 @@ concurrency:
 
 jobs:
   crawl:
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 340
 
     steps:
       - name: Checkout
@@ -34,12 +39,153 @@ jobs:
 
       - name: Run crawler
         env:
-          CRAWLER_MAX_SECONDS: "540"
+          CRAWLER_MAX_SECONDS: "20000"
           HEADLESS: "1"
           SPOTIFY_LANGUAGE: "intl-fr"
           PAGE_WAIT_MS: "2500"
           SCROLL_COUNT: "5"
-        run: python src/crawler.py
+
+          WORKER_ID: "${{ matrix.worker }}"
+          WORKER_COUNT: "10"
+
+        run: |
+          echo "=========================================="
+          echo "Starting worker $WORKER_ID / $WORKER_COUNT"
+          echo "=========================================="
+
+          python src/crawler.py
+
+      - name: Upload worker data
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawler-data-worker-${{ matrix.worker }}
+          path: |
+            data/artistes.json
+            data/state.json
+          if-no-files-found: warn
+
+  merge:
+    name: Merge worker results
+    needs: crawl
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download worker data
+        uses: actions/download-artifact@v4
+        with:
+          path: worker-data
+
+      - name: Show worker files
+        run: |
+          echo "=========================================="
+          echo "Worker files"
+          echo "=========================================="
+
+          find worker-data -type f -print
+
+      - name: Merge artists data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          worker_root = Path("worker-data")
+          artist_files = list(worker_root.glob("**/artistes.json"))
+
+          print(f"Found {len(artist_files)} artistes.json files")
+
+          merged = {}
+
+          for file in artist_files:
+              print(f"Reading: {file}")
+
+              try:
+                  with open(file, "r", encoding="utf-8") as f:
+                      data = json.load(f)
+              except Exception as e:
+                  print(f"Failed to read {file}: {e}")
+                  continue
+
+              if isinstance(data, dict):
+                  for key, artist in data.items():
+                      merged[key] = artist
+
+              elif isinstance(data, list):
+                  for artist in data:
+                      if not isinstance(artist, dict):
+                          continue
+
+                      artist_id = (
+                          artist.get("id")
+                          or artist.get("spotify_id")
+                          or artist.get("uri")
+                      )
+
+                      if artist_id:
+                          merged[artist_id] = artist
+
+          output = Path("data/artistes.json")
+          output.parent.mkdir(parents=True, exist_ok=True)
+
+          with open(output, "w", encoding="utf-8") as f:
+              json.dump(
+                  merged,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print("==========================================")
+          print(f"Total unique artists: {len(merged)}")
+          print("==========================================")
+          PY
+
+      - name: Merge state
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          worker_root = Path("worker-data")
+          state_files = list(worker_root.glob("**/state.json"))
+
+          print(f"Found {len(state_files)} state.json files")
+
+          if not state_files:
+              print("No state files found.")
+              raise SystemExit(0)
+
+          merged = {}
+
+          for file in state_files:
+              print(f"Reading: {file}")
+
+              try:
+                  with open(file, "r", encoding="utf-8") as f:
+                      data = json.load(f)
+              except Exception as e:
+                  print(f"Failed to read {file}: {e}")
+                  continue
+
+              if isinstance(data, dict):
+                  merged.update(data)
+
+          output = Path("data/state.json")
+          output.parent.mkdir(parents=True, exist_ok=True)
+
+          with open(output, "w", encoding="utf-8") as f:
+              json.dump(
+                  merged,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print("State merged successfully.")
+          PY
 
       - name: Commit updated data
         run: |
