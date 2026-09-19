@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Nouveaux artistes Spotify</title>
+
 <style>
 body{
   font-family:system-ui,sans-serif;
@@ -12,6 +14,7 @@ body{
   padding:24px;
   background:#fafafa;
 }
+
 header{
   display:flex;
   justify-content:space-between;
@@ -19,25 +22,33 @@ header{
   align-items:center;
   flex-wrap:wrap;
 }
+
 h1{
   margin-bottom:6px;
 }
+
 .stats{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  grid-template-columns:repeat(
+    auto-fit,
+    minmax(180px,1fr)
+  );
   gap:12px;
   margin:24px 0;
 }
+
 .card{
   background:white;
   border:1px solid #ddd;
   border-radius:12px;
   padding:16px;
 }
+
 .value{
   font-size:28px;
   font-weight:700;
 }
+
 input{
   width:100%;
   box-sizing:border-box;
@@ -46,6 +57,7 @@ input{
   border-radius:8px;
   background:white;
 }
+
 table{
   width:100%;
   border-collapse:collapse;
@@ -55,25 +67,31 @@ table{
   border-radius:12px;
   overflow:hidden;
 }
+
 th,
 td{
   padding:12px;
   border-bottom:1px solid #ddd;
   text-align:left;
 }
+
 th{
   background:#f5f5f5;
 }
+
 tr:last-child td{
   border-bottom:none;
 }
+
 a{
   color:inherit;
 }
+
 .small{
   color:#666;
   font-size:13px;
 }
+
 .badge{
   display:inline-block;
   margin-left:8px;
@@ -84,11 +102,13 @@ a{
   background:#e8f5e9;
   color:#2e7d32;
 }
+
 .empty{
   text-align:center;
   padding:40px;
   color:#666;
 }
+
 .refresh{
   margin-top:10px;
   font-size:13px;
@@ -96,260 +116,452 @@ a{
 }
 </style>
 </head>
+
 <body>
+
 <header>
+
   <div>
-    <h1>Nouveaux artistes Spotify</h1>
-    <div class="small" id="last">
+
+    <h1>
+      Nouveaux artistes Spotify
+    </h1>
+
+    <div
+      class="small"
+      id="last"
+    >
       Chargement…
     </div>
+
     <div class="refresh">
-      Actualisation automatique toutes les 30 secondes
+      Artistes trouvés dans les
+      <strong>24 dernières heures</strong>
+      · Actualisation automatique toutes les 30 secondes
     </div>
+
   </div>
+
   <div style="min-width:280px">
+
     <input
       id="search"
       placeholder="Rechercher un artiste…"
     >
+
   </div>
+
 </header>
+
+
 <section class="stats">
+
   <div class="card">
+
     <div class="small">
-      Nouveaux artistes
+      Nouveaux artistes (24h)
     </div>
+
     <div
       class="value"
       id="newCount"
     >
       —
     </div>
+
   </div>
+
+
   <div class="card">
+
     <div class="small">
       Total artistes
     </div>
+
     <div
       class="value"
       id="totalCount"
     >
       —
     </div>
+
   </div>
+
+
   <div class="card">
+
     <div class="small">
       Parcourus
     </div>
+
     <div
       class="value"
       id="processed"
     >
       —
     </div>
+
   </div>
+
+
   <div class="card">
+
     <div class="small">
       En attente
     </div>
+
     <div
       class="value"
       id="queue"
     >
       —
     </div>
+
   </div>
+
+
   <div class="card">
+
     <div class="small">
       Erreurs
     </div>
+
     <div
       class="value"
       id="errors"
     >
       —
     </div>
+
   </div>
+
 </section>
+
+
 <table>
+
   <thead>
+
     <tr>
-      <th>Artiste</th>
-      <th>ID</th>
-      <th>Auditeurs mensuels</th>
-      <th>Ajouté</th>
-      <th>Spotify</th>
+
+      <th>
+        Artiste
+      </th>
+
+      <th>
+        ID
+      </th>
+
+      <th>
+        Auditeurs mensuels
+      </th>
+
+      <th>
+        Ajouté
+      </th>
+
+      <th>
+        Spotify
+      </th>
+
     </tr>
+
   </thead>
+
   <tbody id="rows"></tbody>
+
 </table>
+
+
 <script>
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * CONFIGURATION
- * ------------------------------------------------------------
+ * ============================================================
  *
- * Le crawler tourne toutes les 15 minutes.
+ * Fenêtre utilisée pour afficher les nouveaux artistes.
  *
- * On considère donc comme "nouveaux" les artistes dont
- * first_seen date de moins de 30 minutes.
+ * 24 heures = 24 × 60 × 60 × 1000 millisecondes.
  *
- * Tu peux modifier cette valeur si nécessaire.
+ * La fenêtre est glissante :
+ *
+ * maintenant - 24 heures
+ *
+ * jusqu'à
+ *
+ * maintenant
  */
-const NEW_WINDOW_MINUTES = 30;
+
+const NEW_WINDOW_HOURS = 24;
+
+const NEW_WINDOW_MS =
+  NEW_WINDOW_HOURS *
+  60 *
+  60 *
+  1000;
+
+
 let artists = {};
+
 let state = {};
+
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * CHARGEMENT DES DONNÉES
- * ------------------------------------------------------------
+ * ============================================================
  */
+
 async function load(){
+
   try{
+
     const [a, s] = await Promise.all([
+
       fetch(
-        'data/artistes.json?' + Date.now()
+        'data/artistes.json?' +
+        Date.now()
       ).then(r => {
+
         if(!r.ok){
+
           throw new Error(
             'Impossible de charger artistes.json'
           );
+
         }
+
         return r.json();
+
       }),
+
+
       fetch(
-        'data/state.json?' + Date.now()
+        'data/state.json?' +
+        Date.now()
       ).then(r => {
+
         if(!r.ok){
+
           throw new Error(
             'Impossible de charger state.json'
           );
+
         }
+
         return r.json();
+
       })
+
     ]);
-    artists = a.artists || {};
-    state = s || {};
+
+
+    artists =
+      a.artists || {};
+
+
+    state =
+      s || {};
+
+
     render();
+
+
   }catch(error){
+
     console.error(error);
+
+
     document.getElementById(
       'last'
     ).textContent =
-      'Erreur : ' + error.message;
+      'Erreur : ' +
+      error.message;
+
   }
+
 }
+
+
 /*
- * ------------------------------------------------------------
- * DÉTECTION DES NOUVEAUX ARTISTES
- * ------------------------------------------------------------
+ * ============================================================
+ * DÉTECTION DES ARTISTES DES 24 DERNIÈRES HEURES
+ * ============================================================
  */
-function isNewArtist(artist){
-  if(!artist.first_seen){
+
+function isNewArtist(
+  artist
+){
+
+  if(
+    !artist.first_seen
+  ){
+
     return false;
+
   }
+
+
   const firstSeen =
-    new Date(artist.first_seen);
+    new Date(
+      artist.first_seen
+    );
+
+
   if(
     Number.isNaN(
       firstSeen.getTime()
     )
   ){
+
     return false;
+
   }
-  const now = new Date();
-  const ageMinutes =
-    (
-      now.getTime()
-      -
-      firstSeen.getTime()
-    )
-    /
-    1000
-    /
-    60;
+
+
+  const now =
+    Date.now();
+
+
+  const firstSeenTime =
+    firstSeen.getTime();
+
+
+  const age =
+    now -
+    firstSeenTime;
+
+
+  /*
+   * L'artiste doit avoir été découvert :
+   *
+   * - après maintenant - 24 heures
+   * - avant maintenant
+   */
+
   return (
-    ageMinutes >= 0 &&
-    ageMinutes <= NEW_WINDOW_MINUTES
+    age >= 0 &&
+    age <= NEW_WINDOW_MS
   );
+
 }
+
+
 /*
- * ------------------------------------------------------------
- * RENDU DE LA PAGE
- * ------------------------------------------------------------
+ * ============================================================
+ * RENDU
+ * ============================================================
  */
+
 function render(){
+
   const q = (
+
     document.getElementById(
       'search'
     ).value || ''
+
   ).toLowerCase();
+
+
   /*
-   * On ne garde QUE les artistes récemment ajoutés.
+   * ----------------------------------------------------------
+   * ARTISTES DES 24 DERNIÈRES HEURES
+   * ----------------------------------------------------------
    */
+
   const newArtists =
-    Object.values(artists)
-      .filter(
-        artist =>
-          isNewArtist(artist)
-      )
-      .filter(
-        artist =>
-          (artist.name || '')
-            .toLowerCase()
-            .includes(q)
-          ||
-          (artist.id || '')
-            .toLowerCase()
-            .includes(q)
-      )
-      /*
-       * Les plus récemment ajoutés
-       * apparaissent en premier.
-       */
-      .sort(
-        (a,b) =>
-          new Date(
-            b.first_seen || 0
-          )
-          -
-          new Date(
-            a.first_seen || 0
-          )
-      );
+
+    Object.values(
+      artists
+    )
+
+    .filter(
+      artist =>
+        isNewArtist(
+          artist
+        )
+    )
+
+    .filter(
+      artist =>
+
+        (artist.name || '')
+          .toLowerCase()
+          .includes(q)
+
+        ||
+
+        (artist.id || '')
+          .toLowerCase()
+          .includes(q)
+
+    )
+
+    /*
+     * Les plus récents en premier.
+     */
+
+    .sort(
+      (a,b) =>
+
+        new Date(
+          b.first_seen || 0
+        )
+
+        -
+
+        new Date(
+          a.first_seen || 0
+        )
+    );
+
+
   /*
-   * ----------------------------------------------------------
+   * ==========================================================
    * STATISTIQUES
-   * ----------------------------------------------------------
+   * ==========================================================
    */
+
   document.getElementById(
     'newCount'
   ).textContent =
     newArtists.length;
+
+
   document.getElementById(
     'totalCount'
   ).textContent =
     Object.keys(
       artists
     ).length;
+
+
   document.getElementById(
     'processed'
   ).textContent =
     (
       state.processed || []
     ).length;
+
+
   document.getElementById(
     'queue'
   ).textContent =
     (
       state.queue || []
     ).length;
+
+
   document.getElementById(
     'errors'
   ).textContent =
     (
       state.stats || {}
     ).errors || 0;
+
+
   document.getElementById(
     'last'
   ).textContent =
@@ -357,102 +569,177 @@ function render(){
     (
       state.last_run || '—'
     );
+
+
   /*
-   * ----------------------------------------------------------
+   * ==========================================================
    * TABLEAU VIDE
-   * ----------------------------------------------------------
+   * ==========================================================
    */
-  if(newArtists.length === 0){
+
+  if(
+    newArtists.length === 0
+  ){
+
     document.getElementById(
       'rows'
     ).innerHTML = `
+
       <tr>
+
         <td
           colspan="5"
           class="empty"
         >
+
           Aucun nouvel artiste
-          dans les ${NEW_WINDOW_MINUTES} dernières minutes.
+          trouvé dans les
+          <strong>
+            dernières 24 heures
+          </strong>.
+
         </td>
+
       </tr>
+
     `;
+
     return;
+
   }
+
+
   /*
-   * ----------------------------------------------------------
-   * TABLEAU DES NOUVEAUX ARTISTES
-   * ----------------------------------------------------------
+   * ==========================================================
+   * TABLEAU
+   * ==========================================================
    */
+
   document.getElementById(
     'rows'
-  ).innerHTML = newArtists.map(
-    artist => `
-      <tr>
-        <td>
-          <strong>
+  ).innerHTML =
+
+    newArtists.map(
+      artist => `
+
+        <tr>
+
+          <td>
+
+            <strong>
+
+              ${escapeHtml(
+                artist.name ||
+                'Sans nom'
+              )}
+
+            </strong>
+
+            <span class="badge">
+              NOUVEAU
+            </span>
+
+          </td>
+
+
+          <td class="small">
+
             ${escapeHtml(
-              artist.name ||
-              'Sans nom'
+              artist.id || ''
             )}
-          </strong>
-          <span class="badge">
-            NOUVEAU
-          </span>
-        </td>
-        <td class="small">
-          ${escapeHtml(
-            artist.id || ''
-          )}
-        </td>
-        <td>
-          ${
-            artist.monthly_listeners == null
-              ? '—'
-              : Number(
-                  artist.monthly_listeners
-                ).toLocaleString(
-                  'fr-FR'
-                )
-          }
-        </td>
-        <td class="small">
-          ${formatDate(
-            artist.first_seen
-          )}
-        </td>
-        <td>
-          <a
-            href="${escapeAttr(
-              artist.url || '#'
-            )}"
-            target="_blank"
-            rel="noopener"
-          >
-            Ouvrir
-          </a>
-        </td>
-      </tr>
-    `
-  ).join('');
+
+          </td>
+
+
+          <td>
+
+            ${
+              artist.monthly_listeners == null
+
+              ?
+
+              '—'
+
+              :
+
+              Number(
+                artist.monthly_listeners
+              ).toLocaleString(
+                'fr-FR'
+              )
+
+            }
+
+          </td>
+
+
+          <td class="small">
+
+            ${formatDate(
+              artist.first_seen
+            )}
+
+          </td>
+
+
+          <td>
+
+            <a
+              href="${escapeAttr(
+                artist.url || '#'
+              )}"
+              target="_blank"
+              rel="noopener"
+            >
+
+              Ouvrir
+
+            </a>
+
+          </td>
+
+        </tr>
+
+      `
+    ).join('');
+
 }
+
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * FORMATAGE DE LA DATE
- * ------------------------------------------------------------
+ * ============================================================
  */
-function formatDate(value){
+
+function formatDate(
+  value
+){
+
   if(!value){
+
     return '—';
+
   }
+
+
   const date =
-    new Date(value);
+    new Date(
+      value
+    );
+
+
   if(
     Number.isNaN(
       date.getTime()
     )
   ){
+
     return '—';
+
   }
+
+
   return date.toLocaleString(
     'fr-FR',
     {
@@ -463,14 +750,23 @@ function formatDate(value){
       minute: '2-digit'
     }
   );
+
 }
+
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * PROTECTION HTML
- * ------------------------------------------------------------
+ * ============================================================
  */
-function escapeHtml(s){
-  return String(s).replace(
+
+function escapeHtml(
+  s
+){
+
+  return String(
+    s
+  ).replace(
     /[&<>"']/g,
     c => ({
       '&':'&amp;',
@@ -480,24 +776,36 @@ function escapeHtml(s){
       "'":'&#039;'
     }[c])
   );
+
 }
+
+
 /*
- * ------------------------------------------------------------
- * PROTECTION DES ATTRIBUTS HTML
- * ------------------------------------------------------------
+ * ============================================================
+ * PROTECTION DES ATTRIBUTS
+ * ============================================================
  */
-function escapeAttr(s){
-  return String(s)
-    .replace(
-      /"/g,
-      '&quot;'
-    );
+
+function escapeAttr(
+  s
+){
+
+  return String(
+    s
+  ).replace(
+    /"/g,
+    '&quot;'
+  );
+
 }
+
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * RECHERCHE
- * ------------------------------------------------------------
+ * ============================================================
  */
+
 document
   .getElementById(
     'search'
@@ -506,21 +814,29 @@ document
     'input',
     render
   );
+
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * PREMIER CHARGEMENT
- * ------------------------------------------------------------
+ * ============================================================
  */
+
 load();
+
+
 /*
- * ------------------------------------------------------------
+ * ============================================================
  * ACTUALISATION AUTOMATIQUE
- * ------------------------------------------------------------
+ * ============================================================
  */
+
 setInterval(
   load,
   30000
 );
+
 </script>
+
 </body>
 </html>
