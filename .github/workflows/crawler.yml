@@ -13,7 +13,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
+  # ============================================================
+  # 10 WORKERS
+  # ============================================================
   crawl:
+    name: Crawler Worker ${{ matrix.worker }}
     strategy:
       fail-fast: false
       matrix:
@@ -23,20 +28,35 @@ jobs:
     timeout-minutes: 340
 
     steps:
+
+      # ----------------------------------------------------------
+      # Checkout
+      # ----------------------------------------------------------
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
+      # ----------------------------------------------------------
+      # Python
+      # ----------------------------------------------------------
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      # ----------------------------------------------------------
+      # Dependencies
+      # ----------------------------------------------------------
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
+      # ----------------------------------------------------------
+      # Run crawler
+      # ----------------------------------------------------------
       - name: Run crawler
         env:
           CRAWLER_MAX_SECONDS: "20000"
@@ -45,16 +65,21 @@ jobs:
           PAGE_WAIT_MS: "2500"
           SCROLL_COUNT: "5"
 
+          # Worker configuration
           WORKER_ID: "${{ matrix.worker }}"
           WORKER_COUNT: "10"
 
         run: |
           echo "=========================================="
-          echo "Starting worker $WORKER_ID / $WORKER_COUNT"
+          echo "Starting Spotify crawler"
+          echo "Worker: $WORKER_ID / $WORKER_COUNT"
           echo "=========================================="
 
           python src/crawler.py
 
+      # ----------------------------------------------------------
+      # Upload worker data
+      # ----------------------------------------------------------
       - name: Upload worker data
         uses: actions/upload-artifact@v4
         with:
@@ -62,132 +87,356 @@ jobs:
           path: |
             data/artistes.json
             data/state.json
-          if-no-files-found: warn
+          if-no-files-found: error
+          retention-days: 3
 
+
+  # ============================================================
+  # MERGE
+  # ============================================================
   merge:
-    name: Merge worker results
+    name: Merge workers and update repository
     needs: crawl
+
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
+
+      # ----------------------------------------------------------
+      # Checkout
+      # ----------------------------------------------------------
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
+      # ----------------------------------------------------------
+      # Download all worker artifacts
+      # ----------------------------------------------------------
       - name: Download worker data
         uses: actions/download-artifact@v4
         with:
+          pattern: crawler-data-worker-*
           path: worker-data
+          merge-multiple: false
 
-      - name: Show worker files
+      # ----------------------------------------------------------
+      # Show downloaded files
+      # ----------------------------------------------------------
+      - name: Show worker data
         run: |
-          echo "=========================================="
-          echo "Worker files"
-          echo "=========================================="
-
+          echo "Downloaded worker data:"
           find worker-data -type f -print
 
-      - name: Merge artists data
+      # ----------------------------------------------------------
+      # Merge JSON files
+      # ----------------------------------------------------------
+      - name: Merge worker results
+        env:
+          WORKER_COUNT: "10"
         run: |
-          python - <<'PY'
+          python <<'PY'
           import json
           from pathlib import Path
+          from datetime import datetime, timezone
 
-          worker_root = Path("worker-data")
-          artist_files = list(worker_root.glob("**/artistes.json"))
+          ROOT = Path(".")
+          DATA_DIR = ROOT / "data"
+          WORKER_DIR = ROOT / "worker-data"
 
-          print(f"Found {len(artist_files)} artistes.json files")
+          ARTISTS_FILE = DATA_DIR / "artistes.json"
+          STATE_FILE = DATA_DIR / "state.json"
 
-          merged = {}
+          DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-          for file in artist_files:
-              print(f"Reading: {file}")
-
+          def load_json(path, default):
               try:
-                  with open(file, "r", encoding="utf-8") as f:
-                      data = json.load(f)
+                  if not path.exists():
+                      return default
+
+                  with path.open("r", encoding="utf-8") as f:
+                      return json.load(f)
+
               except Exception as e:
-                  print(f"Failed to read {file}: {e}")
+                  print(f"Warning: impossible de lire {path}: {e}")
+                  return default
+
+
+          def save_json(path, data):
+              temp = path.with_suffix(path.suffix + ".tmp")
+
+              with temp.open("w", encoding="utf-8") as f:
+                  json.dump(
+                      data,
+                      f,
+                      ensure_ascii=False,
+                      indent=2
+                  )
+
+              temp.replace(path)
+
+
+          # ======================================================
+          # BASE EXISTANTE
+          # ======================================================
+
+          existing_artists_doc = load_json(
+              ARTISTS_FILE,
+              {"artists": {}}
+          )
+
+          if not isinstance(existing_artists_doc, dict):
+              existing_artists_doc = {"artists": {}}
+
+          existing_artists = existing_artists_doc.get("artists", {})
+
+          if not isinstance(existing_artists, dict):
+              existing_artists = {}
+
+
+          existing_state = load_json(
+              STATE_FILE,
+              {}
+          )
+
+          if not isinstance(existing_state, dict):
+              existing_state = {}
+
+
+          # ======================================================
+          # MERGE ARTISTS
+          # ======================================================
+
+          merged_artists = dict(existing_artists)
+
+          worker_count = 0
+
+          for worker_path in sorted(WORKER_DIR.glob("crawler-data-worker-*")):
+
+              worker_count += 1
+
+              artists_file = worker_path / "artistes.json"
+
+              if not artists_file.exists():
+                  print(f"No artistes.json in {worker_path}")
                   continue
 
-              if isinstance(data, dict):
-                  for key, artist in data.items():
-                      merged[key] = artist
+              worker_doc = load_json(
+                  artists_file,
+                  {"artists": {}}
+              )
 
-              elif isinstance(data, list):
-                  for artist in data:
-                      if not isinstance(artist, dict):
+              worker_artists = worker_doc.get("artists", {})
+
+              if not isinstance(worker_artists, dict):
+                  continue
+
+              print(
+                  f"{worker_path.name}: "
+                  f"{len(worker_artists)} artists"
+              )
+
+              for artist_id, artist in worker_artists.items():
+
+                  if not isinstance(artist, dict):
+                      continue
+
+                  if artist_id not in merged_artists:
+                      merged_artists[artist_id] = artist
+                      continue
+
+                  # ------------------------------------------------
+                  # Fusion champ par champ.
+                  # On conserve les informations déjà présentes
+                  # et on complète avec celles du worker.
+                  # ------------------------------------------------
+
+                  current = merged_artists[artist_id]
+
+                  if not isinstance(current, dict):
+                      merged_artists[artist_id] = artist
+                      continue
+
+                  for key, value in artist.items():
+
+                      if value is None:
                           continue
 
-                      artist_id = (
-                          artist.get("id")
-                          or artist.get("spotify_id")
-                          or artist.get("uri")
-                      )
+                      if value == "":
+                          continue
 
-                      if artist_id:
-                          merged[artist_id] = artist
+                      if value == []:
+                          continue
 
-          output = Path("data/artistes.json")
-          output.parent.mkdir(parents=True, exist_ok=True)
+                      if value == {}:
+                          continue
 
-          with open(output, "w", encoding="utf-8") as f:
-              json.dump(
-                  merged,
-                  f,
-                  ensure_ascii=False,
-                  indent=2
-              )
+                      current[key] = value
 
-          print("==========================================")
-          print(f"Total unique artists: {len(merged)}")
-          print("==========================================")
-          PY
 
-      - name: Merge state
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
+          # ======================================================
+          # MERGE STATES
+          # ======================================================
 
-          worker_root = Path("worker-data")
-          state_files = list(worker_root.glob("**/state.json"))
+          merged_processed = set()
+          merged_queue = set()
 
-          print(f"Found {len(state_files)} state.json files")
+          total_added = 0
+          total_processed = 0
+          total_errors = 0
 
-          if not state_files:
-              print("No state files found.")
-              raise SystemExit(0)
+          last_run = None
 
-          merged = {}
+          for worker_path in sorted(WORKER_DIR.glob("crawler-data-worker-*")):
 
-          for file in state_files:
-              print(f"Reading: {file}")
+              state_file = worker_path / "state.json"
 
-              try:
-                  with open(file, "r", encoding="utf-8") as f:
-                      data = json.load(f)
-              except Exception as e:
-                  print(f"Failed to read {file}: {e}")
+              if not state_file.exists():
                   continue
 
-              if isinstance(data, dict):
-                  merged.update(data)
-
-          output = Path("data/state.json")
-          output.parent.mkdir(parents=True, exist_ok=True)
-
-          with open(output, "w", encoding="utf-8") as f:
-              json.dump(
-                  merged,
-                  f,
-                  ensure_ascii=False,
-                  indent=2
+              worker_state = load_json(
+                  state_file,
+                  {}
               )
 
-          print("State merged successfully.")
+              if not isinstance(worker_state, dict):
+                  continue
+
+              # processed
+              processed = worker_state.get("processed", [])
+
+              if isinstance(processed, list):
+                  merged_processed.update(
+                      str(x) for x in processed if x
+                  )
+
+              # queue
+              queue = worker_state.get("queue", [])
+
+              if isinstance(queue, list):
+                  merged_queue.update(
+                      str(x) for x in queue if x
+                  )
+
+              # stats
+              stats = worker_state.get("stats", {})
+
+              if isinstance(stats, dict):
+
+                  try:
+                      total_added += int(
+                          stats.get("added", 0) or 0
+                      )
+                  except Exception:
+                      pass
+
+                  try:
+                      total_processed += int(
+                          stats.get("processed", 0) or 0
+                      )
+                  except Exception:
+                      pass
+
+                  try:
+                      total_errors += int(
+                          stats.get("errors", 0) or 0
+                      )
+                  except Exception:
+                      pass
+
+              worker_last_run = worker_state.get("last_run")
+
+              if worker_last_run:
+                  if (
+                      last_run is None
+                      or str(worker_last_run) > str(last_run)
+                  ):
+                      last_run = worker_last_run
+
+
+          # Un artiste traité ne doit pas rester dans la queue.
+          merged_queue -= merged_processed
+
+
+          # ======================================================
+          # FINAL STATE
+          # ======================================================
+
+          final_state = dict(existing_state)
+
+          final_state["processed"] = sorted(
+              merged_processed
+          )
+
+          final_state["queue"] = sorted(
+              merged_queue
+          )
+
+          final_state["stats"] = {
+              "added": total_added,
+              "processed": total_processed,
+              "errors": total_errors,
+              "artists_total": len(merged_artists),
+              "workers": worker_count,
+          }
+
+          final_state["worker_count"] = worker_count
+          final_state["last_run"] = (
+              last_run
+              or datetime.now(timezone.utc).isoformat()
+          )
+
+
+          # ======================================================
+          # SAVE
+          # ======================================================
+
+          final_artists_doc = {
+              "artists": merged_artists
+          }
+
+          save_json(
+              ARTISTS_FILE,
+              final_artists_doc
+          )
+
+          save_json(
+              STATE_FILE,
+              final_state
+          )
+
+
+          # ======================================================
+          # SUMMARY
+          # ======================================================
+
+          print()
+          print("==========================================")
+          print("MERGE COMPLETE")
+          print("==========================================")
+          print(f"Workers:          {worker_count}")
+          print(f"Artists total:    {len(merged_artists)}")
+          print(f"Processed total:  {len(merged_processed)}")
+          print(f"Queue restante:   {len(merged_queue)}")
+          print(f"Added:            {total_added}")
+          print(f"Processed stats:  {total_processed}")
+          print(f"Errors:           {total_errors}")
+          print("==========================================")
           PY
 
-      - name: Commit updated data
+      # ----------------------------------------------------------
+      # Show git diff
+      # ----------------------------------------------------------
+      - name: Show changes
+        run: |
+          git status
+          git diff --stat
+
+      # ----------------------------------------------------------
+      # Commit and push
+      # ----------------------------------------------------------
+      - name: Commit and push merged data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -196,7 +445,16 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No data changes."
-          else
-            git commit -m "Update discovered artists"
-            git push
+            exit 0
           fi
+
+          git commit -m "Update discovered artists"
+
+          echo "Fetching latest main..."
+          git fetch origin main
+
+          echo "Rebasing on latest main..."
+          git rebase origin/main
+
+          echo "Pushing..."
+          git push origin HEAD:main
