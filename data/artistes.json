@@ -377407,6 +377407,2706 @@
       },
       "first_seen": "2026-09-21T03:25:15+00:00",
       "last_seen": "2026-09-21T03:25:15+00:00"
+    },
+    "6yZrhOqdA5XgahdXNYCsqe": {
+      "id": "6yZrhOqdA5XgahdXNYCsqe",
+      "name": "Stelove Koko",
+      "url": "https://open.spotify.com/intl-fr/artist/6yZrhOqdA5XgahdXNYCsqe",
+      "uri": "spotify:artist:6yZrhOqdA5XgahdXNYCsqe",
+      "followers": null,
+      "monthly_listeners": 7,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048513f42419992d6fab5385a2afe",
+        "https://i.scdn.co/image/ab67616d00004851acf017bae0f23fd1ab2e36b1",
+        "https://i.scdn.co/image/ab67616d00004851122ceb85b003ccc5a797a4d9",
+        "https://i.scdn.co/image/ab67616d000048519372b03b8ce11368881daaa5",
+        "https://i.scdn.co/image/ab67616d000048518f09ae3216665d00f83cf983",
+        "https://i.scdn.co/image/ab67616d00001e023f42419992d6fab5385a2afe",
+        "https://i.scdn.co/image/ab67616d00001e02acf017bae0f23fd1ab2e36b1",
+        "https://i.scdn.co/image/ab67616d00001e02ef5679665e6af86518b43214",
+        "https://i.scdn.co/image/ab67616d00001e02a6d501bad975a77111c6401a",
+        "https://i.scdn.co/image/ab67616d00001e02d243d2fbd941c0433ef26e92"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6yZrhOqdA5XgahdXNYCsqe"
+      },
+      "first_seen": "2026-09-21T14:46:33+00:00",
+      "last_seen": "2026-09-21T14:46:33+00:00"
+    },
+    "6B4E8prEfeZSTw3SvHcsVk": {
+      "id": "6B4E8prEfeZSTw3SvHcsVk",
+      "name": "Drae Divine",
+      "url": "https://open.spotify.com/intl-fr/artist/6B4E8prEfeZSTw3SvHcsVk",
+      "uri": "spotify:artist:6B4E8prEfeZSTw3SvHcsVk",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a322cc0a2fcaf4601c5ee364c4",
+        "https://i.scdn.co/image/ab67616d0000485122cc0a2fcaf4601c5ee364c4",
+        "https://i.scdn.co/image/ab67616d00001e0222cc0a2fcaf4601c5ee364c4",
+        "https://i.scdn.co/image/ab67616d00001e025dee79058edf3c29d29695bf",
+        "https://i.scdn.co/image/ab67616100005174928a025a955cef438f4175ba",
+        "https://i.scdn.co/image/ab6761610000517499df982c809f34d9ca72b413",
+        "https://i.scdn.co/image/ab67616100005174dd709121566de4116a67a8c0",
+        "https://i.scdn.co/image/ab67616d00001e02b4651e44f3c350787c47c1a0",
+        "https://i.scdn.co/image/ab6761610000517446570c006be7d5cdedee8818",
+        "https://i.scdn.co/image/ab676161000051741f3cc1e1e0cd50ae4aa09538"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6B4E8prEfeZSTw3SvHcsVk"
+      },
+      "first_seen": "2026-09-21T14:47:17+00:00",
+      "last_seen": "2026-09-21T14:47:17+00:00"
+    },
+    "3ZTYVMplDnrv8lIX38X64N": {
+      "id": "3ZTYVMplDnrv8lIX38X64N",
+      "name": "Kayeeh",
+      "url": "https://open.spotify.com/intl-fr/artist/3ZTYVMplDnrv8lIX38X64N",
+      "uri": "spotify:artist:3ZTYVMplDnrv8lIX38X64N",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b6985d85b9f3ecd8765ab4c1a",
+        "https://i.scdn.co/image/ab67616d00004851fa436a9d899e14d5df090f98",
+        "https://i.scdn.co/image/ab67616d00001e02fa436a9d899e14d5df090f98",
+        "https://mosaic.scdn.co/300/ab67616d00001e020fa15ba8114e46e604f6fc48ab67616d00001e022c8c70e0f4d27244bda5de1cab67616d00001e02917109783c3d0a383ef41942ab67616d00001e0298eea33da038afaa9f00f471",
+        "https://i.scdn.co/image/ab67616100005174b665ecd9acb56bc1d84f1f56",
+        "https://i.scdn.co/image/ab67616d00001e024cc3bcb721d2eb1879747b77",
+        "https://i.scdn.co/image/ab67616d00001e02b1e8235e0ad650d686dfa99e",
+        "https://i.scdn.co/image/ab6761610000517489f9699ccd5825b3b78798df",
+        "https://i.scdn.co/image/ab67616100005174d2665daa40e3b0b99ecd561b",
+        "https://i.scdn.co/image/ab67616d00001e027d863c1a18f59060e8dff145"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3ZTYVMplDnrv8lIX38X64N"
+      },
+      "first_seen": "2026-09-21T14:48:20+00:00",
+      "last_seen": "2026-09-21T14:48:20+00:00"
+    },
+    "19lYPYLG7f1MX0c8IFHoA9": {
+      "id": "19lYPYLG7f1MX0c8IFHoA9",
+      "name": "Bigtinz",
+      "url": "https://open.spotify.com/intl-fr/artist/19lYPYLG7f1MX0c8IFHoA9",
+      "uri": "spotify:artist:19lYPYLG7f1MX0c8IFHoA9",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939ba79a20685a75884caec10490",
+        "https://i.scdn.co/image/ab67616d0000485181af748a55bfe14021792753",
+        "https://i.scdn.co/image/ab67616d0000485157b7ab57abad3c7bc351af7e",
+        "https://i.scdn.co/image/ab67616d00004851ff92ab62d5302983c99894a8",
+        "https://i.scdn.co/image/ab67616d00004851d7d5f4301d07ea4187f3b445",
+        "https://i.scdn.co/image/ab67616d0000485147eda3b53d70d1889c31ec03",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910c37d25268eb05e14e1a75885",
+        "https://i.scdn.co/image/ab6761610000101fa79a20685a75884caec10490",
+        "https://i.scdn.co/image/ab67616d00001e0257b7ab57abad3c7bc351af7e",
+        "https://i.scdn.co/image/ab67616d00001e02ff92ab62d5302983c99894a8"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/19lYPYLG7f1MX0c8IFHoA9"
+      },
+      "first_seen": "2026-09-21T14:49:05+00:00",
+      "last_seen": "2026-09-21T14:49:05+00:00"
+    },
+    "0eeC3bgPjLwbgf6yYrlUbD": {
+      "id": "0eeC3bgPjLwbgf6yYrlUbD",
+      "name": "BoiKels",
+      "url": "https://open.spotify.com/intl-fr/artist/0eeC3bgPjLwbgf6yYrlUbD",
+      "uri": "spotify:artist:0eeC3bgPjLwbgf6yYrlUbD",
+      "followers": null,
+      "monthly_listeners": 9,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a34787f73e028f9f0cec3941b3",
+        "https://i.scdn.co/image/ab67616d000048514787f73e028f9f0cec3941b3",
+        "https://i.scdn.co/image/ab67616d000048511abed2a02472fce26a595e23",
+        "https://i.scdn.co/image/ab67616d00001e024787f73e028f9f0cec3941b3",
+        "https://i.scdn.co/image/ab67616d00001e021abed2a02472fce26a595e23",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cf07b4fd41dd769dc44628051",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cf6fd5685d341ab17edfd918f",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c867e2944ab58215b4ef45181",
+        "https://i.scdn.co/image/ab67616100005174efe94e53266e2f43f443043a",
+        "https://i.scdn.co/image/ab676161000051741845910382f044525d811c38"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0eeC3bgPjLwbgf6yYrlUbD"
+      },
+      "first_seen": "2026-09-21T14:49:49+00:00",
+      "last_seen": "2026-09-21T14:49:49+00:00"
+    },
+    "6pJTgWOB8LWq8I3S0tffke": {
+      "id": "6pJTgWOB8LWq8I3S0tffke",
+      "name": "Emmy black",
+      "url": "https://open.spotify.com/intl-fr/artist/6pJTgWOB8LWq8I3S0tffke",
+      "uri": "spotify:artist:6pJTgWOB8LWq8I3S0tffke",
+      "followers": null,
+      "monthly_listeners": 71,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3368a1120340619583162cb02",
+        "https://i.scdn.co/image/ab67616d00004851368a1120340619583162cb02",
+        "https://i.scdn.co/image/ab67616d00004851c56dc8278e0e4c4fc47b301f",
+        "https://i.scdn.co/image/ab67616d0000485165f5a32a64f3610aa8220c88",
+        "https://i.scdn.co/image/ab67616d00004851270ebc1b2bebc8b3dcf2cb4e",
+        "https://i.scdn.co/image/ab67616d000048517a9d10ebba22fdb8c2f9893e",
+        "https://i.scdn.co/image/ab67616d00001e02c56dc8278e0e4c4fc47b301f",
+        "https://i.scdn.co/image/ab67616d00001e02368a1120340619583162cb02",
+        "https://i.scdn.co/image/ab67616d00001e02270ebc1b2bebc8b3dcf2cb4e",
+        "https://i.scdn.co/image/ab67616d00001e027a9d10ebba22fdb8c2f9893e"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6pJTgWOB8LWq8I3S0tffke"
+      },
+      "first_seen": "2026-09-21T14:51:10+00:00",
+      "last_seen": "2026-09-21T14:51:10+00:00"
+    },
+    "78m3n8BQtN4QjVtpLkTbtG": {
+      "id": "78m3n8BQtN4QjVtpLkTbtG",
+      "name": "TG Mars",
+      "url": "https://open.spotify.com/intl-fr/artist/78m3n8BQtN4QjVtpLkTbtG",
+      "uri": "spotify:artist:78m3n8BQtN4QjVtpLkTbtG",
+      "followers": null,
+      "monthly_listeners": 64,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a33fc6f7bcf585b767aed06fa1",
+        "https://i.scdn.co/image/ab67616d000048513fc6f7bcf585b767aed06fa1",
+        "https://i.scdn.co/image/ab67616d00004851c5021be5ccd45aa2216c3bfd",
+        "https://i.scdn.co/image/ab67616d00001e023fc6f7bcf585b767aed06fa1",
+        "https://i.scdn.co/image/ab67616d00001e02c5021be5ccd45aa2216c3bfd",
+        "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/5S7rAUDSMBncSXFQHG49Qt/fr",
+        "https://i.scdn.co/image/ab67616d00001e02bdcdec1d08c5f096ae29b675",
+        "https://i.scdn.co/image/ab67616d00001e0283c2ca7673c76ab6bbce0970",
+        "https://i.scdn.co/image/ab67616100005174e783261467d659d284a949e0",
+        "https://i.scdn.co/image/ab6761610000517427397065d214f0529a35578b"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/78m3n8BQtN4QjVtpLkTbtG"
+      },
+      "first_seen": "2026-09-21T14:51:55+00:00",
+      "last_seen": "2026-09-21T14:51:55+00:00"
+    },
+    "3oYJyRYBzlyoXipo8EHS4l": {
+      "id": "3oYJyRYBzlyoXipo8EHS4l",
+      "name": "Rayderr",
+      "url": "https://open.spotify.com/intl-fr/artist/3oYJyRYBzlyoXipo8EHS4l",
+      "uri": "spotify:artist:3oYJyRYBzlyoXipo8EHS4l",
+      "followers": null,
+      "monthly_listeners": 3,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bbac0aab48bccb0481f1874c1",
+        "https://i.scdn.co/image/ab67616d00004851280176db5c18051ea5999236",
+        "https://i.scdn.co/image/ab67616d00001e02280176db5c18051ea5999236",
+        "https://i.scdn.co/image/ab67616100005174e3ec3cd4cae39624e109e17d",
+        "https://i.scdn.co/image/ab67616d00001e02a9d16c80e8862c220b55ab83",
+        "https://i.scdn.co/image/ab67616100005174378ee6007f94ca08c12db96b",
+        "https://i.scdn.co/image/ab676161000051740f44d36ef0460c284b23b2b4",
+        "https://i.scdn.co/image/ab676161000051744df3683c722a18495cf8e893",
+        "https://i.scdn.co/image/ab6761610000517401a3a1d254b63cc606add96f",
+        "https://i.scdn.co/image/ab67616100005174f678ce456cdf1388f2f25f78"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3oYJyRYBzlyoXipo8EHS4l"
+      },
+      "first_seen": "2026-09-21T14:52:58+00:00",
+      "last_seen": "2026-09-21T14:52:58+00:00"
+    },
+    "4ZaztmFpNulkTvQOwZYWBf": {
+      "id": "4ZaztmFpNulkTvQOwZYWBf",
+      "name": "K₦O!!",
+      "url": "https://open.spotify.com/intl-fr/artist/4ZaztmFpNulkTvQOwZYWBf",
+      "uri": "spotify:artist:4ZaztmFpNulkTvQOwZYWBf",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b378ee6007f94ca08c12db96b",
+        "https://i.scdn.co/image/ab67616d00004851b926f156eb5c683494362809",
+        "https://i.scdn.co/image/ab67616d000048516f8b76f449010b59cb61176e",
+        "https://i.scdn.co/image/ab67616d000048518bdf5b1b41bc6976af42aae4",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910e86aef8b35c11210adeea1a3",
+        "https://i.scdn.co/image/ab6761610000101f378ee6007f94ca08c12db96b",
+        "https://i.scdn.co/image/ab67616d00001e02ed01dc0a9bbaee1e9179c7d8",
+        "https://i.scdn.co/image/ab67616d00001e028bdf5b1b41bc6976af42aae4",
+        "https://i.scdn.co/image/ab67616d00001e02b926f156eb5c683494362809",
+        "https://i.scdn.co/image/ab67616d00001e026f8b76f449010b59cb61176e"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4ZaztmFpNulkTvQOwZYWBf"
+      },
+      "first_seen": "2026-09-21T14:53:43+00:00",
+      "last_seen": "2026-09-21T14:53:43+00:00"
+    },
+    "5wckdZTpbXD7r5qLZAG8lu": {
+      "id": "5wckdZTpbXD7r5qLZAG8lu",
+      "name": "Cas",
+      "url": "https://open.spotify.com/intl-fr/artist/5wckdZTpbXD7r5qLZAG8lu",
+      "uri": "spotify:artist:5wckdZTpbXD7r5qLZAG8lu",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bfa685a453672cc3f3d63b229",
+        "https://i.scdn.co/image/ab67616d0000485116ac84d27680da2f559ac166",
+        "https://i.scdn.co/image/ab67616d00001e0216ac84d27680da2f559ac166",
+        "https://i.scdn.co/image/ab67616100005174b71e63e5eced8c26eae1c5e3",
+        "https://i.scdn.co/image/ab6761610000517444da229a5e9d758edae27e02",
+        "https://i.scdn.co/image/ab676161000051742c3fdbd70585277ed68793ad",
+        "https://i.scdn.co/image/ab6761610000517438a85f433d2b3623559648fc",
+        "https://i.scdn.co/image/ab676161000051744a9e2c74c439c589862f1cd2",
+        "https://i.scdn.co/image/ab67616100005174def0b10c4c112514d8a532c5",
+        "https://i.scdn.co/image/ab676161000051747269a0f9666d1ead106e0674"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5wckdZTpbXD7r5qLZAG8lu"
+      },
+      "first_seen": "2026-09-21T14:54:46+00:00",
+      "last_seen": "2026-09-21T14:54:46+00:00"
+    },
+    "4U04QnvUBxOHvbSjIZRfWN": {
+      "id": "4U04QnvUBxOHvbSjIZRfWN",
+      "name": "Kevwe",
+      "url": "https://open.spotify.com/intl-fr/artist/4U04QnvUBxOHvbSjIZRfWN",
+      "uri": "spotify:artist:4U04QnvUBxOHvbSjIZRfWN",
+      "followers": null,
+      "monthly_listeners": 201,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851059714a6e94a5112aeaa767e",
+        "https://i.scdn.co/image/ab67616d000048511ab045e65d1ae67e6beae048",
+        "https://i.scdn.co/image/ab67616d00004851ffe2658428ed6dbc037c610f",
+        "https://i.scdn.co/image/ab67616d00004851a6ee34ea79c6cd8d79c4d96e",
+        "https://i.scdn.co/image/ab67616d00004851945073fd8301007e6f911467",
+        "https://i.scdn.co/image/ab67616d00001e02059714a6e94a5112aeaa767e",
+        "https://i.scdn.co/image/ab67616d00001e021ab045e65d1ae67e6beae048",
+        "https://i.scdn.co/image/ab67616d00001e02ffe2658428ed6dbc037c610f",
+        "https://i.scdn.co/image/ab67616d00001e02070bf678716adf0f50ecd183",
+        "https://i.scdn.co/image/ab67616d00001e0230cb14373078738cfab6b484"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4U04QnvUBxOHvbSjIZRfWN"
+      },
+      "first_seen": "2026-09-21T14:55:49+00:00",
+      "last_seen": "2026-09-21T14:55:49+00:00"
+    },
+    "4dyYjiU89aNlM7TKBw0GtV": {
+      "id": "4dyYjiU89aNlM7TKBw0GtV",
+      "name": "Lmlagi",
+      "url": "https://open.spotify.com/intl-fr/artist/4dyYjiU89aNlM7TKBw0GtV",
+      "uri": "spotify:artist:4dyYjiU89aNlM7TKBw0GtV",
+      "followers": null,
+      "monthly_listeners": 28,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b0c31beaae541e1e8749fa77b",
+        "https://i.scdn.co/image/ab67616d000048513b7b3a67dd73e7cfe49dae2d",
+        "https://i.scdn.co/image/ab67616d00004851516d52f521e973ee8e38d17f",
+        "https://i.scdn.co/image/ab67616d00004851c7caf8b2b9c715c4a922f254",
+        "https://i.scdn.co/image/ab67616d00004851e2b0c8f4a8a6d266b841309a",
+        "https://i.scdn.co/image/ab67616d00004851b850fe1b14e816b3ecca6e6a",
+        "https://i.scdn.co/image/ab67616d00001e023b7b3a67dd73e7cfe49dae2d",
+        "https://i.scdn.co/image/ab67616d00001e02516d52f521e973ee8e38d17f",
+        "https://i.scdn.co/image/ab67616d00001e02d8f21ec43a858ff4cd6d05b9",
+        "https://i.scdn.co/image/ab67616d00001e02c7caf8b2b9c715c4a922f254"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4dyYjiU89aNlM7TKBw0GtV"
+      },
+      "first_seen": "2026-09-21T14:56:52+00:00",
+      "last_seen": "2026-09-21T14:56:52+00:00"
+    },
+    "4i8AqY1tqwNNzZZiq4Ltgg": {
+      "id": "4i8AqY1tqwNNzZZiq4Ltgg",
+      "name": "Saze Tomar",
+      "url": "https://open.spotify.com/intl-fr/artist/4i8AqY1tqwNNzZZiq4Ltgg",
+      "uri": "spotify:artist:4i8AqY1tqwNNzZZiq4Ltgg",
+      "followers": null,
+      "monthly_listeners": 18,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b6c3605a7d02f8aa77daaa027",
+        "https://i.scdn.co/image/ab67616d00004851e26ef4cd71d1caf367dfc071",
+        "https://i.scdn.co/image/ab67616d00004851d92fbfa6e3801302696fbff9",
+        "https://i.scdn.co/image/ab67616d00001e02e26ef4cd71d1caf367dfc071",
+        "https://i.scdn.co/image/ab67616d00001e02d92fbfa6e3801302696fbff9",
+        "https://i.scdn.co/image/ab67616100005174f8c9883482bb9ed09776dfb9",
+        "https://i.scdn.co/image/ab67616d00001e0259076b631842ad4eb9db8136",
+        "https://i.scdn.co/image/ab676161000051741614cd8b8173371d4f029e7c",
+        "https://i.scdn.co/image/ab6761610000517402c551272d5e8061a5fe7bb5",
+        "https://i.scdn.co/image/ab676161000051746836885a51f7998f96f41e08"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4i8AqY1tqwNNzZZiq4Ltgg"
+      },
+      "first_seen": "2026-09-21T14:57:36+00:00",
+      "last_seen": "2026-09-21T14:57:36+00:00"
+    },
+    "2CGubSpZlD5qXMo8Zgwyrx": {
+      "id": "2CGubSpZlD5qXMo8Zgwyrx",
+      "name": "L'kreen",
+      "url": "https://open.spotify.com/intl-fr/artist/2CGubSpZlD5qXMo8Zgwyrx",
+      "uri": "spotify:artist:2CGubSpZlD5qXMo8Zgwyrx",
+      "followers": null,
+      "monthly_listeners": 75,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000485184da4cc69169922f09fe7816",
+        "https://i.scdn.co/image/ab67616d00004851c42feaf4ae3164b5a0620508",
+        "https://i.scdn.co/image/ab67616d00004851ae425440ac3517552a2c3a36",
+        "https://i.scdn.co/image/ab67616d00001e0284da4cc69169922f09fe7816",
+        "https://i.scdn.co/image/ab67616d00001e02b3f124d59dbe26771b109df1",
+        "https://i.scdn.co/image/ab67616d00001e0282782733222200c0ded042b0",
+        "https://i.scdn.co/image/ab67616d00001e02ae425440ac3517552a2c3a36",
+        "https://i.scdn.co/image/ab67616d00001e0207082f49d0b5467a7d546b7b",
+        "https://i.scdn.co/image/ab67616d00001e02f6b1c5864276bf11a64eccf7",
+        "https://i.scdn.co/image/ab67616d00001e028b1697bd1db57ce4a45acfe3"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/2CGubSpZlD5qXMo8Zgwyrx"
+      },
+      "first_seen": "2026-09-21T14:58:39+00:00",
+      "last_seen": "2026-09-21T14:58:39+00:00"
+    },
+    "6RdgaqpWor2Pc7JjPMO5s8": {
+      "id": "6RdgaqpWor2Pc7JjPMO5s8",
+      "name": "TAAN 97",
+      "url": "https://open.spotify.com/intl-fr/artist/6RdgaqpWor2Pc7JjPMO5s8",
+      "uri": "spotify:artist:6RdgaqpWor2Pc7JjPMO5s8",
+      "followers": null,
+      "monthly_listeners": 976,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b73ef3e5e10e2262285da4556",
+        "https://i.scdn.co/image/ab67616d00004851f27ab610378402893502dea3",
+        "https://i.scdn.co/image/ab67616d00004851b2644c5204183fe7d17e8e0f",
+        "https://i.scdn.co/image/ab67616d00004851e75e74fb1e626f3b657b36f7",
+        "https://i.scdn.co/image/ab67616d000048516187af78e4191626f9d1216a",
+        "https://i.scdn.co/image/ab67616d00001e02e75e74fb1e626f3b657b36f7",
+        "https://i.scdn.co/image/ab67616d00001e026187af78e4191626f9d1216a",
+        "https://i.scdn.co/image/ab67616d00001e02b2644c5204183fe7d17e8e0f",
+        "https://i.scdn.co/image/ab67616d00001e02f27ab610378402893502dea3",
+        "https://i.scdn.co/image/ab676161000051745537b5cec10394ec071c9eeb"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6RdgaqpWor2Pc7JjPMO5s8"
+      },
+      "first_seen": "2026-09-21T14:59:44+00:00",
+      "last_seen": "2026-09-21T14:59:44+00:00"
+    },
+    "0oasdHh7w62q7O9Tl5s5Ec": {
+      "id": "0oasdHh7w62q7O9Tl5s5Ec",
+      "name": "ZEMI CULTURA",
+      "url": "https://open.spotify.com/intl-fr/artist/0oasdHh7w62q7O9Tl5s5Ec",
+      "uri": "spotify:artist:0oasdHh7w62q7O9Tl5s5Ec",
+      "followers": null,
+      "monthly_listeners": 7,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851fabf406ef7659199d40a8eaf",
+        "https://i.scdn.co/image/ab67616d00004851b2ad70d15e98b2fc499f069e",
+        "https://i.scdn.co/image/ab67616d00001e02fabf406ef7659199d40a8eaf",
+        "https://i.scdn.co/image/ab67616d00001e02b2ad70d15e98b2fc499f069e",
+        "https://i.scdn.co/image/ab67616d00001e02fb822632203438930ada55db",
+        "https://i.scdn.co/image/ab67616d00001e02a5302e1816ab2c11008417fe",
+        "https://i.scdn.co/image/ab6761610000939b56f5be0c0dcf967074c5d354",
+        "https://i.scdn.co/image/ab67616100005174aaae3dcc32800a9d32aebe16",
+        "https://i.scdn.co/image/ab67616100005174c4c53e546336eeaa4bddecf7",
+        "https://i.scdn.co/image/ab67616d00001e02fee893a1bf5d050e6cd90ddf"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0oasdHh7w62q7O9Tl5s5Ec"
+      },
+      "first_seen": "2026-09-21T15:00:46+00:00",
+      "last_seen": "2026-09-21T15:00:46+00:00"
+    },
+    "7IEVf2YgpQIYsHddNVzyaH": {
+      "id": "7IEVf2YgpQIYsHddNVzyaH",
+      "name": "RayB Music",
+      "url": "https://open.spotify.com/intl-fr/artist/7IEVf2YgpQIYsHddNVzyaH",
+      "uri": "spotify:artist:7IEVf2YgpQIYsHddNVzyaH",
+      "followers": null,
+      "monthly_listeners": 12,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851f5e4e3937715b4466702d7de",
+        "https://i.scdn.co/image/ab67616d0000485164789aae3e678d4195ba6f40",
+        "https://i.scdn.co/image/ab67616d000048517008f63707638df5fb99b94a",
+        "https://i.scdn.co/image/ab67616d000048514c3bf95a7e43d8347b6e3597",
+        "https://i.scdn.co/image/ab67616d000048510925c742449eb48ea40709a9",
+        "https://i.scdn.co/image/ab67616d00001e027008f63707638df5fb99b94a",
+        "https://i.scdn.co/image/ab67616d00001e02f5e4e3937715b4466702d7de",
+        "https://i.scdn.co/image/ab67616d00001e020925c742449eb48ea40709a9",
+        "https://i.scdn.co/image/ab67616d00001e024c3bf95a7e43d8347b6e3597",
+        "https://i.scdn.co/image/ab67616d00001e0264789aae3e678d4195ba6f40"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7IEVf2YgpQIYsHddNVzyaH"
+      },
+      "first_seen": "2026-09-21T15:01:31+00:00",
+      "last_seen": "2026-09-21T15:01:31+00:00"
+    },
+    "144Qk7599dyKQWHwSA1JWE": {
+      "id": "144Qk7599dyKQWHwSA1JWE",
+      "name": "Grohs",
+      "url": "https://open.spotify.com/intl-fr/artist/144Qk7599dyKQWHwSA1JWE",
+      "uri": "spotify:artist:144Qk7599dyKQWHwSA1JWE",
+      "followers": null,
+      "monthly_listeners": 84,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b63f43203f2648d2be34f8bc4",
+        "https://i.scdn.co/image/ab67616d000048514cad9d53ee2a80397be0480d",
+        "https://i.scdn.co/image/ab67616d000048519149fdcd46a0e3e64bd1b380",
+        "https://i.scdn.co/image/ab67616d0000485142c19a11118db259d6c7519d",
+        "https://i.scdn.co/image/ab67616d000048515194ff6d2feeb658d1fecaf5",
+        "https://i.scdn.co/image/ab67616d0000485180e581af03a6afea23dce424",
+        "https://image-cdn-fa.spotifycdn.com/image/ab676170000059107b4c315723aa62351fae7227",
+        "https://i.scdn.co/image/ab6761610000101f63f43203f2648d2be34f8bc4",
+        "https://i.scdn.co/image/ab67616d00001e029149fdcd46a0e3e64bd1b380",
+        "https://i.scdn.co/image/ab67616d00001e024cad9d53ee2a80397be0480d"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/144Qk7599dyKQWHwSA1JWE"
+      },
+      "first_seen": "2026-09-21T15:02:34+00:00",
+      "last_seen": "2026-09-21T15:02:34+00:00"
+    },
+    "1JjVbqg2DRMKw7lMUhqV3e": {
+      "id": "1JjVbqg2DRMKw7lMUhqV3e",
+      "name": "MAOO",
+      "url": "https://open.spotify.com/intl-fr/artist/1JjVbqg2DRMKw7lMUhqV3e",
+      "uri": "spotify:artist:1JjVbqg2DRMKw7lMUhqV3e",
+      "followers": null,
+      "monthly_listeners": 85,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851be9dccbd6f0f285b6d656fbf",
+        "https://i.scdn.co/image/ab67616d00004851fadb73a7347a6e4b37b607d8",
+        "https://i.scdn.co/image/ab67616d000048516fa82e408ff1a6ad1168159e",
+        "https://i.scdn.co/image/ab67616d00004851e50480f214354146e01a2b9e",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910a9bc2314f8ecbe7a0c70aaa7",
+        "https://i.scdn.co/image/ab6761610000101f366df335765eba96024fc8b9",
+        "https://i.scdn.co/image/ab67616d00001e02be9dccbd6f0f285b6d656fbf",
+        "https://i.scdn.co/image/ab67616d00001e02b5593b965ed0cea84f7351b1",
+        "https://i.scdn.co/image/ab67616d00001e02bc141c73dae04422531bf793",
+        "https://i.scdn.co/image/ab67616d00001e0208157dd32db9b9e859e137b3"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1JjVbqg2DRMKw7lMUhqV3e"
+      },
+      "first_seen": "2026-09-21T15:03:19+00:00",
+      "last_seen": "2026-09-21T15:03:19+00:00"
+    },
+    "0GWR8lE82UKvFONZ5wyAyZ": {
+      "id": "0GWR8lE82UKvFONZ5wyAyZ",
+      "name": "Kid Abis",
+      "url": "https://open.spotify.com/intl-fr/artist/0GWR8lE82UKvFONZ5wyAyZ",
+      "uri": "spotify:artist:0GWR8lE82UKvFONZ5wyAyZ",
+      "followers": null,
+      "monthly_listeners": 104,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000485126460f0f4bb747705553be36",
+        "https://i.scdn.co/image/ab67616d0000485162d93371dca7abf490605793",
+        "https://i.scdn.co/image/ab67616d00004851b4d22dabe09bd717ab5d9ca8",
+        "https://i.scdn.co/image/ab67616d00004851ed5f24f6e1c9dffa28c74233",
+        "https://i.scdn.co/image/ab67616d00004851290fe36d2db11845eb74861f",
+        "https://i.scdn.co/image/ab67616d00001e02b9e29942038dc3d3841a68fb",
+        "https://i.scdn.co/image/ab67616d00001e02dd58e73b5fafe1f8291545bc",
+        "https://i.scdn.co/image/ab67616d00001e02ed5f24f6e1c9dffa28c74233",
+        "https://i.scdn.co/image/ab67616d00001e02bb5ad55f455540930f8a74e4",
+        "https://i.scdn.co/image/ab67616d00001e02b4d22dabe09bd717ab5d9ca8"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0GWR8lE82UKvFONZ5wyAyZ"
+      },
+      "first_seen": "2026-09-21T15:04:04+00:00",
+      "last_seen": "2026-09-21T15:04:04+00:00"
+    },
+    "6VJ167rxtXw0i8xtaLBoaA": {
+      "id": "6VJ167rxtXw0i8xtaLBoaA",
+      "name": "p.romess",
+      "url": "https://open.spotify.com/intl-fr/artist/6VJ167rxtXw0i8xtaLBoaA",
+      "uri": "spotify:artist:6VJ167rxtXw0i8xtaLBoaA",
+      "followers": null,
+      "monthly_listeners": 50,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b3c7ef17dacbcbb57386141ef",
+        "https://i.scdn.co/image/ab67616d00004851ec2e1c6422ea6ee42da12f76",
+        "https://i.scdn.co/image/ab67616d00004851a3f012f42a4425428ec26c16",
+        "https://i.scdn.co/image/ab67616d0000485195b8b7b199ab5b71290d7f26",
+        "https://i.scdn.co/image/ab67616d00001e02ec2e1c6422ea6ee42da12f76",
+        "https://i.scdn.co/image/ab67616d00001e02a3f012f42a4425428ec26c16",
+        "https://i.scdn.co/image/ab67616d00001e0295b8b7b199ab5b71290d7f26",
+        "https://i.scdn.co/image/ab676161000051743473fd53792270f64a37e921",
+        "https://i.scdn.co/image/ab676161000051742bdbd9ec692f7b8324ac2957",
+        "https://i.scdn.co/image/ab676161000051743501528a99d4aba9d5aaa01f"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6VJ167rxtXw0i8xtaLBoaA"
+      },
+      "first_seen": "2026-09-21T15:04:48+00:00",
+      "last_seen": "2026-09-21T15:04:48+00:00"
+    },
+    "5gbmT3iCITeh76WBDIJiYp": {
+      "id": "5gbmT3iCITeh76WBDIJiYp",
+      "name": "Shishi",
+      "url": "https://open.spotify.com/intl-fr/artist/5gbmT3iCITeh76WBDIJiYp",
+      "uri": "spotify:artist:5gbmT3iCITeh76WBDIJiYp",
+      "followers": null,
+      "monthly_listeners": 26,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b05d08c2d66421fd357590593",
+        "https://i.scdn.co/image/ab67616d00004851198e86c8d209784eb796f5a0",
+        "https://i.scdn.co/image/ab67616d0000485193a593252db6dfd1a1cf9e10",
+        "https://i.scdn.co/image/ab67616d00004851918222dd437f301c86187d90",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910baf423ea889bfedfce7240fa",
+        "https://i.scdn.co/image/ab6761610000101f05d08c2d66421fd357590593",
+        "https://i.scdn.co/image/ab67616d00001e02198e86c8d209784eb796f5a0",
+        "https://i.scdn.co/image/ab67616d00001e02918222dd437f301c86187d90",
+        "https://i.scdn.co/image/ab67616d00001e0293a593252db6dfd1a1cf9e10",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc035ab35bbd96b9b83c058da"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5gbmT3iCITeh76WBDIJiYp"
+      },
+      "first_seen": "2026-09-21T15:05:52+00:00",
+      "last_seen": "2026-09-21T15:05:52+00:00"
+    },
+    "2eBjWjA6MEBpwW5uu7m0By": {
+      "id": "2eBjWjA6MEBpwW5uu7m0By",
+      "name": "Bennzly",
+      "url": "https://open.spotify.com/intl-fr/artist/2eBjWjA6MEBpwW5uu7m0By",
+      "uri": "spotify:artist:2eBjWjA6MEBpwW5uu7m0By",
+      "followers": null,
+      "monthly_listeners": 63,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b4e32c6b6ab957157d4a06ff7",
+        "https://i.scdn.co/image/ab67616d00004851565dfbd242d11a164754f11c",
+        "https://i.scdn.co/image/ab67616d00004851490852fe6d5ca13f94e0ad6d",
+        "https://i.scdn.co/image/ab67616d0000485155fe1898483761cd6286098d",
+        "https://i.scdn.co/image/ab67616d00004851e2554889941337205f44491d",
+        "https://i.scdn.co/image/ab67616d0000485177c00eb0480495e8c6978900",
+        "https://i.scdn.co/image/ab67616d00001e02e2554889941337205f44491d",
+        "https://i.scdn.co/image/ab6761610000101f4e32c6b6ab957157d4a06ff7",
+        "https://i.scdn.co/image/ab67616d00001e02490852fe6d5ca13f94e0ad6d",
+        "https://i.scdn.co/image/ab67616d00001e0293890128ccd3b18149dad561"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/2eBjWjA6MEBpwW5uu7m0By"
+      },
+      "first_seen": "2026-09-21T15:06:37+00:00",
+      "last_seen": "2026-09-21T15:06:37+00:00"
+    },
+    "7iuj2TtJmyVItZzyQXrvqa": {
+      "id": "7iuj2TtJmyVItZzyQXrvqa",
+      "name": "ENB-Moiii",
+      "url": "https://open.spotify.com/intl-fr/artist/7iuj2TtJmyVItZzyQXrvqa",
+      "uri": "spotify:artist:7iuj2TtJmyVItZzyQXrvqa",
+      "followers": null,
+      "monthly_listeners": 19,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851eccedb38f36319486d53640f",
+        "https://i.scdn.co/image/ab67616d000048515f5f66ae90e0c8f8bb0ad887",
+        "https://i.scdn.co/image/ab67616d000048513446bb8555f29a82dc5ef0bd",
+        "https://i.scdn.co/image/ab67616d00004851d54cce877746800599bd5f42",
+        "https://i.scdn.co/image/ab67616d000048514da60f50592e037d41620d02",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910fd08fbda0651c58d404f4451",
+        "https://i.scdn.co/image/ab6761610000101fdba46bacdc57646592ebeb43",
+        "https://i.scdn.co/image/ab67616d00001e02eccedb38f36319486d53640f",
+        "https://i.scdn.co/image/ab67616d00001e025f5f66ae90e0c8f8bb0ad887",
+        "https://i.scdn.co/image/ab67616d00001e028a3f5d64eba159c2d8205737"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7iuj2TtJmyVItZzyQXrvqa"
+      },
+      "first_seen": "2026-09-21T15:07:40+00:00",
+      "last_seen": "2026-09-21T15:07:40+00:00"
+    },
+    "3fDr8YSkgiCahOsmKxGARh": {
+      "id": "3fDr8YSkgiCahOsmKxGARh",
+      "name": "Fvbb",
+      "url": "https://open.spotify.com/intl-fr/artist/3fDr8YSkgiCahOsmKxGARh",
+      "uri": "spotify:artist:3fDr8YSkgiCahOsmKxGARh",
+      "followers": null,
+      "monthly_listeners": 23,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b73c5465be4d94af8c7446bd3",
+        "https://i.scdn.co/image/ab67616d000048513a3fae91917cfda5b88b2134",
+        "https://i.scdn.co/image/ab67616d000048517ba10f7d6e8198e0e4654dfa",
+        "https://i.scdn.co/image/ab67616d0000485153e122ce18e567db55e7bc3a",
+        "https://i.scdn.co/image/ab67616d00001e023a3fae91917cfda5b88b2134",
+        "https://i.scdn.co/image/ab67616d00001e0253e122ce18e567db55e7bc3a",
+        "https://i.scdn.co/image/ab67616d00001e027ba10f7d6e8198e0e4654dfa",
+        "https://i.scdn.co/image/ab676161000051747ab70af3eaff4cd266f2132d",
+        "https://i.scdn.co/image/ab676161000051741b5f8a40fa23fdc5fd1c8765",
+        "https://i.scdn.co/image/ab676161000051740b255efb7c1432040cd886d5"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3fDr8YSkgiCahOsmKxGARh"
+      },
+      "first_seen": "2026-09-21T15:08:25+00:00",
+      "last_seen": "2026-09-21T15:08:25+00:00"
+    },
+    "45rRacwAbK2JS0M8eN1cFF": {
+      "id": "45rRacwAbK2JS0M8eN1cFF",
+      "name": "Aleyd",
+      "url": "https://open.spotify.com/intl-fr/artist/45rRacwAbK2JS0M8eN1cFF",
+      "uri": "spotify:artist:45rRacwAbK2JS0M8eN1cFF",
+      "followers": null,
+      "monthly_listeners": 27,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048519e7af76d14bb9d4b62ac7ff9",
+        "https://i.scdn.co/image/ab67616d00004851b1148e910c2260b8a6f41ee9",
+        "https://i.scdn.co/image/ab67616d00004851130d61725f8dfc159b5d3101",
+        "https://i.scdn.co/image/ab67616d00001e02130d61725f8dfc159b5d3101",
+        "https://i.scdn.co/image/ab67616d00001e02b1148e910c2260b8a6f41ee9",
+        "https://i.scdn.co/image/ab67616d00001e029e7af76d14bb9d4b62ac7ff9",
+        "https://i.scdn.co/image/ab6761610000939baf38f0c8a5497862871feab1",
+        "https://mosaic.scdn.co/300/ab67616d00001e02171355ec8200b8e7c71b4487ab67616d00001e027092ef07b956ab08de031c54ab67616d00001e0294f2004fc229f1c9f3ea5b4bab67616d00001e02d2f45506454445e1df695c3e",
+        "https://i.scdn.co/image/ab676161000051745b46a9ae012c6f7282917104",
+        "https://i.scdn.co/image/ab6761610000517435a0056c64f3f3fb873df166"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/45rRacwAbK2JS0M8eN1cFF"
+      },
+      "first_seen": "2026-09-21T15:09:10+00:00",
+      "last_seen": "2026-09-21T15:09:10+00:00"
+    },
+    "5p0qVjeafaX5kYZb81ao0A": {
+      "id": "5p0qVjeafaX5kYZb81ao0A",
+      "name": "J Wizzi",
+      "url": "https://open.spotify.com/intl-fr/artist/5p0qVjeafaX5kYZb81ao0A",
+      "uri": "spotify:artist:5p0qVjeafaX5kYZb81ao0A",
+      "followers": null,
+      "monthly_listeners": 34,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3b46ee54239d037cd0fa989bc",
+        "https://i.scdn.co/image/ab67616d00004851b46ee54239d037cd0fa989bc",
+        "https://i.scdn.co/image/ab67616d000048519b10b17c0e565ea4b8c0169e",
+        "https://i.scdn.co/image/ab67616d0000485105e7b637c2a534c6c99bd98a",
+        "https://i.scdn.co/image/ab67616d000048515ae531847060abe888045132",
+        "https://i.scdn.co/image/ab67616d00004851d0996733a558096b8d077627",
+        "https://i.scdn.co/image/ab67616d00001e025ae531847060abe888045132",
+        "https://i.scdn.co/image/ab67616d00001e029b10b17c0e565ea4b8c0169e",
+        "https://i.scdn.co/image/ab67616d00001e02b46ee54239d037cd0fa989bc",
+        "https://i.scdn.co/image/ab67616d00001e0205e7b637c2a534c6c99bd98a"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5p0qVjeafaX5kYZb81ao0A"
+      },
+      "first_seen": "2026-09-21T15:10:13+00:00",
+      "last_seen": "2026-09-21T15:10:13+00:00"
+    },
+    "3iSoh4iioLwnriu1zkA9gu": {
+      "id": "3iSoh4iioLwnriu1zkA9gu",
+      "name": "KVEE Music",
+      "url": "https://open.spotify.com/intl-fr/artist/3iSoh4iioLwnriu1zkA9gu",
+      "uri": "spotify:artist:3iSoh4iioLwnriu1zkA9gu",
+      "followers": null,
+      "monthly_listeners": 10,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851011199bca6a2540d50794e18",
+        "https://i.scdn.co/image/ab67616d00001e02011199bca6a2540d50794e18",
+        "https://i.scdn.co/image/ab6761610000939b127e268f4c882d1647569a42",
+        "https://i.scdn.co/image/ab67616d00001e02c307c0bbcda6478fd4190b32",
+        "https://i.scdn.co/image/ab67616d00001e02128c2a9025bbbd6d8ba5c2c4",
+        "https://i.scdn.co/image/ab67616d00001e0266849196dcf25de345010dec",
+        "https://i.scdn.co/image/ab67616100005174ca640c654a8508d85bf9c00a",
+        "https://i.scdn.co/image/ab67616100005174f5f91ac5bfa5d9daeec3f65d",
+        "https://i.scdn.co/image/ab676161000051740f67cd3f3b88f8dc44fdec83",
+        "https://i.scdn.co/image/ab67616d00001e0245f593895de5c59d092fc840"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3iSoh4iioLwnriu1zkA9gu"
+      },
+      "first_seen": "2026-09-21T15:10:58+00:00",
+      "last_seen": "2026-09-21T15:10:58+00:00"
+    },
+    "5GjA4IOnt7qTUSFDTD89g0": {
+      "id": "5GjA4IOnt7qTUSFDTD89g0",
+      "name": "Serra",
+      "url": "https://open.spotify.com/intl-fr/artist/5GjA4IOnt7qTUSFDTD89g0",
+      "uri": "spotify:artist:5GjA4IOnt7qTUSFDTD89g0",
+      "followers": null,
+      "monthly_listeners": 8,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000485198236cbd9ce0f24e560e3aa7",
+        "https://i.scdn.co/image/ab67616d0000485130851cc375bbd1f6a703e6b2",
+        "https://i.scdn.co/image/ab67616d00004851737d5a774dcede6f5bf62e3f",
+        "https://i.scdn.co/image/ab67616d000048516c4a33d0d6c22484fd974e03",
+        "https://i.scdn.co/image/ab67616d00004851a92cccb317787d8aaa08509d",
+        "https://i.scdn.co/image/ab67616d00001e0230851cc375bbd1f6a703e6b2",
+        "https://i.scdn.co/image/ab6761610000101f11ad2885c3e5ed8b92c259dd",
+        "https://i.scdn.co/image/ab67616d00001e02737d5a774dcede6f5bf62e3f",
+        "https://i.scdn.co/image/ab67616d00001e02a92cccb317787d8aaa08509d",
+        "https://i.scdn.co/image/ab67616d00001e0298236cbd9ce0f24e560e3aa7"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5GjA4IOnt7qTUSFDTD89g0"
+      },
+      "first_seen": "2026-09-21T15:12:20+00:00",
+      "last_seen": "2026-09-21T15:12:20+00:00"
+    },
+    "5QrE1DGPlGZAekVhuN2BUx": {
+      "id": "5QrE1DGPlGZAekVhuN2BUx",
+      "name": "Aryan Munjal",
+      "url": "https://open.spotify.com/intl-fr/artist/5QrE1DGPlGZAekVhuN2BUx",
+      "uri": "spotify:artist:5QrE1DGPlGZAekVhuN2BUx",
+      "followers": null,
+      "monthly_listeners": 11,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b923bba770d283d0981ebdcb4",
+        "https://i.scdn.co/image/ab67616d00004851b62436d7955016e12af82e76",
+        "https://i.scdn.co/image/ab67616d000048519c5da5b46ff0b2a9de35230e",
+        "https://i.scdn.co/image/ab67616d0000485174bea12059c2a03e3bbc5544",
+        "https://i.scdn.co/image/ab67616d00001e0274bea12059c2a03e3bbc5544",
+        "https://i.scdn.co/image/ab67616d00001e02b62436d7955016e12af82e76",
+        "https://i.scdn.co/image/ab67616d00001e029c5da5b46ff0b2a9de35230e",
+        "https://i.scdn.co/image/ab676161000051743b8cb3da0a669e09f6597a90",
+        "https://i.scdn.co/image/ab676161000051743401510edd3ba5e8c5c0f274",
+        "https://i.scdn.co/image/ab67616100005174b7c40dd62c76ffaf64a41785"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5QrE1DGPlGZAekVhuN2BUx"
+      },
+      "first_seen": "2026-09-21T15:13:05+00:00",
+      "last_seen": "2026-09-21T15:13:05+00:00"
+    },
+    "6IBwBE0rHy8UhyjE6L81nf": {
+      "id": "6IBwBE0rHy8UhyjE6L81nf",
+      "name": "Tha Blaze",
+      "url": "https://open.spotify.com/intl-fr/artist/6IBwBE0rHy8UhyjE6L81nf",
+      "uri": "spotify:artist:6IBwBE0rHy8UhyjE6L81nf",
+      "followers": null,
+      "monthly_listeners": 23,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851a3abbd4297b0affd95b80c9a",
+        "https://i.scdn.co/image/ab67616d00004851b3828f17aeebc1afd164e842",
+        "https://i.scdn.co/image/ab67616d0000485112e246f31bd82b5a90d33819",
+        "https://i.scdn.co/image/ab67616d000048518497ccbe728543acedb5046e",
+        "https://i.scdn.co/image/ab67616d00004851d21d7dee6f05f9d15984c0ae",
+        "https://i.scdn.co/image/ab67616d00001e028497ccbe728543acedb5046e",
+        "https://i.scdn.co/image/ab67616d00001e02d21d7dee6f05f9d15984c0ae",
+        "https://i.scdn.co/image/ab67616d00001e026dba1afb2f6174a747852b98",
+        "https://i.scdn.co/image/ab67616d00001e02db04a4e4fa1d3ad14133f6ab",
+        "https://i.scdn.co/image/ab67616d00001e02ccd9ebfdb2089435eb111e47"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6IBwBE0rHy8UhyjE6L81nf"
+      },
+      "first_seen": "2026-09-21T15:13:51+00:00",
+      "last_seen": "2026-09-21T15:13:51+00:00"
+    },
+    "3050mqW4uIg4i9sHnwo8iE": {
+      "id": "3050mqW4uIg4i9sHnwo8iE",
+      "name": "Kappa_i8",
+      "url": "https://open.spotify.com/intl-fr/artist/3050mqW4uIg4i9sHnwo8iE",
+      "uri": "spotify:artist:3050mqW4uIg4i9sHnwo8iE",
+      "followers": null,
+      "monthly_listeners": 89,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851787ee380413a87893aaae73f",
+        "https://i.scdn.co/image/ab67616d0000485173a6f497a227326093aee7e2",
+        "https://i.scdn.co/image/ab67616d000048513d87c02d814c2e1f086a48a0",
+        "https://i.scdn.co/image/ab67616d00004851f2608f2456666ffc5c64645a",
+        "https://i.scdn.co/image/ab67616d00004851487dd3aca9e29da07961825a",
+        "https://i.scdn.co/image/ab67616d00001e02787ee380413a87893aaae73f",
+        "https://i.scdn.co/image/ab67616d00001e02f2608f2456666ffc5c64645a",
+        "https://i.scdn.co/image/ab67616d00001e02487dd3aca9e29da07961825a",
+        "https://i.scdn.co/image/ab67616d00001e026e08e6428c30120445cf126c",
+        "https://i.scdn.co/image/ab67616d00001e0273a6f497a227326093aee7e2"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3050mqW4uIg4i9sHnwo8iE"
+      },
+      "first_seen": "2026-09-21T15:14:35+00:00",
+      "last_seen": "2026-09-21T15:14:35+00:00"
+    },
+    "20nbdTkuilM6zrpJICFfJb": {
+      "id": "20nbdTkuilM6zrpJICFfJb",
+      "name": "T-Maze",
+      "url": "https://open.spotify.com/intl-fr/artist/20nbdTkuilM6zrpJICFfJb",
+      "uri": "spotify:artist:20nbdTkuilM6zrpJICFfJb",
+      "followers": null,
+      "monthly_listeners": 11,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851441dd3b653f5fc81412e56b6",
+        "https://i.scdn.co/image/ab67616d000048517f901add8a7674d503d6918e",
+        "https://i.scdn.co/image/ab67616d000048511a140da033c0048e83ca75cc",
+        "https://i.scdn.co/image/ab67616d00004851a31761bd19c8aa6f4fc46c8b",
+        "https://i.scdn.co/image/ab67616d000048510491198a84d0ef09db81af14",
+        "https://i.scdn.co/image/ab67616d00001e021a140da033c0048e83ca75cc",
+        "https://i.scdn.co/image/ab67616d00001e02a31761bd19c8aa6f4fc46c8b",
+        "https://i.scdn.co/image/ab67616d00001e02441dd3b653f5fc81412e56b6",
+        "https://i.scdn.co/image/ab67616d00001e020491198a84d0ef09db81af14",
+        "https://i.scdn.co/image/ab67616d00001e021a2ae751089cebfcb305fa2b"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/20nbdTkuilM6zrpJICFfJb"
+      },
+      "first_seen": "2026-09-21T15:15:20+00:00",
+      "last_seen": "2026-09-21T15:15:20+00:00"
+    },
+    "1n8bjMCgdl0HF1j4Tj0CFX": {
+      "id": "1n8bjMCgdl0HF1j4Tj0CFX",
+      "name": "LIL Ghost!",
+      "url": "https://open.spotify.com/intl-fr/artist/1n8bjMCgdl0HF1j4Tj0CFX",
+      "uri": "spotify:artist:1n8bjMCgdl0HF1j4Tj0CFX",
+      "followers": null,
+      "monthly_listeners": 9,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048517400e66017b24d7055c4ce65",
+        "https://i.scdn.co/image/ab67616d0000485106641fabb8a6199d4cccbe5a",
+        "https://i.scdn.co/image/ab67616d00004851e5129ec89f32040e922f3d09",
+        "https://i.scdn.co/image/ab67616d00004851a7422ed8ee2a189864834c4e",
+        "https://i.scdn.co/image/ab67616d00004851d22bc1f75a38ceeaf9bfe975",
+        "https://i.scdn.co/image/ab67616d00001e02a7422ed8ee2a189864834c4e",
+        "https://i.scdn.co/image/ab67616d00001e0206641fabb8a6199d4cccbe5a",
+        "https://i.scdn.co/image/ab67616d00001e02f35a8808e81821da9bb55557",
+        "https://i.scdn.co/image/ab67616d00001e02d22bc1f75a38ceeaf9bfe975",
+        "https://i.scdn.co/image/ab67616d00001e027400e66017b24d7055c4ce65"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1n8bjMCgdl0HF1j4Tj0CFX"
+      },
+      "first_seen": "2026-09-21T15:16:04+00:00",
+      "last_seen": "2026-09-21T15:16:04+00:00"
+    },
+    "6Am2KqaAiggNPBDkt7zVgy": {
+      "id": "6Am2KqaAiggNPBDkt7zVgy",
+      "name": "Diptero",
+      "url": "https://open.spotify.com/intl-fr/artist/6Am2KqaAiggNPBDkt7zVgy",
+      "uri": "spotify:artist:6Am2KqaAiggNPBDkt7zVgy",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b46aa28da23bd2131e5e30a58",
+        "https://i.scdn.co/image/ab67616d0000485100a1e054f4e373e77f07a340",
+        "https://i.scdn.co/image/ab67616d00004851c46212a358e7084174aca082",
+        "https://i.scdn.co/image/ab67616d0000485114f1b3117a036689303d821e",
+        "https://i.scdn.co/image/ab67616d0000485103d04f1023c58a270af64995",
+        "https://i.scdn.co/image/ab67616d000048517e26cc6239eb4f33a3b007d5",
+        "https://i.scdn.co/image/ab67616d00001e0200a1e054f4e373e77f07a340",
+        "https://i.scdn.co/image/ab67616d00001e02ebb2d77e7bde9d647bd12582",
+        "https://i.scdn.co/image/ab67616d00001e027e26cc6239eb4f33a3b007d5",
+        "https://i.scdn.co/image/ab67616d00001e02c46212a358e7084174aca082"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6Am2KqaAiggNPBDkt7zVgy"
+      },
+      "first_seen": "2026-09-21T15:16:49+00:00",
+      "last_seen": "2026-09-21T15:16:49+00:00"
+    },
+    "0wIqiATQ9OB7qeDvNb8Mtr": {
+      "id": "0wIqiATQ9OB7qeDvNb8Mtr",
+      "name": "TRINNI",
+      "url": "https://open.spotify.com/intl-fr/artist/0wIqiATQ9OB7qeDvNb8Mtr",
+      "uri": "spotify:artist:0wIqiATQ9OB7qeDvNb8Mtr",
+      "followers": null,
+      "monthly_listeners": 77,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851b603e9f93436f5e41781fb22",
+        "https://i.scdn.co/image/ab67616d00004851963ec4d45b330a2542bd1b4e",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc3429ce17ac4657a4b64e6cf",
+        "https://i.scdn.co/image/ab6761610000101f142cdc78d308985003bfea8f",
+        "https://i.scdn.co/image/ab67616d00001e0268f49c55c12cf8a338fbd7cb",
+        "https://i.scdn.co/image/ab67616d00001e02ee0b872b742e4ccbd1f491b1",
+        "https://i.scdn.co/image/ab67616d00001e02004f390c989096a44f1d4f84",
+        "https://i.scdn.co/image/ab6761610000939b142cdc78d308985003bfea8f",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8408534360d38e432ba07702d5",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c15ceb3e1c85e934ba56e1fea"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0wIqiATQ9OB7qeDvNb8Mtr"
+      },
+      "first_seen": "2026-09-21T15:17:53+00:00",
+      "last_seen": "2026-09-21T15:17:53+00:00"
+    },
+    "3MgChjZp6lcE4iMMnlWJae": {
+      "id": "3MgChjZp6lcE4iMMnlWJae",
+      "name": "Mulato G",
+      "url": "https://open.spotify.com/intl-fr/artist/3MgChjZp6lcE4iMMnlWJae",
+      "uri": "spotify:artist:3MgChjZp6lcE4iMMnlWJae",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b675481d72ff0f6dfbff6507d",
+        "https://i.scdn.co/image/ab67616d000048511d4aa948af4c9dc9e3647100",
+        "https://i.scdn.co/image/ab67616100005174ea3fb8eaf91b32dc0d02e685",
+        "https://i.scdn.co/image/ab67616d00001e02ec4ab9959f3a3825c3276d65",
+        "https://i.scdn.co/image/ab67616d00001e02f44877f39fc578de134cf41a",
+        "https://i.scdn.co/image/ab67616d00001e02274e2eef4147dfea8bf77c79",
+        "https://i.scdn.co/image/ab67616100005174af1c49a2b3c24092af236fcc",
+        "https://i.scdn.co/image/ab676161000051746c7a8a677211c15b527dd0a8",
+        "https://i.scdn.co/image/ab67616d00001e02173dad9d04783871c25a4c25",
+        "https://i.scdn.co/image/ab67616d00001e02b8970121967cf031227da783"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3MgChjZp6lcE4iMMnlWJae"
+      },
+      "first_seen": "2026-09-21T15:18:56+00:00",
+      "last_seen": "2026-09-21T15:18:56+00:00"
+    },
+    "2DbiZAOkbs5Po32ndzEc3b": {
+      "id": "2DbiZAOkbs5Po32ndzEc3b",
+      "name": "Tra Bongo",
+      "url": "https://open.spotify.com/intl-fr/artist/2DbiZAOkbs5Po32ndzEc3b",
+      "uri": "spotify:artist:2DbiZAOkbs5Po32ndzEc3b",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3043c50d6c1d3dc541cb55489",
+        "https://i.scdn.co/image/ab67616d00004851043c50d6c1d3dc541cb55489",
+        "https://i.scdn.co/image/ab67616d00004851e856d1ebd4fe1c602ae7db65",
+        "https://i.scdn.co/image/ab67616d00001e02043c50d6c1d3dc541cb55489",
+        "https://i.scdn.co/image/ab67616d00001e02e856d1ebd4fe1c602ae7db65",
+        "https://i.scdn.co/image/ab67616d00001e0207b563461ef8aa0de9fde7c8",
+        "https://i.scdn.co/image/ab676161000051747836afcd328ce5dd98059240",
+        "https://i.scdn.co/image/ab676161000051740487d870873b8001fe391359",
+        "https://i.scdn.co/image/ab676161000051745ab788744bd4d15d8ce3d19d",
+        "https://i.scdn.co/image/ab67616d00001e02ec52417d2e704da27358a0b8"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/2DbiZAOkbs5Po32ndzEc3b"
+      },
+      "first_seen": "2026-09-21T15:19:41+00:00",
+      "last_seen": "2026-09-21T15:19:41+00:00"
+    },
+    "6L46mB7urZu45ouVlDj2tp": {
+      "id": "6L46mB7urZu45ouVlDj2tp",
+      "name": "LYAN DRX",
+      "url": "https://open.spotify.com/intl-fr/artist/6L46mB7urZu45ouVlDj2tp",
+      "uri": "spotify:artist:6L46mB7urZu45ouVlDj2tp",
+      "followers": null,
+      "monthly_listeners": 7,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851632a4570753134e1b7ff68cc",
+        "https://i.scdn.co/image/ab67616d00004851a432b11fc081ab4446ef7ddc",
+        "https://i.scdn.co/image/ab67616d0000485186e12b0ea1ce38c15dd75ca8",
+        "https://i.scdn.co/image/ab67616d00004851aa2dee1785fa56b75507d8f8",
+        "https://i.scdn.co/image/ab67616d0000485139bf2c1b9a59e82475c81001",
+        "https://i.scdn.co/image/ab67616d00001e02632a4570753134e1b7ff68cc",
+        "https://i.scdn.co/image/ab67616d00001e0261ea91912442bf79d30cd4d6",
+        "https://i.scdn.co/image/ab67616d00001e02aa2dee1785fa56b75507d8f8",
+        "https://i.scdn.co/image/ab67616d00001e0286e12b0ea1ce38c15dd75ca8",
+        "https://i.scdn.co/image/ab67616d00001e02a94637d9290a93695769d8fc"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6L46mB7urZu45ouVlDj2tp"
+      },
+      "first_seen": "2026-09-21T15:20:25+00:00",
+      "last_seen": "2026-09-21T15:20:25+00:00"
+    },
+    "657A1OiOkE4PtlTaHYCDNL": {
+      "id": "657A1OiOkE4PtlTaHYCDNL",
+      "name": "Jcare",
+      "url": "https://open.spotify.com/intl-fr/artist/657A1OiOkE4PtlTaHYCDNL",
+      "uri": "spotify:artist:657A1OiOkE4PtlTaHYCDNL",
+      "followers": null,
+      "monthly_listeners": 36,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b0ced2305ba6d12af8ac3ab0e",
+        "https://i.scdn.co/image/ab67616d000048519ee5824d63bcc2f7cdbb2e17",
+        "https://i.scdn.co/image/ab67616d000048511403bc334e1c38cbd52fe024",
+        "https://i.scdn.co/image/ab67616d000048512a11ab916cc5445125734f8d",
+        "https://i.scdn.co/image/ab67616d00004851a785c0c14482ca4b2ec9ae73",
+        "https://i.scdn.co/image/ab67616d0000485151bc2605d9f7702092b29c95",
+        "https://i.scdn.co/image/ab67616d00001e029ee5824d63bcc2f7cdbb2e17",
+        "https://i.scdn.co/image/ab67616d00001e02a785c0c14482ca4b2ec9ae73",
+        "https://i.scdn.co/image/ab67616d00001e02f3c4c9a06e95320da088fa76",
+        "https://i.scdn.co/image/ab67616d00001e022a11ab916cc5445125734f8d"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/657A1OiOkE4PtlTaHYCDNL"
+      },
+      "first_seen": "2026-09-21T15:21:28+00:00",
+      "last_seen": "2026-09-21T15:21:28+00:00"
+    },
+    "3y6JBmxJZxb9TPvgXi4EPn": {
+      "id": "3y6JBmxJZxb9TPvgXi4EPn",
+      "name": "SAMUCA",
+      "url": "https://open.spotify.com/intl-fr/artist/3y6JBmxJZxb9TPvgXi4EPn",
+      "uri": "spotify:artist:3y6JBmxJZxb9TPvgXi4EPn",
+      "followers": null,
+      "monthly_listeners": 54,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bc23cf7f94ef39f5303c2a59a",
+        "https://i.scdn.co/image/ab67616d000048510e17968d6c901aeb8079466a",
+        "https://i.scdn.co/image/ab67616d0000485139f674a35afb3613472f71ac",
+        "https://i.scdn.co/image/ab67616d0000485148dd0b73e6b3eb64aabe4ff6",
+        "https://i.scdn.co/image/ab67616d0000485174b3e44d4a4c7f7368990c2d",
+        "https://i.scdn.co/image/ab67616d00001e0274b3e44d4a4c7f7368990c2d",
+        "https://i.scdn.co/image/ab67616d00001e0248dd0b73e6b3eb64aabe4ff6",
+        "https://i.scdn.co/image/ab67616d00001e020e17968d6c901aeb8079466a",
+        "https://i.scdn.co/image/ab67616d00001e0239f674a35afb3613472f71ac",
+        "https://i.scdn.co/image/ab67616d00001e02626f33272714b85eceaab701"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3y6JBmxJZxb9TPvgXi4EPn"
+      },
+      "first_seen": "2026-09-21T15:22:31+00:00",
+      "last_seen": "2026-09-21T15:22:31+00:00"
+    },
+    "2jZHy1xEIyY84BbKe4eRS9": {
+      "id": "2jZHy1xEIyY84BbKe4eRS9",
+      "name": "Fudjuko RKO",
+      "url": "https://open.spotify.com/intl-fr/artist/2jZHy1xEIyY84BbKe4eRS9",
+      "uri": "spotify:artist:2jZHy1xEIyY84BbKe4eRS9",
+      "followers": null,
+      "monthly_listeners": 14,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d000048512b40e629aafc8e879f99fbbe",
+        "https://i.scdn.co/image/ab67616d000048517a0308490e2fb4a477af8fb3",
+        "https://i.scdn.co/image/ab67616d000048519600d680c837f7013cba0842",
+        "https://i.scdn.co/image/ab67616d0000485166c171f2f7dc8f10ce5d89c0",
+        "https://i.scdn.co/image/ab67616d000048512b2bf27a2bc00fd29255bc95",
+        "https://i.scdn.co/image/ab67616d00001e022b40e629aafc8e879f99fbbe",
+        "https://i.scdn.co/image/ab67616d00001e022b2bf27a2bc00fd29255bc95",
+        "https://i.scdn.co/image/ab67616d00001e02dba2ca8ad468acb45113b264",
+        "https://i.scdn.co/image/ab67616d00001e020a842c7acb35c8ea049e4fe6",
+        "https://i.scdn.co/image/ab67616d00001e027a0308490e2fb4a477af8fb3"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/2jZHy1xEIyY84BbKe4eRS9"
+      },
+      "first_seen": "2026-09-21T15:23:15+00:00",
+      "last_seen": "2026-09-21T15:23:15+00:00"
+    },
+    "5OlswW66LQBr7XRztZHuix": {
+      "id": "5OlswW66LQBr7XRztZHuix",
+      "name": "Ajm",
+      "url": "https://open.spotify.com/intl-fr/artist/5OlswW66LQBr7XRztZHuix",
+      "uri": "spotify:artist:5OlswW66LQBr7XRztZHuix",
+      "followers": null,
+      "monthly_listeners": 30,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851bd08769dce699ecc13052cc0",
+        "https://i.scdn.co/image/ab67616d000048515fbee238c42ee2f4e0563e65",
+        "https://i.scdn.co/image/ab67616d000048518406d24db86ebd4b5e97730f",
+        "https://i.scdn.co/image/ab67616d000048513a9bd3966de1241ce602e1bb",
+        "https://i.scdn.co/image/ab67616d000048515f2df98d40fdc73177704a67",
+        "https://i.scdn.co/image/ab67616d00001e0267dde10efa98a526636565f0",
+        "https://i.scdn.co/image/ab67616d00001e0245d0e7c9133fb7d73481492c",
+        "https://i.scdn.co/image/ab67616d00001e02d002154774cef8a7f1d864f8",
+        "https://i.scdn.co/image/ab67616d00001e025fbee238c42ee2f4e0563e65",
+        "https://i.scdn.co/image/ab67616d00001e023a9bd3966de1241ce602e1bb"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5OlswW66LQBr7XRztZHuix"
+      },
+      "first_seen": "2026-09-21T15:24:00+00:00",
+      "last_seen": "2026-09-21T15:24:00+00:00"
+    },
+    "5AZ2FfbcQAV2TIW1dPWfbJ": {
+      "id": "5AZ2FfbcQAV2TIW1dPWfbJ",
+      "name": "Santos",
+      "url": "https://open.spotify.com/intl-fr/artist/5AZ2FfbcQAV2TIW1dPWfbJ",
+      "uri": "spotify:artist:5AZ2FfbcQAV2TIW1dPWfbJ",
+      "followers": null,
+      "monthly_listeners": 12,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939ba5b7f096d982da9309c5d84d",
+        "https://i.scdn.co/image/ab67616d00004851f23ed1a2fd3cc5a5ba55f79e",
+        "https://i.scdn.co/image/ab67616d00004851296f007cbb36787f0dbdcfc9",
+        "https://i.scdn.co/image/ab67616d000048511b050dc9c76611d7baf82733",
+        "https://i.scdn.co/image/ab67616d00001e021b050dc9c76611d7baf82733",
+        "https://i.scdn.co/image/ab67616d00001e02f23ed1a2fd3cc5a5ba55f79e",
+        "https://i.scdn.co/image/ab67616d00001e02296f007cbb36787f0dbdcfc9",
+        "https://i.scdn.co/image/ab67616d00001e0249e4754c520788c9ec4ddf9b",
+        "https://i.scdn.co/image/ab6761610000517418ead0944db789c73ef350f4",
+        "https://i.scdn.co/image/ab67616d00001e02f0d6ca8922ec657ec2bb11b7"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5AZ2FfbcQAV2TIW1dPWfbJ"
+      },
+      "first_seen": "2026-09-21T15:24:44+00:00",
+      "last_seen": "2026-09-21T15:24:44+00:00"
+    },
+    "37lf9HndeDHt2PsOWJPZH6": {
+      "id": "37lf9HndeDHt2PsOWJPZH6",
+      "name": "Matz",
+      "url": "https://open.spotify.com/intl-fr/artist/37lf9HndeDHt2PsOWJPZH6",
+      "uri": "spotify:artist:37lf9HndeDHt2PsOWJPZH6",
+      "followers": null,
+      "monthly_listeners": 31,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3d9b50241168af79153b0f385",
+        "https://i.scdn.co/image/ab67616d00004851d9b50241168af79153b0f385",
+        "https://i.scdn.co/image/ab67616d00004851e27188d89dcd5800a0795d50",
+        "https://i.scdn.co/image/ab67616d00001e02d9b50241168af79153b0f385",
+        "https://i.scdn.co/image/ab67616d00001e02e27188d89dcd5800a0795d50",
+        "https://i.scdn.co/image/ab676161000051741cf6b89a70460ce51989edf3",
+        "https://i.scdn.co/image/ab67616100005174c23cf7f94ef39f5303c2a59a",
+        "https://i.scdn.co/image/ab6761610000517415f21a9e6b7009aae4ecbfe5",
+        "https://i.scdn.co/image/ab6761610000517473056cdf5a362a872ced28d1",
+        "https://i.scdn.co/image/ab6761610000517484163ebda447f93592c35eff"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/37lf9HndeDHt2PsOWJPZH6"
+      },
+      "first_seen": "2026-09-21T15:25:29+00:00",
+      "last_seen": "2026-09-21T15:25:29+00:00"
+    },
+    "1bWGbZO381pK12XMaSKxbM": {
+      "id": "1bWGbZO381pK12XMaSKxbM",
+      "name": "Lord Piter",
+      "url": "https://open.spotify.com/intl-fr/artist/1bWGbZO381pK12XMaSKxbM",
+      "uri": "spotify:artist:1bWGbZO381pK12XMaSKxbM",
+      "followers": null,
+      "monthly_listeners": 10,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3626f33272714b85eceaab701",
+        "https://i.scdn.co/image/ab67616d00004851626f33272714b85eceaab701",
+        "https://i.scdn.co/image/ab67616d00001e02626f33272714b85eceaab701",
+        "https://i.scdn.co/image/ab67616d00001e02f0d6ca8922ec657ec2bb11b7",
+        "https://i.scdn.co/image/ab67616100005174c23cf7f94ef39f5303c2a59a",
+        "https://i.scdn.co/image/ab67616d00001e02a3908e793c6ad9f7d3378e20",
+        "https://i.scdn.co/image/ab67616100005174a96d24988fc2d14264550281",
+        "https://i.scdn.co/image/ab67616d00001e027bfe413e5933078246add2ea",
+        "https://i.scdn.co/image/ab6761610000517429fa66524b727ec7567a8fec",
+        "https://i.scdn.co/image/ab676161000051740c2615c584f27c3697851e82"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1bWGbZO381pK12XMaSKxbM"
+      },
+      "first_seen": "2026-09-21T15:26:14+00:00",
+      "last_seen": "2026-09-21T15:26:14+00:00"
+    },
+    "0W5gloo6mRLkfr8BNVaL1G": {
+      "id": "0W5gloo6mRLkfr8BNVaL1G",
+      "name": "Tab",
+      "url": "https://open.spotify.com/intl-fr/artist/0W5gloo6mRLkfr8BNVaL1G",
+      "uri": "spotify:artist:0W5gloo6mRLkfr8BNVaL1G",
+      "followers": null,
+      "monthly_listeners": 256,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b9337cc3f7c012c5f253b7e83",
+        "https://i.scdn.co/image/ab67616d000048510242ba37d5cd6a504db63e07",
+        "https://i.scdn.co/image/ab67616d00004851facdebcbe6d8f7dd2c16529d",
+        "https://i.scdn.co/image/ab67616d00001e020242ba37d5cd6a504db63e07",
+        "https://i.scdn.co/image/ab67616d00001e02a58c5d312624bdc8cb6958c6",
+        "https://i.scdn.co/image/ab67616d00001e02facdebcbe6d8f7dd2c16529d",
+        "https://i.scdn.co/image/ab67616d00001e027d353132bc7959305572dcc7",
+        "https://i.scdn.co/image/ab67616d00001e0237804befd98a5733dd12effd",
+        "https://i.scdn.co/image/ab67616d00001e0231dec99ca37b6065ff605166",
+        "https://i.scdn.co/image/ab67616d00001e0214de39b3288391e757ce1905"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0W5gloo6mRLkfr8BNVaL1G"
+      },
+      "first_seen": "2026-09-21T15:27:16+00:00",
+      "last_seen": "2026-09-21T15:27:16+00:00"
+    },
+    "3BP3LKllC8M6DpBmL4Q0j0": {
+      "id": "3BP3LKllC8M6DpBmL4Q0j0",
+      "name": "Joowiee",
+      "url": "https://open.spotify.com/intl-fr/artist/3BP3LKllC8M6DpBmL4Q0j0",
+      "uri": "spotify:artist:3BP3LKllC8M6DpBmL4Q0j0",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b7a0f044cd9f7671ab9533251",
+        "https://i.scdn.co/image/ab67616d00004851511577b04d715b4a66cecdc5",
+        "https://i.scdn.co/image/ab67616d00004851661d5f8105fb7d85ca4a6e5a",
+        "https://i.scdn.co/image/ab67616d00001e02511577b04d715b4a66cecdc5",
+        "https://i.scdn.co/image/ab67616d00001e02661d5f8105fb7d85ca4a6e5a",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c76a8684b31ca47686d00aeb1",
+        "https://i.scdn.co/image/ab67616100005174cd7b3845008e2c20661b3b5e",
+        "https://i.scdn.co/image/ab67616d00001e02fcf019019dfb064282c24140",
+        "https://i.scdn.co/image/ab676161000051746b0c8b67dc6783deced2693d",
+        "https://i.scdn.co/image/ab6761610000517487090977b67ef8282122e59a"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3BP3LKllC8M6DpBmL4Q0j0"
+      },
+      "first_seen": "2026-09-21T15:28:56+00:00",
+      "last_seen": "2026-09-21T15:28:56+00:00"
+    },
+    "3qXhRQUJemHZLfoyANSXos": {
+      "id": "3qXhRQUJemHZLfoyANSXos",
+      "name": "majus",
+      "url": "https://open.spotify.com/intl-fr/artist/3qXhRQUJemHZLfoyANSXos",
+      "uri": "spotify:artist:3qXhRQUJemHZLfoyANSXos",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b676b8c3ae0a0079ed7d954e0",
+        "https://i.scdn.co/image/ab67616d000048515f463129f2592695193cd1f1",
+        "https://i.scdn.co/image/ab67616d000048511e65d6e4a3c184338af021db",
+        "https://i.scdn.co/image/ab67616d000048514e789ba1a840d1f138dd94d6",
+        "https://i.scdn.co/image/ab67616d000048513a2b92222ce8e7e407b51b87",
+        "https://i.scdn.co/image/ab67616d000048516a5350fa8ad1de6eb3a1f714",
+        "https://i.scdn.co/image/ab67616d00001e024e789ba1a840d1f138dd94d6",
+        "https://i.scdn.co/image/ab67616d00001e0249007f299f8dacdad3c3eb1e",
+        "https://i.scdn.co/image/ab67616d00001e021e65d6e4a3c184338af021db",
+        "https://i.scdn.co/image/ab67616d00001e025d29b5a07d48215c20ee93bd"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3qXhRQUJemHZLfoyANSXos"
+      },
+      "first_seen": "2026-09-21T15:29:41+00:00",
+      "last_seen": "2026-09-21T15:29:41+00:00"
+    },
+    "3odjP9f4DlkUHXdu8XCKF3": {
+      "id": "3odjP9f4DlkUHXdu8XCKF3",
+      "name": "UMODEN",
+      "url": "https://open.spotify.com/intl-fr/artist/3odjP9f4DlkUHXdu8XCKF3",
+      "uri": "spotify:artist:3odjP9f4DlkUHXdu8XCKF3",
+      "followers": null,
+      "monthly_listeners": 9,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3173a6aec6de4a220386a023c",
+        "https://i.scdn.co/image/ab67616d00004851173a6aec6de4a220386a023c",
+        "https://i.scdn.co/image/ab67616d000048515719d0c00d27bff8c32e6676",
+        "https://i.scdn.co/image/ab67616d000048514d1e430ad574276921b829b9",
+        "https://i.scdn.co/image/ab67616d000048513c91a880455106d55c87e3cf",
+        "https://i.scdn.co/image/ab67616d000048514d3a948df06e9fe1d4f03ad4",
+        "https://i.scdn.co/image/ab67616d00001e02173a6aec6de4a220386a023c",
+        "https://i.scdn.co/image/ab67616d00001e024d1e430ad574276921b829b9",
+        "https://i.scdn.co/image/ab67616d00001e025719d0c00d27bff8c32e6676",
+        "https://i.scdn.co/image/ab67616d00001e024d3a948df06e9fe1d4f03ad4"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3odjP9f4DlkUHXdu8XCKF3"
+      },
+      "first_seen": "2026-09-21T15:30:26+00:00",
+      "last_seen": "2026-09-21T15:30:26+00:00"
+    },
+    "0HqY8gaajAZaamjB2QoMaR": {
+      "id": "0HqY8gaajAZaamjB2QoMaR",
+      "name": "Mili Dior",
+      "url": "https://open.spotify.com/intl-fr/artist/0HqY8gaajAZaamjB2QoMaR",
+      "uri": "spotify:artist:0HqY8gaajAZaamjB2QoMaR",
+      "followers": null,
+      "monthly_listeners": 15,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000485199e2672fab7aec56c0ad652e",
+        "https://i.scdn.co/image/ab67616d0000485128266c8388402e85f27ec26c",
+        "https://i.scdn.co/image/ab67616d000048510524cc7e10b4e936bd8168cf",
+        "https://i.scdn.co/image/ab67616d00001e0299e2672fab7aec56c0ad652e",
+        "https://i.scdn.co/image/ab67616d00001e0228266c8388402e85f27ec26c",
+        "https://i.scdn.co/image/ab6761610000939b67f9ba5f5d280942653466c2",
+        "https://mosaic.scdn.co/300/ab67616d00001e022a7db835b912dc5014bd37f4ab67616d00001e025fb334c680306c1b176906ccab67616d00001e02d9194aa18fa4c9362b47464fab67616d00001e02f9508eb3070b95ceeb82788b",
+        "https://i.scdn.co/image/ab67616100005174b11e1e8c2e9c67ebacf359d1",
+        "https://i.scdn.co/image/ab67616100005174245570659da6c132d2f11e7c",
+        "https://i.scdn.co/image/ab67616100005174d58d180963f27eafbe10181a"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0HqY8gaajAZaamjB2QoMaR"
+      },
+      "first_seen": "2026-09-21T15:31:47+00:00",
+      "last_seen": "2026-09-21T15:31:47+00:00"
+    },
+    "0lraSqymZJFdmrSM55g0ni": {
+      "id": "0lraSqymZJFdmrSM55g0ni",
+      "name": "Bensen Green",
+      "url": "https://open.spotify.com/intl-fr/artist/0lraSqymZJFdmrSM55g0ni",
+      "uri": "spotify:artist:0lraSqymZJFdmrSM55g0ni",
+      "followers": null,
+      "monthly_listeners": 9,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939ba7b9a6e2868c9db7b06ad679",
+        "https://i.scdn.co/image/ab67616d0000485131b2eac59e76d17db3d88d8b",
+        "https://i.scdn.co/image/ab67616d000048518875f6b09dd57dac153ad1bf",
+        "https://i.scdn.co/image/ab67616d00004851125d8dc620c43b3d671b2773",
+        "https://i.scdn.co/image/ab67616d00001e0231b2eac59e76d17db3d88d8b",
+        "https://i.scdn.co/image/ab67616d00001e02125d8dc620c43b3d671b2773",
+        "https://i.scdn.co/image/ab67616d00001e028875f6b09dd57dac153ad1bf",
+        "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-fr.jpg",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c51471a2f53e845c063180d59",
+        "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c838d5ad0e7723b286c772559"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0lraSqymZJFdmrSM55g0ni"
+      },
+      "first_seen": "2026-09-21T15:32:50+00:00",
+      "last_seen": "2026-09-21T15:32:50+00:00"
+    },
+    "0MjBMMvkcHMoLiBNPD29pV": {
+      "id": "0MjBMMvkcHMoLiBNPD29pV",
+      "name": "Skilaz",
+      "url": "https://open.spotify.com/intl-fr/artist/0MjBMMvkcHMoLiBNPD29pV",
+      "uri": "spotify:artist:0MjBMMvkcHMoLiBNPD29pV",
+      "followers": null,
+      "monthly_listeners": 5,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bfda80f86cb37ef3cbcfbd70f",
+        "https://i.scdn.co/image/ab67616d0000485160aca63cf7a1f21a6f575c79",
+        "https://i.scdn.co/image/ab67616d00004851f9bf4c6df6befefd121acda1",
+        "https://i.scdn.co/image/ab67616d00001e0233c866ac81c256c44693635e",
+        "https://i.scdn.co/image/ab67616d00001e022c104dd5c75ecbd3b6f4978b",
+        "https://i.scdn.co/image/ab67616d00001e0260aca63cf7a1f21a6f575c79",
+        "https://i.scdn.co/image/ab67616d00001e02a9ff5849d14de672a20f2d6f",
+        "https://i.scdn.co/image/ab67616d00001e02425e1401131467804ca89227",
+        "https://i.scdn.co/image/ab67616d00001e02f9bf4c6df6befefd121acda1",
+        "https://i.scdn.co/image/ab67616d00001e020a47fd5550fc14055eb1b131"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0MjBMMvkcHMoLiBNPD29pV"
+      },
+      "first_seen": "2026-09-21T15:33:35+00:00",
+      "last_seen": "2026-09-21T15:33:35+00:00"
+    },
+    "63stgLH26j7hjg86362gcG": {
+      "id": "63stgLH26j7hjg86362gcG",
+      "name": "Kairo",
+      "url": "https://open.spotify.com/intl-fr/artist/63stgLH26j7hjg86362gcG",
+      "uri": "spotify:artist:63stgLH26j7hjg86362gcG",
+      "followers": null,
+      "monthly_listeners": 11,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b51d5e458aa354db64217594e",
+        "https://i.scdn.co/image/ab67616d0000485118ddad07cabd1fd4fc39c4d4",
+        "https://i.scdn.co/image/ab67616d0000485143917a7c4da7a37da0190f22",
+        "https://i.scdn.co/image/ab67616d000048517d46db3e190a1a236f4418ba",
+        "https://i.scdn.co/image/ab67616d0000485146bc95b4b3d1cb3fbf255d5a",
+        "https://i.scdn.co/image/ab67616d00004851d5d6a7ab6fe1863a5ab8507a",
+        "https://i.scdn.co/image/ab67616d00001e0246bc95b4b3d1cb3fbf255d5a",
+        "https://i.scdn.co/image/ab67616d00001e027d46db3e190a1a236f4418ba",
+        "https://i.scdn.co/image/ab67616d00001e0218ddad07cabd1fd4fc39c4d4",
+        "https://i.scdn.co/image/ab67616d00001e02d5d6a7ab6fe1863a5ab8507a"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/63stgLH26j7hjg86362gcG"
+      },
+      "first_seen": "2026-09-21T15:34:38+00:00",
+      "last_seen": "2026-09-21T15:34:38+00:00"
+    },
+    "2j4nLIZLl0OUYFkJ2JYEN0": {
+      "id": "2j4nLIZLl0OUYFkJ2JYEN0",
+      "name": "Latu",
+      "url": "https://open.spotify.com/intl-fr/artist/2j4nLIZLl0OUYFkJ2JYEN0",
+      "uri": "spotify:artist:2j4nLIZLl0OUYFkJ2JYEN0",
+      "followers": null,
+      "monthly_listeners": null,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3cfa43d53598a55a0c2e6c12e",
+        "https://i.scdn.co/image/ab67616d00004851cfa43d53598a55a0c2e6c12e",
+        "https://i.scdn.co/image/ab67616d00001e02cfa43d53598a55a0c2e6c12e",
+        "https://i.scdn.co/image/ab67616100005174e3508afb473e789ad0db593d",
+        "https://i.scdn.co/image/ab6761610000517483b96a37e8d5891fce08d84b",
+        "https://i.scdn.co/image/ab676161000051749f4f2b1bac508e6b0a7e8ebb",
+        "https://i.scdn.co/image/ab676161000051741c18c8624a7b328fdee75d7b",
+        "https://i.scdn.co/image/ab6761610000517407400f0736aceabfdfe2b936",
+        "https://i.scdn.co/image/ab6761610000517423f8aecf46d3e40ae7334775",
+        "https://i.scdn.co/image/ab67616100005174f02ca1ee7d7620f8b7086217"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/2j4nLIZLl0OUYFkJ2JYEN0"
+      },
+      "first_seen": "2026-09-21T15:35:22+00:00",
+      "last_seen": "2026-09-21T15:35:22+00:00"
+    },
+    "0tiALbDpdcdReyDozynaVj": {
+      "id": "0tiALbDpdcdReyDozynaVj",
+      "name": "Tirus",
+      "url": "https://open.spotify.com/intl-fr/artist/0tiALbDpdcdReyDozynaVj",
+      "uri": "spotify:artist:0tiALbDpdcdReyDozynaVj",
+      "followers": null,
+      "monthly_listeners": 16,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000485178a0f80e462937cddbb682bd",
+        "https://i.scdn.co/image/ab67616d000048511541019ddeede0426392b10c",
+        "https://i.scdn.co/image/ab67616d00004851a8a9721fab91a81b4122bd16",
+        "https://i.scdn.co/image/ab67616d000048519c6e22e8b8df27e4308e84e5",
+        "https://i.scdn.co/image/ab67616d00001e02a8a9721fab91a81b4122bd16",
+        "https://i.scdn.co/image/ab67616d00001e0286653808fe0cf3cf80d86e08",
+        "https://i.scdn.co/image/ab67616d00001e026b7492408d7c6ff80b2fa44a",
+        "https://i.scdn.co/image/ab67616d00001e02128ddcf91bddbd04951b4ecb",
+        "https://i.scdn.co/image/ab67616d00001e0278a0f80e462937cddbb682bd",
+        "https://i.scdn.co/image/ab67616d00001e02df502f6ba9f5488c13faba2c"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0tiALbDpdcdReyDozynaVj"
+      },
+      "first_seen": "2026-09-21T15:36:25+00:00",
+      "last_seen": "2026-09-21T15:36:25+00:00"
+    },
+    "6EEdlMQwp7853zaf2YskNQ": {
+      "id": "6EEdlMQwp7853zaf2YskNQ",
+      "name": "Xpress",
+      "url": "https://open.spotify.com/intl-fr/artist/6EEdlMQwp7853zaf2YskNQ",
+      "uri": "spotify:artist:6EEdlMQwp7853zaf2YskNQ",
+      "followers": null,
+      "monthly_listeners": 21,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851a3816ff9ca666309f9f808e4",
+        "https://i.scdn.co/image/ab67616d0000485127c281b906256c44e89241ae",
+        "https://i.scdn.co/image/ab67616d0000485124bed87bf42cb8e141d3a76a",
+        "https://i.scdn.co/image/ab67616d00004851332b094f2bd514c228b6f702",
+        "https://i.scdn.co/image/ab67616d00001e0227c281b906256c44e89241ae",
+        "https://i.scdn.co/image/ab67616d00001e02a3816ff9ca666309f9f808e4",
+        "https://i.scdn.co/image/ab67616d00001e02332b094f2bd514c228b6f702",
+        "https://i.scdn.co/image/ab67616d00001e0224bed87bf42cb8e141d3a76a",
+        "https://i.scdn.co/image/ab676161000051740246fa6864f6649ed8c07487",
+        "https://i.scdn.co/image/ab676161000051748f06a7002a23daef474cf718"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6EEdlMQwp7853zaf2YskNQ"
+      },
+      "first_seen": "2026-09-21T15:37:10+00:00",
+      "last_seen": "2026-09-21T15:37:10+00:00"
+    },
+    "30hSK12xeblof6yBpx3k0m": {
+      "id": "30hSK12xeblof6yBpx3k0m",
+      "name": "Pazzu chaze",
+      "url": "https://open.spotify.com/intl-fr/artist/30hSK12xeblof6yBpx3k0m",
+      "uri": "spotify:artist:30hSK12xeblof6yBpx3k0m",
+      "followers": null,
+      "monthly_listeners": 10,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b0f405293c82056439d4f3ca5",
+        "https://i.scdn.co/image/ab67616d00004851aa255a946126668019a4eab1",
+        "https://i.scdn.co/image/ab67616d0000485183832f3d956261714d095232",
+        "https://i.scdn.co/image/ab67616d00004851d8c2abb60127ead312d91b3c",
+        "https://i.scdn.co/image/ab67616d00004851a50b1e3262e7241e94bd240e",
+        "https://i.scdn.co/image/ab67616d000048516ab98cf70015f19768cbe3f3",
+        "https://i.scdn.co/image/ab67616d00001e02a50b1e3262e7241e94bd240e",
+        "https://i.scdn.co/image/ab67616d00001e0290d3af283ae8cee0db1da102",
+        "https://i.scdn.co/image/ab67616d00001e026ab98cf70015f19768cbe3f3",
+        "https://i.scdn.co/image/ab67616d00001e02d8c2abb60127ead312d91b3c"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/30hSK12xeblof6yBpx3k0m"
+      },
+      "first_seen": "2026-09-21T15:37:55+00:00",
+      "last_seen": "2026-09-21T15:37:55+00:00"
+    },
+    "0zfSZPSw4U2pMRSr6V0lIV": {
+      "id": "0zfSZPSw4U2pMRSr6V0lIV",
+      "name": "ABD",
+      "url": "https://open.spotify.com/intl-fr/artist/0zfSZPSw4U2pMRSr6V0lIV",
+      "uri": "spotify:artist:0zfSZPSw4U2pMRSr6V0lIV",
+      "followers": null,
+      "monthly_listeners": 49,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3e6e12ac0c699363f52641415",
+        "https://i.scdn.co/image/ab67616d00004851e6e12ac0c699363f52641415",
+        "https://i.scdn.co/image/ab67616d00001e02e6e12ac0c699363f52641415",
+        "https://i.scdn.co/image/ab67616100005174ec6ad5b422bd01c8dd514d3f",
+        "https://i.scdn.co/image/ab6761610000517417194841aacc137d91e779d7",
+        "https://i.scdn.co/image/ab67616100005174e33d2d2afcbdc8d72451000c",
+        "https://i.scdn.co/image/ab67616100005174b3d7f139a76b8c48e3ad2ec1",
+        "https://i.scdn.co/image/ab67616100005174bf60e99873f8018c01853234",
+        "https://i.scdn.co/image/ab67616100005174a26b2fef6b63b6a35271e34b",
+        "https://i.scdn.co/image/ab6761610000517432cff86d09377c56e7d7c7ca"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0zfSZPSw4U2pMRSr6V0lIV"
+      },
+      "first_seen": "2026-09-21T14:50:13+00:00",
+      "last_seen": "2026-09-21T14:50:13+00:00"
+    },
+    "3c0rXWiQ2JQRWVW8rHqxJY": {
+      "id": "3c0rXWiQ2JQRWVW8rHqxJY",
+      "name": "tek",
+      "url": "https://open.spotify.com/intl-fr/artist/3c0rXWiQ2JQRWVW8rHqxJY",
+      "uri": "spotify:artist:3c0rXWiQ2JQRWVW8rHqxJY",
+      "followers": null,
+      "monthly_listeners": 75,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851d9603f0b06d1ceb1ef44a08a",
+        "https://i.scdn.co/image/ab67616d00004851723a5599a0eaba21f2d23b90",
+        "https://i.scdn.co/image/ab67616d0000485131c1b13dbc147d0d2ab5d446",
+        "https://i.scdn.co/image/ab67616d000048518de054d14d4c4da6b0d81470",
+        "https://i.scdn.co/image/ab67616d000048516dde721d240391fc8aefc737",
+        "https://i.scdn.co/image/ab67616d00001e02d9603f0b06d1ceb1ef44a08a",
+        "https://i.scdn.co/image/ab6761610000101f5896acbcd61b49243e744ff3",
+        "https://i.scdn.co/image/ab67616d00001e02723a5599a0eaba21f2d23b90",
+        "https://i.scdn.co/image/ab67616d00001e0231c1b13dbc147d0d2ab5d446",
+        "https://i.scdn.co/image/ab67616d00001e026dde721d240391fc8aefc737"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3c0rXWiQ2JQRWVW8rHqxJY"
+      },
+      "first_seen": "2026-09-21T15:01:20+00:00",
+      "last_seen": "2026-09-21T15:01:20+00:00"
+    },
+    "3eqdmFoWURIxp5jF65uyKs": {
+      "id": "3eqdmFoWURIxp5jF65uyKs",
+      "name": "Jamison Taylor French",
+      "url": "https://open.spotify.com/intl-fr/artist/3eqdmFoWURIxp5jF65uyKs",
+      "uri": "spotify:artist:3eqdmFoWURIxp5jF65uyKs",
+      "followers": null,
+      "monthly_listeners": 3,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3737bb23004ef44336142d3b1",
+        "https://i.scdn.co/image/ab67616d00004851737bb23004ef44336142d3b1",
+        "https://i.scdn.co/image/ab67616d00001e02737bb23004ef44336142d3b1",
+        "https://i.scdn.co/image/ab67616d00001e02f659ca752c8a732d4d35bdf0",
+        "https://i.scdn.co/image/ab67616d00001e02d75fb1e5406663d55b2a0479",
+        "https://i.scdn.co/image/ab67616100005174039ff31cc7ea79d06be6bc7a",
+        "https://i.scdn.co/image/ab67616d00001e02eec65ec7b15815a2e143ad4c",
+        "https://i.scdn.co/image/ab67616100005174a4bc0a92565dc15feeb1f07b",
+        "https://i.scdn.co/image/ab67616d00001e02011f735d1bcfec9893ac6de7",
+        "https://i.scdn.co/image/ab67616d00001e02bc9734ec5f6b65c4748cc5ff"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3eqdmFoWURIxp5jF65uyKs"
+      },
+      "first_seen": "2026-09-21T15:04:57+00:00",
+      "last_seen": "2026-09-21T15:04:57+00:00"
+    },
+    "7MlbbVbvuRsSngtTP9crPF": {
+      "id": "7MlbbVbvuRsSngtTP9crPF",
+      "name": "Star City Meltdown",
+      "url": "https://open.spotify.com/intl-fr/artist/7MlbbVbvuRsSngtTP9crPF",
+      "uri": "spotify:artist:7MlbbVbvuRsSngtTP9crPF",
+      "followers": null,
+      "monthly_listeners": 8,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851787c98074cff8e77ddbeada3",
+        "https://i.scdn.co/image/ab67616d00001e02f0c419a8e5b305fdb7c11104",
+        "https://i.scdn.co/image/ab67616d00001e0202cd97cc4aedbdcae48a0b5c",
+        "https://i.scdn.co/image/ab676161000051749ea5eec9ba944244b39143ad",
+        "https://i.scdn.co/image/ab67616d00001e020f862218d36f1f1fe979f62f",
+        "https://i.scdn.co/image/ab676161000051740b125f41d35624e0bb4eedaa",
+        "https://i.scdn.co/image/ab67616d00001e023f02b9ee4f0b02827492a867",
+        "https://i.scdn.co/image/ab67616d00001e02fcca251e6678f6a3cb35cedd",
+        "https://i.scdn.co/image/ab676161000051745249234e987e04ba491fb4d0",
+        "https://i.scdn.co/image/ab67616d00001e026030d45faacf98341fcc9a8c"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7MlbbVbvuRsSngtTP9crPF"
+      },
+      "first_seen": "2026-09-21T15:05:46+00:00",
+      "last_seen": "2026-09-21T15:05:46+00:00"
+    },
+    "7m47kUo4VUbsOG364HSD50": {
+      "id": "7m47kUo4VUbsOG364HSD50",
+      "name": "Pawn Shop Gold",
+      "url": "https://open.spotify.com/intl-fr/artist/7m47kUo4VUbsOG364HSD50",
+      "uri": "spotify:artist:7m47kUo4VUbsOG364HSD50",
+      "followers": null,
+      "monthly_listeners": 2,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3be5958f35cf206cf3efa3ac5",
+        "https://i.scdn.co/image/ab67616d00004851be5958f35cf206cf3efa3ac5",
+        "https://i.scdn.co/image/ab67616d00001e02be5958f35cf206cf3efa3ac5",
+        "https://i.scdn.co/image/ab67616d00001e0226c082f34c2f834f6674d140",
+        "https://i.scdn.co/image/ab67616d00001e023219d16aab6eeaa33745fba8",
+        "https://i.scdn.co/image/ab676161000051742e7f6c0326b750cdeebb02fd",
+        "https://i.scdn.co/image/ab67616d00001e02f37e4126f1a66743e67c6600",
+        "https://i.scdn.co/image/ab67616d00001e02856d1d0a510bfd5c6df53d3f",
+        "https://i.scdn.co/image/ab67616d00001e02e7dde5c599f1aec6dffafd2d",
+        "https://i.scdn.co/image/ab67616d00001e027ed61d6645c7d09565cce282"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7m47kUo4VUbsOG364HSD50"
+      },
+      "first_seen": "2026-09-21T15:06:31+00:00",
+      "last_seen": "2026-09-21T15:06:31+00:00"
+    },
+    "0tVluPCWGbqkr0YeHUeIvz": {
+      "id": "0tVluPCWGbqkr0YeHUeIvz",
+      "name": "Kibbs",
+      "url": "https://open.spotify.com/intl-fr/artist/0tVluPCWGbqkr0YeHUeIvz",
+      "uri": "spotify:artist:0tVluPCWGbqkr0YeHUeIvz",
+      "followers": null,
+      "monthly_listeners": 3,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b54d08412b7263689a97af1e1",
+        "https://i.scdn.co/image/ab67616d00004851e2cbf303b39280cea5bba888",
+        "https://i.scdn.co/image/ab67616d0000485186c0f3a6f66d0e52e9bd5b0c",
+        "https://i.scdn.co/image/ab67616d0000485160f1ca5f43542cf9853e6df9",
+        "https://i.scdn.co/image/ab67616d000048516629ebde2dde79cb27a7931e",
+        "https://i.scdn.co/image/ab67616d00004851423d3a414179ce2a4fcfada8",
+        "https://i.scdn.co/image/ab67616d00001e026f1419a9a81cdc32dc0f8a77",
+        "https://i.scdn.co/image/ab67616d00001e020ca6db63d061720553dce905",
+        "https://i.scdn.co/image/ab67616d00001e026629ebde2dde79cb27a7931e",
+        "https://i.scdn.co/image/ab67616d00001e0286c0f3a6f66d0e52e9bd5b0c"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0tVluPCWGbqkr0YeHUeIvz"
+      },
+      "first_seen": "2026-09-21T15:07:16+00:00",
+      "last_seen": "2026-09-21T15:07:16+00:00"
+    },
+    "6dg0MWRYguPNpoI2Yq8mQf": {
+      "id": "6dg0MWRYguPNpoI2Yq8mQf",
+      "name": "BramsoLossa",
+      "url": "https://open.spotify.com/intl-fr/artist/6dg0MWRYguPNpoI2Yq8mQf",
+      "uri": "spotify:artist:6dg0MWRYguPNpoI2Yq8mQf",
+      "followers": null,
+      "monthly_listeners": 6,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3e99648e05b118145aee572f2",
+        "https://i.scdn.co/image/ab67616d00004851e99648e05b118145aee572f2",
+        "https://i.scdn.co/image/ab67616d00001e02e99648e05b118145aee572f2",
+        "https://i.scdn.co/image/ab67616d0000e1a3e92724ae0e7a7a0fec00f29d",
+        "https://i.scdn.co/image/ab6761610000517417aa29674d88904cb1d3faba",
+        "https://i.scdn.co/image/ab6761610000517401984e76114bbbb258c47f72",
+        "https://i.scdn.co/image/ab67616100005174ce19c0a3b4f5f5387c9ebdab",
+        "https://i.scdn.co/image/ab6761610000517474b260fe55375c195a02b0e8",
+        "https://i.scdn.co/image/ab67616d00001e021b37bf537ac9eb9ab47b1e7e",
+        "https://i.scdn.co/image/ab67616100005174a24698e9224592cfaf25e1b2"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6dg0MWRYguPNpoI2Yq8mQf"
+      },
+      "first_seen": "2026-09-21T15:08:19+00:00",
+      "last_seen": "2026-09-21T15:08:19+00:00"
+    },
+    "35YEsqFcXOJMpINlzZqM63": {
+      "id": "35YEsqFcXOJMpINlzZqM63",
+      "name": "Lenche",
+      "url": "https://open.spotify.com/intl-fr/artist/35YEsqFcXOJMpINlzZqM63",
+      "uri": "spotify:artist:35YEsqFcXOJMpINlzZqM63",
+      "followers": null,
+      "monthly_listeners": 1968,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851ec59dd5f2ec10a4c75218719",
+        "https://i.scdn.co/image/ab67616d00004851e41c78ac7fee3c6ce30a10a0",
+        "https://i.scdn.co/image/ab67616d00004851abbb9698b6cc5e12dac00d38",
+        "https://i.scdn.co/image/ab67616d00004851ea1e0f2e1554356cf1676fd5",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910e4befebdb94751e7d4256c1c",
+        "https://i.scdn.co/image/ab6761610000101fdaf6b1e523dee30e4452a3e9",
+        "https://i.scdn.co/image/ab67616d00001e02ec59dd5f2ec10a4c75218719",
+        "https://i.scdn.co/image/ab67616d00001e02e41c78ac7fee3c6ce30a10a0",
+        "https://i.scdn.co/image/ab67616d00001e02abbb9698b6cc5e12dac00d38",
+        "https://i.scdn.co/image/ab67616d00001e02ea1e0f2e1554356cf1676fd5"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/35YEsqFcXOJMpINlzZqM63"
+      },
+      "first_seen": "2026-09-21T15:25:03+00:00",
+      "last_seen": "2026-09-21T15:25:03+00:00"
+    },
+    "1yHj3nTuMqofPhYqWcpWq2": {
+      "id": "1yHj3nTuMqofPhYqWcpWq2",
+      "name": "LATACHE1.7",
+      "url": "https://open.spotify.com/intl-fr/artist/1yHj3nTuMqofPhYqWcpWq2",
+      "uri": "spotify:artist:1yHj3nTuMqofPhYqWcpWq2",
+      "followers": null,
+      "monthly_listeners": 1781140,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b1f88032329ee623adbed110f",
+        "https://i.scdn.co/image/ab67616d000048513d2119d0fc6d23cb75d3ec6d",
+        "https://i.scdn.co/image/ab67616d000048514b8ff902ce6685380cc5f41a",
+        "https://i.scdn.co/image/ab67616d000048515a9b84b467bd97c43f03616c",
+        "https://i.scdn.co/image/ab67616d0000485112d2753efca8c200532bb10f",
+        "https://i.scdn.co/image/ab67616d0000485108cc8111293df736e1c17a9a",
+        "https://i.scdn.co/image/ab67616d00001e023d2119d0fc6d23cb75d3ec6d",
+        "https://i.scdn.co/image/ab6761610000101f1f88032329ee623adbed110f",
+        "https://i.scdn.co/image/ab67616d00001e024b8ff902ce6685380cc5f41a",
+        "https://i.scdn.co/image/ab67616d00001e025a9b84b467bd97c43f03616c"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1yHj3nTuMqofPhYqWcpWq2"
+      },
+      "first_seen": "2026-09-21T15:28:21+00:00",
+      "last_seen": "2026-09-21T15:28:21+00:00"
+    },
+    "6DsZKD94XqgcDENMMouKfc": {
+      "id": "6DsZKD94XqgcDENMMouKfc",
+      "name": "alm",
+      "url": "https://open.spotify.com/intl-fr/artist/6DsZKD94XqgcDENMMouKfc",
+      "uri": "spotify:artist:6DsZKD94XqgcDENMMouKfc",
+      "followers": null,
+      "monthly_listeners": 896,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bd49fb9785af0190f3b5e629a",
+        "https://i.scdn.co/image/ab67616d000048517344e06afe8b29b09d6ef8bf",
+        "https://i.scdn.co/image/ab67616d0000485156681f9ef674a88ab444fc09",
+        "https://i.scdn.co/image/ab67616d00004851e4283df83f737fc1f2557b6f",
+        "https://i.scdn.co/image/ab67616d00004851e7f25100b0430dcd961eb49a",
+        "https://i.scdn.co/image/ab67616d00001e0256681f9ef674a88ab444fc09",
+        "https://i.scdn.co/image/ab67616d00001e027344e06afe8b29b09d6ef8bf",
+        "https://i.scdn.co/image/ab67616d00001e02e4283df83f737fc1f2557b6f",
+        "https://i.scdn.co/image/ab67616d00001e02e7f25100b0430dcd961eb49a",
+        "https://i.scdn.co/image/ab67616100005174c74071d569c6557fb6ffea6e"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6DsZKD94XqgcDENMMouKfc"
+      },
+      "first_seen": "2026-09-21T15:02:27+00:00",
+      "last_seen": "2026-09-21T15:02:27+00:00"
+    },
+    "3TlUEEJx4gaAcBooqfAFbE": {
+      "id": "3TlUEEJx4gaAcBooqfAFbE",
+      "name": "K2 Lahajaa",
+      "url": "https://open.spotify.com/intl-fr/artist/3TlUEEJx4gaAcBooqfAFbE",
+      "uri": "spotify:artist:3TlUEEJx4gaAcBooqfAFbE",
+      "followers": null,
+      "monthly_listeners": 3,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851664820942e763c5f5481bbec",
+        "https://i.scdn.co/image/ab67616d00004851acc14f5deb39e7632695ad5d",
+        "https://i.scdn.co/image/ab67616d00001e02acc14f5deb39e7632695ad5d",
+        "https://i.scdn.co/image/ab67616d00001e02664820942e763c5f5481bbec",
+        "https://i.scdn.co/image/ab6761610000939b7ace24d2eba68b627962411e",
+        "https://i.scdn.co/image/ab67616d00001e02d99458e9b1f8f27ca993cec6",
+        "https://i.scdn.co/image/ab6761610000517434f641b3c3993d4d6ef756a0",
+        "https://i.scdn.co/image/ab67616d00001e02f536da7d54d6c1a9b3942537",
+        "https://i.scdn.co/image/ab67616d00001e02cc5592f2b18aec32c7e4bca5",
+        "https://i.scdn.co/image/ab676161000051747ec8c34c22d27b4fffdead59"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3TlUEEJx4gaAcBooqfAFbE"
+      },
+      "first_seen": "2026-09-21T15:10:13+00:00",
+      "last_seen": "2026-09-21T15:10:13+00:00"
+    },
+    "3vQfHwSgA13qV4gGEuTCSN": {
+      "id": "3vQfHwSgA13qV4gGEuTCSN",
+      "name": "Steve Paxton",
+      "url": "https://open.spotify.com/intl-fr/artist/3vQfHwSgA13qV4gGEuTCSN",
+      "uri": "spotify:artist:3vQfHwSgA13qV4gGEuTCSN",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a303b0389951c345d6da1ce0c3",
+        "https://i.scdn.co/image/ab67616d0000485103b0389951c345d6da1ce0c3",
+        "https://i.scdn.co/image/ab67616d00001e0203b0389951c345d6da1ce0c3",
+        "https://i.scdn.co/image/ab67616d00001e022149656ddde561cc82abf821",
+        "https://i.scdn.co/image/ab67616d00001e0296b3bdbe00383cabc570ede4",
+        "https://i.scdn.co/image/ab67616d00001e0248eeddf5b5f45da11e8b74a0",
+        "https://i.scdn.co/image/ab6761610000517474b71e34fbebb6708f364ddb",
+        "https://i.scdn.co/image/ab67616d00001e022e3e987d324ad89e3232446c",
+        "https://i.scdn.co/image/ab67616d00001e0280ed0d9a929f7c9dd7ef032e",
+        "https://i.scdn.co/image/ab67616d00001e0279fdd47a10a3a19689750b90"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3vQfHwSgA13qV4gGEuTCSN"
+      },
+      "first_seen": "2026-09-21T15:34:35+00:00",
+      "last_seen": "2026-09-21T15:34:35+00:00"
+    },
+    "7hahC9DdtSVfD7CWCDP63E": {
+      "id": "7hahC9DdtSVfD7CWCDP63E",
+      "name": "James Merry and the Parts Supply",
+      "url": "https://open.spotify.com/intl-fr/artist/7hahC9DdtSVfD7CWCDP63E",
+      "uri": "spotify:artist:7hahC9DdtSVfD7CWCDP63E",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a342fe9be69f3f53363f35804a",
+        "https://i.scdn.co/image/ab67616d0000485142fe9be69f3f53363f35804a",
+        "https://i.scdn.co/image/ab67616d00001e0242fe9be69f3f53363f35804a",
+        "https://i.scdn.co/image/ab67616d00001e0256153c4ee4365d72ba14d521",
+        "https://i.scdn.co/image/ab676161000051745e3dd4632a3c4bc31c36f811",
+        "https://i.scdn.co/image/ab67616d00001e0296e8aa30a7aaca455ef421df",
+        "https://i.scdn.co/image/ab67616d00001e029d020576bf5320d11581e413",
+        "https://i.scdn.co/image/ab67616d00001e02e70fcbe7411a0ae0ddb2c526",
+        "https://i.scdn.co/image/ab67616d00001e02cea6b82fec59ca17f3b6218c",
+        "https://i.scdn.co/image/ab67616d00001e028a2b799ce452d97dbcef68c2"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7hahC9DdtSVfD7CWCDP63E"
+      },
+      "first_seen": "2026-09-21T15:35:19+00:00",
+      "last_seen": "2026-09-21T15:35:19+00:00"
+    },
+    "1jMiT1W9FMa3KZhNE63Qfa": {
+      "id": "1jMiT1W9FMa3KZhNE63Qfa",
+      "name": "The Scott Garcia Band",
+      "url": "https://open.spotify.com/intl-fr/artist/1jMiT1W9FMa3KZhNE63Qfa",
+      "uri": "spotify:artist:1jMiT1W9FMa3KZhNE63Qfa",
+      "followers": null,
+      "monthly_listeners": null,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a39db236e9dac9fe4101f50ea1",
+        "https://i.scdn.co/image/ab67616d000048519db236e9dac9fe4101f50ea1",
+        "https://i.scdn.co/image/ab67616d00001e029db236e9dac9fe4101f50ea1",
+        "https://i.scdn.co/image/ab67616d00001e02e1b2b4068337c02e2edbd5f2",
+        "https://i.scdn.co/image/ab67616d00001e02558be66424fbd8d6d88f222e",
+        "https://i.scdn.co/image/ab67616d00001e02bfc460d1402fd95636730ab1",
+        "https://i.scdn.co/image/ab67616d00001e0242fe9be69f3f53363f35804a",
+        "https://i.scdn.co/image/ab67616d00001e02397d7562fe0be3464aa44a86",
+        "https://i.scdn.co/image/ab67616d00001e022e3e987d324ad89e3232446c",
+        "https://i.scdn.co/image/ab67616d00001e02f46ffd8455dc17c5bddcbfe1"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1jMiT1W9FMa3KZhNE63Qfa"
+      },
+      "first_seen": "2026-09-21T15:36:04+00:00",
+      "last_seen": "2026-09-21T15:36:04+00:00"
+    },
+    "0mAJjviMhgG7mhBJ5Lua6I": {
+      "id": "0mAJjviMhgG7mhBJ5Lua6I",
+      "name": "Brison Bursey Band",
+      "url": "https://open.spotify.com/intl-fr/artist/0mAJjviMhgG7mhBJ5Lua6I",
+      "uri": "spotify:artist:0mAJjviMhgG7mhBJ5Lua6I",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b567a50e0b0e14c4a60a9e805",
+        "https://i.scdn.co/image/ab67616d000048513dc3cc8f859f9f3c0b09b40f",
+        "https://i.scdn.co/image/ab67616d00001e023dc3cc8f859f9f3c0b09b40f",
+        "https://i.scdn.co/image/ab676161000051747d363a9eaab096e07ad176b3",
+        "https://i.scdn.co/image/ab67616d00001e0243c85f553f7b1f3b3ba18b7a",
+        "https://i.scdn.co/image/ab67616d00001e0267cd2d522cdfb203563ad7b2",
+        "https://i.scdn.co/image/ab67616d00001e02feeca58b69406eb14f090acc",
+        "https://i.scdn.co/image/ab67616d00001e029601a6307eee7478a92d1de2",
+        "https://i.scdn.co/image/ab6761610000517426708979b52f2082f3ce46e2",
+        "https://i.scdn.co/image/ab67616d00001e02f67288033ae2aa20619dd7a7"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0mAJjviMhgG7mhBJ5Lua6I"
+      },
+      "first_seen": "2026-09-21T15:36:48+00:00",
+      "last_seen": "2026-09-21T15:36:48+00:00"
+    },
+    "5xPyN9eb3AxTy5K1F0odsV": {
+      "id": "5xPyN9eb3AxTy5K1F0odsV",
+      "name": "Shy Blakeman",
+      "url": "https://open.spotify.com/intl-fr/artist/5xPyN9eb3AxTy5K1F0odsV",
+      "uri": "spotify:artist:5xPyN9eb3AxTy5K1F0odsV",
+      "followers": null,
+      "monthly_listeners": 27,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3b857a15fb3922f83caa8ae26",
+        "https://i.scdn.co/image/ab67616d00004851b857a15fb3922f83caa8ae26",
+        "https://i.scdn.co/image/ab67616d00001e02b857a15fb3922f83caa8ae26",
+        "https://i.scdn.co/image/ab67616100005174dc2c920e628530eae35518d7",
+        "https://i.scdn.co/image/ab67616d00001e021fe4357c05d04ab45d33a2f2",
+        "https://i.scdn.co/image/ab67616d00001e02d7fd3adc8621d49b5b6d1fa0",
+        "https://i.scdn.co/image/ab67616d00001e020860eeff0e3a0d67f152efb3",
+        "https://i.scdn.co/image/ab67616d00001e02399b5c4b6af179d553b2abcc",
+        "https://i.scdn.co/image/ab67616d00001e028ea181011f5ab2cd3c4709e8",
+        "https://i.scdn.co/image/ab67616d00001e02fd7fdf14164b39432b93c8f9"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5xPyN9eb3AxTy5K1F0odsV"
+      },
+      "first_seen": "2026-09-21T15:37:33+00:00",
+      "last_seen": "2026-09-21T15:37:33+00:00"
+    },
+    "1Fmh6q1qDht702kK2WQUAX": {
+      "id": "1Fmh6q1qDht702kK2WQUAX",
+      "name": "County Line Drive",
+      "url": "https://open.spotify.com/intl-fr/artist/1Fmh6q1qDht702kK2WQUAX",
+      "uri": "spotify:artist:1Fmh6q1qDht702kK2WQUAX",
+      "followers": null,
+      "monthly_listeners": 10,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3359269d47985088bc7956430",
+        "https://i.scdn.co/image/ab67616d00004851359269d47985088bc7956430",
+        "https://i.scdn.co/image/ab67616d00001e02359269d47985088bc7956430",
+        "https://i.scdn.co/image/ab67616d00001e02275cc2eafa00b2a98b61a3a3",
+        "https://i.scdn.co/image/ab67616d00001e026b9378b4aa5a627f61921717",
+        "https://i.scdn.co/image/ab67616d00001e029d9eb64ac7681cf3c4314574",
+        "https://i.scdn.co/image/ab67616d00001e02ca0feecec9c1b950ad6f290f",
+        "https://i.scdn.co/image/ab67616100005174c0cbed53f45758e82ae8fe16",
+        "https://i.scdn.co/image/ab67616d00001e027a48dd587c918e00540ad508",
+        "https://i.scdn.co/image/ab67616d00001e023d5b467c1660a9ea8c7d470e"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1Fmh6q1qDht702kK2WQUAX"
+      },
+      "first_seen": "2026-09-21T15:38:17+00:00",
+      "last_seen": "2026-09-21T15:38:17+00:00"
+    },
+    "0vBdmtPTG4LjVNiVXvpCfW": {
+      "id": "0vBdmtPTG4LjVNiVXvpCfW",
+      "name": "JAYIR",
+      "url": "https://open.spotify.com/intl-fr/artist/0vBdmtPTG4LjVNiVXvpCfW",
+      "uri": "spotify:artist:0vBdmtPTG4LjVNiVXvpCfW",
+      "followers": null,
+      "monthly_listeners": 24,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a33f2a325471ca32dc850f0208",
+        "https://i.scdn.co/image/ab67616d00004851fd4c18692d8cbdc77475a3ac",
+        "https://i.scdn.co/image/ab67616d0000485135b2e84bb0b259212a243241",
+        "https://i.scdn.co/image/ab67616d00001e0235b2e84bb0b259212a243241",
+        "https://i.scdn.co/image/ab67616d00001e02fd4c18692d8cbdc77475a3ac",
+        "https://i.scdn.co/image/ab67616100005174884b2ab5767633d3dc98b54c",
+        "https://i.scdn.co/image/ab6761610000517486837359352ff82673afe245",
+        "https://i.scdn.co/image/ab6761610000517433f9caf5439af9d87dd29dfd",
+        "https://i.scdn.co/image/ab6761610000517493b9906a4763aa1d8476ded4",
+        "https://i.scdn.co/image/ab6761610000517493f3b537dfba68e5feccca19"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0vBdmtPTG4LjVNiVXvpCfW"
+      },
+      "first_seen": "2026-09-21T14:53:57+00:00",
+      "last_seen": "2026-09-21T14:53:57+00:00"
+    },
+    "4kFwAGNPQYDPM2h1FYtVCH": {
+      "id": "4kFwAGNPQYDPM2h1FYtVCH",
+      "name": "Carmyto",
+      "url": "https://open.spotify.com/intl-fr/artist/4kFwAGNPQYDPM2h1FYtVCH",
+      "uri": "spotify:artist:4kFwAGNPQYDPM2h1FYtVCH",
+      "followers": null,
+      "monthly_listeners": 119,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b82b221fdb0c3e5c7d32f1bc2",
+        "https://i.scdn.co/image/ab67616d000048512e1a44e0e6828fe3fec34f5c",
+        "https://i.scdn.co/image/ab67616d00004851ae0d2d9e42e1ea09e4e567e9",
+        "https://i.scdn.co/image/ab67616d0000485101b5577bf6869d507ab32319",
+        "https://image-cdn-ak.spotifycdn.com/image/ab676170000059102d8bb0d6990f6e20673e9259",
+        "https://i.scdn.co/image/ab6761610000101f82b221fdb0c3e5c7d32f1bc2",
+        "https://i.scdn.co/image/ab67616d00001e0201b5577bf6869d507ab32319",
+        "https://i.scdn.co/image/ab67616d00001e022e1a44e0e6828fe3fec34f5c",
+        "https://i.scdn.co/image/ab67616d00001e02ae0d2d9e42e1ea09e4e567e9",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c03b2d1ae9530498b07168398"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4kFwAGNPQYDPM2h1FYtVCH"
+      },
+      "first_seen": "2026-09-21T14:56:13+00:00",
+      "last_seen": "2026-09-21T14:56:13+00:00"
+    },
+    "6p67H18StGFUpcxK5KfULy": {
+      "id": "6p67H18StGFUpcxK5KfULy",
+      "name": "BVRMAN",
+      "url": "https://open.spotify.com/intl-fr/artist/6p67H18StGFUpcxK5KfULy",
+      "uri": "spotify:artist:6p67H18StGFUpcxK5KfULy",
+      "followers": null,
+      "monthly_listeners": 281,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a36a84062f4ac349ce6782ac91",
+        "https://i.scdn.co/image/ab67616d0000485183d99435d97550942304ff64",
+        "https://i.scdn.co/image/ab67616d00001e0283d99435d97550942304ff64",
+        "https://i.scdn.co/image/ab67616d00001e02454e3f29e1437afc8d644ecb",
+        "https://i.scdn.co/image/ab676161000051747be0a85403b1553dc314e006",
+        "https://i.scdn.co/image/ab676161000051748b46ff7b13d63ea26d810fe1",
+        "https://i.scdn.co/image/ab67616100005174c66b5c185a197d8ec40ce4a0",
+        "https://i.scdn.co/image/ab67616d00001e0286178e5e1b070a401cfc30c8",
+        "https://i.scdn.co/image/ab67616d00001e02ce673d165cd72ca3e9a1b227",
+        "https://i.scdn.co/image/ab6761610000517471ced07f95c51aeae1d4b8d6"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6p67H18StGFUpcxK5KfULy"
+      },
+      "first_seen": "2026-09-21T15:15:17+00:00",
+      "last_seen": "2026-09-21T15:15:17+00:00"
+    },
+    "1hYA1CqDR9TgS0tVPbrsLE": {
+      "id": "1hYA1CqDR9TgS0tVPbrsLE",
+      "name": "ICY'",
+      "url": "https://open.spotify.com/intl-fr/artist/1hYA1CqDR9TgS0tVPbrsLE",
+      "uri": "spotify:artist:1hYA1CqDR9TgS0tVPbrsLE",
+      "followers": null,
+      "monthly_listeners": 347,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b97011ce8227a850f84c49801",
+        "https://i.scdn.co/image/ab67616d000048517873cc571f62a7b6d8732563",
+        "https://i.scdn.co/image/ab67616d00004851c588663f5159db37837e8c2c",
+        "https://i.scdn.co/image/ab67616d00004851359105bb0eac8b2a77cbc002",
+        "https://i.scdn.co/image/ab67616d00004851796fa0bf63f13213d1687f3d",
+        "https://i.scdn.co/image/ab67616d00004851a0af97db1f8193de89cb6646",
+        "https://i.scdn.co/image/ab67616d00001e02c588663f5159db37837e8c2c",
+        "https://i.scdn.co/image/ab6761610000101f97011ce8227a850f84c49801",
+        "https://i.scdn.co/image/ab67616d00001e027873cc571f62a7b6d8732563",
+        "https://i.scdn.co/image/ab67616d00001e02359105bb0eac8b2a77cbc002"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1hYA1CqDR9TgS0tVPbrsLE"
+      },
+      "first_seen": "2026-09-21T14:54:38+00:00",
+      "last_seen": "2026-09-21T14:54:38+00:00"
+    },
+    "3TtJmo58YLBYGRcXf9uHC8": {
+      "id": "3TtJmo58YLBYGRcXf9uHC8",
+      "name": "Sitta",
+      "url": "https://open.spotify.com/intl-fr/artist/3TtJmo58YLBYGRcXf9uHC8",
+      "uri": "spotify:artist:3TtJmo58YLBYGRcXf9uHC8",
+      "followers": null,
+      "monthly_listeners": 3,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3d03f6ff404b947a1581ab670",
+        "https://i.scdn.co/image/ab67616d00004851d03f6ff404b947a1581ab670",
+        "https://i.scdn.co/image/ab67616d00001e02d03f6ff404b947a1581ab670",
+        "https://i.scdn.co/image/ab67616d00001e02b29cffaedb22f113b4b9e748",
+        "https://i.scdn.co/image/ab676161000051745065559e54d3213d6e63153a",
+        "https://i.scdn.co/image/ab676161000051749d2c954c8606448892aa7e20",
+        "https://i.scdn.co/image/ab67616100005174381295ee418a7d541ff39ece",
+        "https://i.scdn.co/image/ab67616d00001e0282d65874de02e174c33f4f8c",
+        "https://i.scdn.co/image/ab6761610000517442aa1ec3c947ca2e08d5605c",
+        "https://i.scdn.co/image/ab6761610000517474b260fe55375c195a02b0e8"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3TtJmo58YLBYGRcXf9uHC8"
+      },
+      "first_seen": "2026-09-21T15:08:38+00:00",
+      "last_seen": "2026-09-21T15:08:38+00:00"
+    },
+    "6kffqE242jTt15r7J1o1qc": {
+      "id": "6kffqE242jTt15r7J1o1qc",
+      "name": "Moraislr",
+      "url": "https://open.spotify.com/intl-fr/artist/6kffqE242jTt15r7J1o1qc",
+      "uri": "spotify:artist:6kffqE242jTt15r7J1o1qc",
+      "followers": null,
+      "monthly_listeners": 74,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a310ec453185c26a69948d38f0",
+        "https://i.scdn.co/image/ab67616d0000485110ec453185c26a69948d38f0",
+        "https://i.scdn.co/image/ab67616d00001e0210ec453185c26a69948d38f0",
+        "https://i.scdn.co/image/ab67616d00001e0292c886f3f417d9ca1c30e91b",
+        "https://i.scdn.co/image/ab67616d00001e02dc7cea5cf30d6b686ef9c06b",
+        "https://i.scdn.co/image/ab676161000051746561cc09df2ec7eefaaceb81",
+        "https://i.scdn.co/image/ab6761610000517484b202cdab0766041a3b55b3",
+        "https://i.scdn.co/image/ab67616100005174d0cfb3f76a626137b2909876",
+        "https://i.scdn.co/image/ab6761610000517449ff613905287537797ca086",
+        "https://i.scdn.co/image/ab676161000051740eab8a011fbc7cbecc03217f"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6kffqE242jTt15r7J1o1qc"
+      },
+      "first_seen": "2026-09-21T15:03:10+00:00",
+      "last_seen": "2026-09-21T15:03:10+00:00"
+    },
+    "4CfXqRfRfmTBKtbHEIX6AF": {
+      "id": "4CfXqRfRfmTBKtbHEIX6AF",
+      "name": "T-DY",
+      "url": "https://open.spotify.com/intl-fr/artist/4CfXqRfRfmTBKtbHEIX6AF",
+      "uri": "spotify:artist:4CfXqRfRfmTBKtbHEIX6AF",
+      "followers": null,
+      "monthly_listeners": 756,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a33525ad8684b4a84755d192bd",
+        "https://i.scdn.co/image/ab67616d000048513525ad8684b4a84755d192bd",
+        "https://i.scdn.co/image/ab67616d00004851ff2336a96bdaa48ec9f286f1",
+        "https://i.scdn.co/image/ab67616d000048511855116d3282f3eb5ec6abb0",
+        "https://i.scdn.co/image/ab67616d00001e023525ad8684b4a84755d192bd",
+        "https://i.scdn.co/image/ab67616d00001e021855116d3282f3eb5ec6abb0",
+        "https://i.scdn.co/image/ab67616d00001e02ff2336a96bdaa48ec9f286f1",
+        "https://i.scdn.co/image/ab67616100005174934726c9d7bd0a65406e6977",
+        "https://i.scdn.co/image/ab67616d00001e02aefe9ea2d79a06b12878e8c6",
+        "https://i.scdn.co/image/ab67616d00001e021cb90d4a9948eaf4ac2aaf7e"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4CfXqRfRfmTBKtbHEIX6AF"
+      },
+      "first_seen": "2026-09-21T15:04:13+00:00",
+      "last_seen": "2026-09-21T15:04:13+00:00"
+    },
+    "1muKymeehiiPtLInl7svk5": {
+      "id": "1muKymeehiiPtLInl7svk5",
+      "name": "Faayce",
+      "url": "https://open.spotify.com/intl-fr/artist/1muKymeehiiPtLInl7svk5",
+      "uri": "spotify:artist:1muKymeehiiPtLInl7svk5",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a322f9fba97f7148732a8daa63",
+        "https://i.scdn.co/image/ab67616d0000485122f9fba97f7148732a8daa63",
+        "https://i.scdn.co/image/ab67616d00001e0222f9fba97f7148732a8daa63",
+        "https://i.scdn.co/image/ab6761610000517449ff613905287537797ca086",
+        "https://i.scdn.co/image/ab67616100005174685997dac35139dd4f27a680",
+        "https://i.scdn.co/image/ab67616d00001e02c8420abad1c9b0c95367a090",
+        "https://i.scdn.co/image/ab676161000051745865ed001156b12f04aae5f7",
+        "https://i.scdn.co/image/ab6761610000517428a5692d0b05bc569cba67f1",
+        "https://i.scdn.co/image/ab676161000051740af60e09b997088e7ade9cfb",
+        "https://i.scdn.co/image/ab67616100005174666d833f75de12826a0e8be1"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1muKymeehiiPtLInl7svk5"
+      },
+      "first_seen": "2026-09-21T15:21:36+00:00",
+      "last_seen": "2026-09-21T15:21:36+00:00"
+    },
+    "3WMFncjSL533LPU2or6YFu": {
+      "id": "3WMFncjSL533LPU2or6YFu",
+      "name": "K2L",
+      "url": "https://open.spotify.com/intl-fr/artist/3WMFncjSL533LPU2or6YFu",
+      "uri": "spotify:artist:3WMFncjSL533LPU2or6YFu",
+      "followers": null,
+      "monthly_listeners": 50,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a315cfff5452eb9142b484739a",
+        "https://i.scdn.co/image/ab67616d0000485115cfff5452eb9142b484739a",
+        "https://i.scdn.co/image/ab67616d00004851102f322993ac0af614365469",
+        "https://i.scdn.co/image/ab67616d00001e0215cfff5452eb9142b484739a",
+        "https://i.scdn.co/image/ab67616d00001e02102f322993ac0af614365469",
+        "https://i.scdn.co/image/ab6761610000517449ff613905287537797ca086",
+        "https://i.scdn.co/image/ab676161000051745127b7cbc2562e3424588872",
+        "https://i.scdn.co/image/ab67616d00001e021f534adf897d7e38302ef4a1",
+        "https://i.scdn.co/image/ab6761610000517406662a95aa53b3f8589d6869",
+        "https://i.scdn.co/image/ab67616d00001e0285e7c07571b97be239f019cf"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3WMFncjSL533LPU2or6YFu"
+      },
+      "first_seen": "2026-09-21T14:49:27+00:00",
+      "last_seen": "2026-09-21T14:49:27+00:00"
+    },
+    "0yt0ZS7K2CGKcO5PA0BntC": {
+      "id": "0yt0ZS7K2CGKcO5PA0BntC",
+      "name": "Gertch's Folly",
+      "url": "https://open.spotify.com/intl-fr/artist/0yt0ZS7K2CGKcO5PA0BntC",
+      "uri": "spotify:artist:0yt0ZS7K2CGKcO5PA0BntC",
+      "followers": null,
+      "monthly_listeners": 4,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3f37e4126f1a66743e67c6600",
+        "https://i.scdn.co/image/ab67616d00004851f37e4126f1a66743e67c6600",
+        "https://i.scdn.co/image/ab67616d00001e02f37e4126f1a66743e67c6600",
+        "https://i.scdn.co/image/ab67616d00001e02e7dde5c599f1aec6dffafd2d",
+        "https://i.scdn.co/image/ab67616d00001e02215fe99fa58e45a240e6f0d9",
+        "https://i.scdn.co/image/ab67616d00001e02dd7f02d56b802d19d739e570",
+        "https://i.scdn.co/image/ab67616d00001e02d3698d8f397849cf433ef5e2",
+        "https://i.scdn.co/image/ab676161000051742fae6c43baba236d0aa46fcb",
+        "https://i.scdn.co/image/ab67616d00001e02929e01babffe4e220dceeb31",
+        "https://i.scdn.co/image/ab67616d00001e02be5958f35cf206cf3efa3ac5"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0yt0ZS7K2CGKcO5PA0BntC"
+      },
+      "first_seen": "2026-09-21T14:58:03+00:00",
+      "last_seen": "2026-09-21T14:58:03+00:00"
+    },
+    "7KmFpyYNU0YDHtkTNvQZDq": {
+      "id": "7KmFpyYNU0YDHtkTNvQZDq",
+      "name": "KDZ 06",
+      "url": "https://open.spotify.com/intl-fr/artist/7KmFpyYNU0YDHtkTNvQZDq",
+      "uri": "spotify:artist:7KmFpyYNU0YDHtkTNvQZDq",
+      "followers": null,
+      "monthly_listeners": 6235,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b4743eba1d4f626144cb3da6b",
+        "https://i.scdn.co/image/ab67616d0000485104f0ece11ab6a2809a14709f",
+        "https://i.scdn.co/image/ab67616d000048517f645f4863ee8221030bed6e",
+        "https://i.scdn.co/image/ab67616d0000485169ebd6257ae30991128633c0",
+        "https://i.scdn.co/image/ab67616d0000485141e7f2b43abaefb9d0367fb9",
+        "https://i.scdn.co/image/ab67616d00004851622cd8269ed642d62d3c906b",
+        "https://i.scdn.co/image/ab67616d00001e02622cd8269ed642d62d3c906b",
+        "https://i.scdn.co/image/ab67616d00001e0204f0ece11ab6a2809a14709f",
+        "https://i.scdn.co/image/ab67616d00001e0241e7f2b43abaefb9d0367fb9",
+        "https://i.scdn.co/image/ab67616d00001e027f645f4863ee8221030bed6e"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7KmFpyYNU0YDHtkTNvQZDq"
+      },
+      "first_seen": "2026-09-21T15:08:03+00:00",
+      "last_seen": "2026-09-21T15:08:03+00:00"
+    },
+    "1ZZ7DmnVxs5PcYNl96CfhJ": {
+      "id": "1ZZ7DmnVxs5PcYNl96CfhJ",
+      "name": "P¥RA",
+      "url": "https://open.spotify.com/intl-fr/artist/1ZZ7DmnVxs5PcYNl96CfhJ",
+      "uri": "spotify:artist:1ZZ7DmnVxs5PcYNl96CfhJ",
+      "followers": null,
+      "monthly_listeners": 1370,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b12edb788f29287933942d997",
+        "https://i.scdn.co/image/ab67616d0000485135819a812122fb7ed027a73d",
+        "https://i.scdn.co/image/ab67616d00004851e2458aa7481d943e71abd65d",
+        "https://i.scdn.co/image/ab67616d000048517bfd31e053d46c016ae82771",
+        "https://i.scdn.co/image/ab67616d00004851edf6ea684e6209ef80c3bdd1",
+        "https://i.scdn.co/image/ab67616d00001e0235819a812122fb7ed027a73d",
+        "https://i.scdn.co/image/ab67616d00001e02e2458aa7481d943e71abd65d",
+        "https://i.scdn.co/image/ab67616d00001e027bfd31e053d46c016ae82771",
+        "https://i.scdn.co/image/ab67616d00001e02474244ad75114aae4e103373",
+        "https://i.scdn.co/image/ab67616d00001e02edf6ea684e6209ef80c3bdd1"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1ZZ7DmnVxs5PcYNl96CfhJ"
+      },
+      "first_seen": "2026-09-21T15:18:57+00:00",
+      "last_seen": "2026-09-21T15:18:57+00:00"
+    },
+    "4OF1F0Et23RrZSdJyXENhi": {
+      "id": "4OF1F0Et23RrZSdJyXENhi",
+      "name": "Quest 4 Fame",
+      "url": "https://open.spotify.com/intl-fr/artist/4OF1F0Et23RrZSdJyXENhi",
+      "uri": "spotify:artist:4OF1F0Et23RrZSdJyXENhi",
+      "followers": null,
+      "monthly_listeners": 23,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d00004851bd732c83f1e0f235e63eb138",
+        "https://i.scdn.co/image/ab67616d000048516ce4dd3d351885c99a4a0498",
+        "https://i.scdn.co/image/ab67616d000048512ad02dd98cab91069818b116",
+        "https://i.scdn.co/image/ab67616d00004851fcd4def83e82466e70eada31",
+        "https://i.scdn.co/image/ab67616d000048514bf5f7b8842b783a2528472c",
+        "https://i.scdn.co/image/ab67616d00001e024bf5f7b8842b783a2528472c",
+        "https://i.scdn.co/image/ab67616d00001e02bd732c83f1e0f235e63eb138",
+        "https://i.scdn.co/image/ab67616d00001e022ad02dd98cab91069818b116",
+        "https://i.scdn.co/image/ab67616d00001e02fcd4def83e82466e70eada31",
+        "https://i.scdn.co/image/ab67616d00001e026ce4dd3d351885c99a4a0498"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/4OF1F0Et23RrZSdJyXENhi"
+      },
+      "first_seen": "2026-09-21T15:34:45+00:00",
+      "last_seen": "2026-09-21T15:34:45+00:00"
+    },
+    "5LJ8UuvCSv7Zl0tjmDuPSd": {
+      "id": "5LJ8UuvCSv7Zl0tjmDuPSd",
+      "name": "Lowther",
+      "url": "https://open.spotify.com/intl-fr/artist/5LJ8UuvCSv7Zl0tjmDuPSd",
+      "uri": "spotify:artist:5LJ8UuvCSv7Zl0tjmDuPSd",
+      "followers": null,
+      "monthly_listeners": 7,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b1b8b1a0bf9a5dc7057022e7a",
+        "https://i.scdn.co/image/ab67616d000048516935d1262d6cc88c46172090",
+        "https://i.scdn.co/image/ab67616d00001e026935d1262d6cc88c46172090",
+        "https://i.scdn.co/image/ab6761610000517437fd84ea83b0ab478b81a51b",
+        "https://i.scdn.co/image/ab6761610000517454a02f805809603ef914c78f",
+        "https://i.scdn.co/image/ab67616d00001e0213de9ab9df46f7d6a5b262c7",
+        "https://i.scdn.co/image/ab676161000051743e3c7d46406339b777a84334",
+        "https://i.scdn.co/image/ab676161000051742a5ad0157f1a175b0f60d42d",
+        "https://i.scdn.co/image/ab67616d00001e0228b17bc9c924e974b38dd733",
+        "https://i.scdn.co/image/ab67616100005174a1a54c841f9c522a4f35b6a5"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5LJ8UuvCSv7Zl0tjmDuPSd"
+      },
+      "first_seen": "2026-09-21T14:49:41+00:00",
+      "last_seen": "2026-09-21T14:49:41+00:00"
+    },
+    "1Ll1m8hEvw5bmWsJFwDb5U": {
+      "id": "1Ll1m8hEvw5bmWsJFwDb5U",
+      "name": "Lasko",
+      "url": "https://open.spotify.com/intl-fr/artist/1Ll1m8hEvw5bmWsJFwDb5U",
+      "uri": "spotify:artist:1Ll1m8hEvw5bmWsJFwDb5U",
+      "followers": null,
+      "monthly_listeners": 143,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b2ed937a6f8518db65c2c33af",
+        "https://i.scdn.co/image/ab67616d00004851268b469a05800338bcd5fa81",
+        "https://image-cdn-fa.spotifycdn.com/image/ab676170000059101f58048dfaf7f1c7baa92c86",
+        "https://i.scdn.co/image/ab6761610000101f2ed937a6f8518db65c2c33af",
+        "https://i.scdn.co/image/ab67616d00001e02268b469a05800338bcd5fa81",
+        "https://i.scdn.co/image/ab67616100005174f9ad43c1a2371771efc6613e",
+        "https://i.scdn.co/image/ab6761610000517468cca4e7cfa5c0180e332291",
+        "https://i.scdn.co/image/ab67616100005174a9dbe36eef2d23b2050be0cf",
+        "https://i.scdn.co/image/ab67616d00001e02fd050480aea8765e899eb9af",
+        "https://i.scdn.co/image/ab67616100005174b8c0dc7b77c9e85e3d04cace"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/1Ll1m8hEvw5bmWsJFwDb5U"
+      },
+      "first_seen": "2026-09-21T15:25:03+00:00",
+      "last_seen": "2026-09-21T15:25:03+00:00"
+    },
+    "7Mqr6VSP1s5sW1kDUBBH2t": {
+      "id": "7Mqr6VSP1s5sW1kDUBBH2t",
+      "name": "LECRACK",
+      "url": "https://open.spotify.com/intl-fr/artist/7Mqr6VSP1s5sW1kDUBBH2t",
+      "uri": "spotify:artist:7Mqr6VSP1s5sW1kDUBBH2t",
+      "followers": null,
+      "monthly_listeners": 174,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b8c65b19ab183bf779abb34ce",
+        "https://i.scdn.co/image/ab67616d0000485187dafd4c650e7a6259fd1153",
+        "https://i.scdn.co/image/ab67616d00001e0287dafd4c650e7a6259fd1153",
+        "https://i.scdn.co/image/ab67616100005174a7e89d94c5f2c2d0e4142628",
+        "https://i.scdn.co/image/ab67616100005174dd1798be249e110a441872b1",
+        "https://i.scdn.co/image/ab67616d00001e0277076358eec9c3089e003a74",
+        "https://i.scdn.co/image/ab67616d00001e02c81e4a06b01a3df105c50fa5",
+        "https://i.scdn.co/image/ab67616d00001e02a01847fade3d24a241c5323d",
+        "https://i.scdn.co/image/ab676161000051745ef7a3fde3d37b4f8906b19f",
+        "https://i.scdn.co/image/ab67616d00001e0277e7cf4fdf89d09f1e252ab5"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/7Mqr6VSP1s5sW1kDUBBH2t"
+      },
+      "first_seen": "2026-09-21T15:07:36+00:00",
+      "last_seen": "2026-09-21T15:07:36+00:00"
+    },
+    "5ZpmceexnZzIXkPOrlNjDJ": {
+      "id": "5ZpmceexnZzIXkPOrlNjDJ",
+      "name": "KFTA",
+      "url": "https://open.spotify.com/intl-fr/artist/5ZpmceexnZzIXkPOrlNjDJ",
+      "uri": "spotify:artist:5ZpmceexnZzIXkPOrlNjDJ",
+      "followers": null,
+      "monthly_listeners": 4114,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b8320bd182323af432bc0da6f",
+        "https://i.scdn.co/image/ab67616d0000485163c17e6cbb838bc22e6321a3",
+        "https://i.scdn.co/image/ab67616d0000485175cfd546520da8286c689208",
+        "https://i.scdn.co/image/ab67616d00004851a3e3a18cb6f50aaa49ed683c",
+        "https://i.scdn.co/image/ab67616d00004851bc10a6a2906117554df4da3f",
+        "https://i.scdn.co/image/ab67616d0000485178cf8019442564f3eea39e8f",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67617000005910c512a11190edbf6cbcc16c38",
+        "https://i.scdn.co/image/ab6761610000101f8320bd182323af432bc0da6f",
+        "https://i.scdn.co/image/ab67616d00001e0278cf8019442564f3eea39e8f",
+        "https://i.scdn.co/image/ab67616d00001e0263c17e6cbb838bc22e6321a3"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5ZpmceexnZzIXkPOrlNjDJ"
+      },
+      "first_seen": "2026-09-21T15:09:00+00:00",
+      "last_seen": "2026-09-21T15:09:00+00:00"
+    },
+    "2m51Ei3m25jNOLuAWWpOZ1": {
+      "id": "2m51Ei3m25jNOLuAWWpOZ1",
+      "name": "Moha",
+      "url": "https://open.spotify.com/intl-fr/artist/2m51Ei3m25jNOLuAWWpOZ1",
+      "uri": "spotify:artist:2m51Ei3m25jNOLuAWWpOZ1",
+      "followers": null,
+      "monthly_listeners": 313,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a30eab6688c80a0ee5d4f0ba83",
+        "https://i.scdn.co/image/ab67616d000048510eab6688c80a0ee5d4f0ba83",
+        "https://i.scdn.co/image/ab67616d00001e020eab6688c80a0ee5d4f0ba83",
+        "https://i.scdn.co/image/ab67616d00001e02eb9de0c273bce3a08c0e6543",
+        "https://i.scdn.co/image/ab67616100005174d1bcb6305466fccd43427e89",
+        "https://i.scdn.co/image/ab67616d00001e025baf0f36befc7c12ce43b925",
+        "https://i.scdn.co/image/ab67616100005174163eab88f4d9110d5398c830",
+        "https://i.scdn.co/image/ab67616100005174ceaaba6fab5803d8334fd611",
+        "https://i.scdn.co/image/ab67616100005174ea425f4d83f11921f993b45c",
+        "https://i.scdn.co/image/ab6761610000517452f57b86ae328f97e2422da8"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/2m51Ei3m25jNOLuAWWpOZ1"
+      },
+      "first_seen": "2026-09-21T15:11:20+00:00",
+      "last_seen": "2026-09-21T15:11:20+00:00"
+    },
+    "3PbEVi2WjhDfvhiYi5TyYT": {
+      "id": "3PbEVi2WjhDfvhiYi5TyYT",
+      "name": "Michael Drew",
+      "url": "https://open.spotify.com/intl-fr/artist/3PbEVi2WjhDfvhiYi5TyYT",
+      "uri": "spotify:artist:3PbEVi2WjhDfvhiYi5TyYT",
+      "followers": null,
+      "monthly_listeners": 3,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939b7d363a9eaab096e07ad176b3",
+        "https://i.scdn.co/image/ab67616100005174567a50e0b0e14c4a60a9e805",
+        "https://i.scdn.co/image/ab67616d00001e0243c85f553f7b1f3b3ba18b7a",
+        "https://i.scdn.co/image/ab67616d00001e02d103443df49cc92665b4c111",
+        "https://i.scdn.co/image/ab67616d00001e029601a6307eee7478a92d1de2",
+        "https://i.scdn.co/image/ab67616d00001e02d72d95308d0c96cb448c590c",
+        "https://i.scdn.co/image/ab67616d00001e020d241e7a2251bbcf8ed46a5a",
+        "https://i.scdn.co/image/ab67616d00001e029afa5a4cae5e65bdef190b47",
+        "https://i.scdn.co/image/ab67616d00001e02f67288033ae2aa20619dd7a7",
+        "https://i.scdn.co/image/ab67616d00001e0267cd2d522cdfb203563ad7b2"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/3PbEVi2WjhDfvhiYi5TyYT"
+      },
+      "first_seen": "2026-09-21T15:35:57+00:00",
+      "last_seen": "2026-09-21T15:35:57+00:00"
+    },
+    "5OrKxLsVj9HJrLI2QWrFTz": {
+      "id": "5OrKxLsVj9HJrLI2QWrFTz",
+      "name": "Meliora",
+      "url": "https://open.spotify.com/intl-fr/artist/5OrKxLsVj9HJrLI2QWrFTz",
+      "uri": "spotify:artist:5OrKxLsVj9HJrLI2QWrFTz",
+      "followers": null,
+      "monthly_listeners": 7,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a31f9076d6cb2845fa55aebc2e",
+        "https://i.scdn.co/image/ab67616d000048511f9076d6cb2845fa55aebc2e",
+        "https://i.scdn.co/image/ab67616d00001e021f9076d6cb2845fa55aebc2e",
+        "https://i.scdn.co/image/ab67616d00001e0252c4d0bc1651a9aa83ce40d6",
+        "https://i.scdn.co/image/ab67616d00001e02d4ff010050f4c9e34911b3a3",
+        "https://i.scdn.co/image/ab6761610000517459eac4e1932d740b277c98a1",
+        "https://i.scdn.co/image/ab67616100005174c469444ec378c69eea30e513",
+        "https://i.scdn.co/image/ab67616d00001e02d2806583c690fb7b6afcb96c",
+        "https://i.scdn.co/image/ab67616d00001e02fe44cd95d1e1eaf565afd8d9",
+        "https://i.scdn.co/image/ab67616d00001e02672f76836ef891d274f954ac"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5OrKxLsVj9HJrLI2QWrFTz"
+      },
+      "first_seen": "2026-09-21T15:36:42+00:00",
+      "last_seen": "2026-09-21T15:36:42+00:00"
+    },
+    "261wKeKyrkAq9ewvLPx7nW": {
+      "id": "261wKeKyrkAq9ewvLPx7nW",
+      "name": "Logan Rawson",
+      "url": "https://open.spotify.com/intl-fr/artist/261wKeKyrkAq9ewvLPx7nW",
+      "uri": "spotify:artist:261wKeKyrkAq9ewvLPx7nW",
+      "followers": null,
+      "monthly_listeners": 7,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3bffacbe3d2bc971a7ce1f260",
+        "https://i.scdn.co/image/ab67616d00004851bffacbe3d2bc971a7ce1f260",
+        "https://i.scdn.co/image/ab67616d0000485199a95d7022514c17aa6fd8e7",
+        "https://i.scdn.co/image/ab67616d00001e0299a95d7022514c17aa6fd8e7",
+        "https://i.scdn.co/image/ab67616d00001e02bffacbe3d2bc971a7ce1f260",
+        "https://i.scdn.co/image/ab67616d00001e0238f76a030b4ebe49ffa09e22",
+        "https://i.scdn.co/image/ab67616d00001e024075acc48aa061d3addbee18",
+        "https://i.scdn.co/image/ab676161000051748104cdcf7cccf260b884325e",
+        "https://i.scdn.co/image/ab67616d00001e02a0d321211a8b5d6f6362881e",
+        "https://i.scdn.co/image/ab67616d00001e02f8b4c2af91396d06a7afe569"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/261wKeKyrkAq9ewvLPx7nW"
+      },
+      "first_seen": "2026-09-21T15:37:28+00:00",
+      "last_seen": "2026-09-21T15:37:28+00:00"
+    },
+    "5zyAUP45RWaLlalIoLVwd3": {
+      "id": "5zyAUP45RWaLlalIoLVwd3",
+      "name": "Freezer",
+      "url": "https://open.spotify.com/intl-fr/artist/5zyAUP45RWaLlalIoLVwd3",
+      "uri": "spotify:artist:5zyAUP45RWaLlalIoLVwd3",
+      "followers": null,
+      "monthly_listeners": 144,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3bfc12bb3505abe6eba02fbe6",
+        "https://i.scdn.co/image/ab67616d00004851bfc12bb3505abe6eba02fbe6",
+        "https://i.scdn.co/image/ab67616d00001e02bfc12bb3505abe6eba02fbe6",
+        "https://i.scdn.co/image/ab67616100005174d49fb9785af0190f3b5e629a",
+        "https://i.scdn.co/image/ab67616d00001e025f45a38560118915efa19a97",
+        "https://i.scdn.co/image/ab676161000051747dc8da7bda66675dd58cd9bf",
+        "https://i.scdn.co/image/ab67616100005174e6442fc62f4b6b836ea74f94",
+        "https://i.scdn.co/image/ab67616100005174ffbe0f849fdb05314ecea428",
+        "https://i.scdn.co/image/ab67616100005174495fedb6c6c3c2738f29f461",
+        "https://i.scdn.co/image/ab67616d00001e02bcbeb91f9d85fb14a6461a5b"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/5zyAUP45RWaLlalIoLVwd3"
+      },
+      "first_seen": "2026-09-21T14:46:59+00:00",
+      "last_seen": "2026-09-21T14:46:59+00:00"
+    },
+    "0rByw0gTjs0yfIdy1NkT6R": {
+      "id": "0rByw0gTjs0yfIdy1NkT6R",
+      "name": "5sjester",
+      "url": "https://open.spotify.com/intl-fr/artist/0rByw0gTjs0yfIdy1NkT6R",
+      "uri": "spotify:artist:0rByw0gTjs0yfIdy1NkT6R",
+      "followers": null,
+      "monthly_listeners": 62,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a30f62556d9c096e2b42d233f0",
+        "https://i.scdn.co/image/ab67616d000048510f62556d9c096e2b42d233f0",
+        "https://i.scdn.co/image/ab67616d00001e020f62556d9c096e2b42d233f0",
+        "https://i.scdn.co/image/ab67616d0000e1a3af89dd8f28240cadd5e50f0a",
+        "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c7ae2a863d9b38ce436cc0811",
+        "https://i.scdn.co/image/ab676161000051748f7ddc0ad5b730cbf948719f",
+        "https://i.scdn.co/image/ab67616100005174948f0a3ec8eca1e5e0042e44",
+        "https://i.scdn.co/image/ab67616d00001e02cbb6dd2febd1150a8a33199d",
+        "https://i.scdn.co/image/ab67616100005174e0b7b32a114fff5e5f0fc81a",
+        "https://i.scdn.co/image/ab67616100005174ab732ad409104d1a754e3cda"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/0rByw0gTjs0yfIdy1NkT6R"
+      },
+      "first_seen": "2026-09-21T14:56:33+00:00",
+      "last_seen": "2026-09-21T14:56:33+00:00"
+    },
+    "6r37jFkEJtZxQJjPcvLPlf": {
+      "id": "6r37jFkEJtZxQJjPcvLPlf",
+      "name": "Leuji 19",
+      "url": "https://open.spotify.com/intl-fr/artist/6r37jFkEJtZxQJjPcvLPlf",
+      "uri": "spotify:artist:6r37jFkEJtZxQJjPcvLPlf",
+      "followers": null,
+      "monthly_listeners": 194,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab67616d0000e1a3a3916ef41a2ed7f82123c2f5",
+        "https://i.scdn.co/image/ab67616d00004851a5e0924aa87b91afcd331dd3",
+        "https://i.scdn.co/image/ab67616d00001e02a5e0924aa87b91afcd331dd3",
+        "https://i.scdn.co/image/ab67616d0000e1a3a5e0924aa87b91afcd331dd3",
+        "https://i.scdn.co/image/ab67616100005174f6b4ea4b4d214b584fa0ba4e",
+        "https://i.scdn.co/image/ab67616100005174f0562f992743ae9fbd1904c0",
+        "https://i.scdn.co/image/ab67616d00001e0263065fb899226570a072a8be",
+        "https://i.scdn.co/image/ab67616d00001e0290011a421e8c8a7f8502b4d5",
+        "https://i.scdn.co/image/ab6761610000517400546118f9486a7170783a4a",
+        "https://i.scdn.co/image/ab67616d00001e028672fbc24f2ef426c3f8042b"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/6r37jFkEJtZxQJjPcvLPlf"
+      },
+      "first_seen": "2026-09-21T14:57:56+00:00",
+      "last_seen": "2026-09-21T14:57:56+00:00"
+    },
+    "76uCz4lTQpOaQ3xfcsFE3w": {
+      "id": "76uCz4lTQpOaQ3xfcsFE3w",
+      "name": "Nxs s.a.b",
+      "url": "https://open.spotify.com/intl-fr/artist/76uCz4lTQpOaQ3xfcsFE3w",
+      "uri": "spotify:artist:76uCz4lTQpOaQ3xfcsFE3w",
+      "followers": null,
+      "monthly_listeners": 58,
+      "popularity": null,
+      "genres": [],
+      "images": [
+        "https://i.scdn.co/image/ab6761610000939bd94f929c840066998d8a084c",
+        "https://i.scdn.co/image/ab67616d000048516c3168aa278bf93a3e2dcae2",
+        "https://i.scdn.co/image/ab67616d00001e026c3168aa278bf93a3e2dcae2",
+        "https://i.scdn.co/image/ab6761610000517446c6e2606cd8ad648c8d5f36",
+        "https://i.scdn.co/image/ab67616d00001e02269bebd4ffd149f65f023cab",
+        "https://i.scdn.co/image/ab6761610000517496b6fdc119830abb8f1212a8",
+        "https://i.scdn.co/image/ab67616d00001e02401ba26e44ac3f7f63a020ec",
+        "https://i.scdn.co/image/ab67616d00001e02a354b6b51b37e7f5a1d41003",
+        "https://i.scdn.co/image/ab67616100005174274154f45970b45aa2c4d163",
+        "https://i.scdn.co/image/ab67616d00001e02f584c5f1c2f60af236979fb9"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/intl-fr/artist/76uCz4lTQpOaQ3xfcsFE3w"
+      },
+      "first_seen": "2026-09-21T15:18:35+00:00",
+      "last_seen": "2026-09-21T15:18:35+00:00"
     }
   }
 }
