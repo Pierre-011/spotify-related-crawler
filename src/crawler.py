@@ -50,7 +50,7 @@ BASE = "https://open.spotify.com"
 MAX_SECONDS = int(
     os.getenv(
         "CRAWLER_MAX_SECONDS",
-        "3600"
+        "3000"
     )
 )
 
