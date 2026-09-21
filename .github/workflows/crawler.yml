@@ -3,7 +3,7 @@ name: Spotify Related Artists Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */1 * * *"
 
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
         worker: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     runs-on: ubuntu-latest
-    timeout-minutes: 340
+    timeout-minutes: 60
 
     steps:
 
@@ -59,7 +59,7 @@ jobs:
       # ----------------------------------------------------------
       - name: Run crawler
         env:
-          CRAWLER_MAX_SECONDS: "20000"
+          CRAWLER_MAX_SECONDS: "3000"
           HEADLESS: "1"
           SPOTIFY_LANGUAGE: "intl-fr"
           PAGE_WAIT_MS: "2500"
