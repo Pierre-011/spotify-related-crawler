@@ -4,16 +4,18 @@
 Spotify Related Artists crawler.
 
 IMPORTANT:
-- This project DOES NOT use the Spotify Web API.
-- It opens Spotify's public website with Playwright/Chromium.
-- It inspects the rendered DOM/HTML of /related and /artist pages.
-- It persists its queue and data to JSON so GitHub Actions can resume.
+- Ce projet N'UTILISE PAS l'API Web Spotify.
+- Il ouvre le site public Spotify avec Playwright/Chromium.
+- Il inspecte le DOM/HTML rendu des pages /related et /artist.
+- Les données sont persistées dans plusieurs fichiers JSON.
+- Chaque fichier contient au maximum 30 000 artistes.
+- Le crawler vérifie les doublons dans TOUS les fichiers artistes*.json.
 
 MULTI-WORKER:
-- WORKER_ID identifies the current worker.
-- WORKER_COUNT defines the total number of workers.
-- Each Spotify artist is deterministically assigned to exactly one worker.
-- Workers therefore never intentionally process the same artist.
+- WORKER_ID identifie le worker actuel.
+- WORKER_COUNT définit le nombre total de workers.
+- Chaque artiste est déterministiquement affecté à un seul worker.
+- Les workers ne traitent donc volontairement pas le même artiste.
 """
 
 import asyncio
@@ -41,7 +43,17 @@ ROOT = Path(__file__).resolve().parents[1]
 
 DATA_DIR = ROOT / "data"
 
+# ------------------------------------------------------------
+# FICHIERS ARTISTES
+# ------------------------------------------------------------
+
+ARTISTS_PREFIX = "artistes"
+
+# Nombre maximum d'artistes par fichier.
+ARTISTS_MAX_PER_FILE = 30000
+
 ARTISTS_FILE = DATA_DIR / "artistes.json"
+
 STATE_FILE = DATA_DIR / "state.json"
 
 BASE = "https://open.spotify.com"
@@ -54,6 +66,7 @@ MAX_SECONDS = int(
     )
 )
 
+
 HEADLESS = (
     os.getenv(
         "HEADLESS",
@@ -61,10 +74,12 @@ HEADLESS = (
     ) != "0"
 )
 
+
 LANGUAGE = os.getenv(
     "SPOTIFY_LANGUAGE",
     "intl-fr"
 )
+
 
 PAGE_WAIT_MS = int(
     os.getenv(
@@ -72,6 +87,7 @@ PAGE_WAIT_MS = int(
         "2500"
     )
 )
+
 
 SCROLL_COUNT = int(
     os.getenv(
@@ -92,6 +108,7 @@ WORKER_ID = int(
     )
 )
 
+
 WORKER_COUNT = int(
     os.getenv(
         "WORKER_COUNT",
@@ -99,10 +116,12 @@ WORKER_COUNT = int(
     )
 )
 
+
 if WORKER_COUNT < 1:
     raise ValueError(
         f"WORKER_COUNT must be >= 1, got {WORKER_COUNT}"
     )
+
 
 if WORKER_ID < 1 or WORKER_ID > WORKER_COUNT:
     raise ValueError(
@@ -190,6 +209,395 @@ def save_json(
     )
 
 
+# ============================================================
+# GESTION DES FICHIERS ARTISTES
+# ============================================================
+
+def get_artist_files():
+    """
+    Retourne tous les fichiers artistes*.json dans l'ordre.
+
+    Ordre:
+        artistes.json
+        artistes_1.json
+        artistes_2.json
+        artistes_3.json
+        ...
+    """
+
+    DATA_DIR.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    files = []
+
+    main_file = DATA_DIR / "artistes.json"
+
+    if main_file.exists():
+        files.append(
+            main_file
+        )
+
+    numbered = []
+
+    for path in DATA_DIR.glob(
+        "artistes_*.json"
+    ):
+
+        match = re.fullmatch(
+            r"artistes_(\d+)\.json",
+            path.name
+        )
+
+        if match:
+            numbered.append(
+                (
+                    int(match.group(1)),
+                    path
+                )
+            )
+
+    numbered.sort(
+        key=lambda x: x[0]
+    )
+
+    files.extend(
+        path
+        for _, path in numbered
+    )
+
+    # Si aucun fichier n'existe encore,
+    # le premier sera artistes.json.
+    if not files:
+        files.append(
+            main_file
+        )
+
+    return files
+
+
+def load_all_artists():
+    """
+    Charge TOUS les fichiers artistes*.json.
+
+    Retourne:
+
+        artists_docs:
+            {
+                Path: {
+                    "artists": {...}
+                }
+            }
+
+        artists_index:
+            {
+                artist_id: Path
+            }
+
+    L'index permet de savoir dans quel fichier
+    se trouve déjà un artiste.
+    """
+
+    artists_docs = {}
+
+    artists_index = {}
+
+    files = get_artist_files()
+
+    for path in files:
+
+        doc = load_json(
+            path,
+            {
+                "artists": {}
+            }
+        )
+
+        if (
+            "artists" not in doc
+            or not isinstance(
+                doc["artists"],
+                dict
+            )
+        ):
+            doc["artists"] = {}
+
+        artists_docs[path] = doc
+
+        for artist_id in doc["artists"]:
+
+            # Si un doublon existe déjà dans plusieurs
+            # fichiers, on conserve la première occurrence.
+            if artist_id not in artists_index:
+                artists_index[artist_id] = path
+
+    total = len(
+        artists_index
+    )
+
+    print(
+        f"[ARTISTS] "
+        f"{len(artists_docs)} fichier(s) chargé(s) | "
+        f"{total} artiste(s) uniques",
+        flush=True
+    )
+
+    for path, doc in artists_docs.items():
+
+        print(
+            f"[ARTISTS] "
+            f"{path.name}: "
+            f"{len(doc['artists'])} artistes",
+            flush=True
+        )
+
+    return (
+        artists_docs,
+        artists_index
+    )
+
+
+def get_next_artist_file(
+    artists_docs
+):
+    """
+    Retourne le prochain fichier artistes_X.json.
+    """
+
+    max_number = 0
+
+    for path in artists_docs:
+
+        if path.name == "artistes.json":
+            continue
+
+        match = re.fullmatch(
+            r"artistes_(\d+)\.json",
+            path.name
+        )
+
+        if match:
+
+            max_number = max(
+                max_number,
+                int(
+                    match.group(1)
+                )
+            )
+
+    if max_number == 0:
+        return (
+            DATA_DIR
+            / "artistes_1.json"
+        )
+
+    return (
+        DATA_DIR
+        / f"artistes_{max_number + 1}.json"
+    )
+
+
+def get_artist_storage(
+    artists_docs
+):
+    """
+    Trouve le premier fichier ayant encore de la place.
+
+    Maximum:
+        30 000 artistes / fichier.
+
+    Si tous les fichiers sont pleins,
+    un nouveau fichier est créé.
+    """
+
+    files = get_artist_files()
+
+    for path in files:
+
+        doc = artists_docs.get(
+            path
+        )
+
+        if doc is None:
+
+            doc = {
+                "artists": {}
+            }
+
+            artists_docs[path] = doc
+
+        count = len(
+            doc["artists"]
+        )
+
+        if count < ARTISTS_MAX_PER_FILE:
+
+            return (
+                path,
+                doc
+            )
+
+    # Tous les fichiers existants sont pleins.
+
+    new_path = get_next_artist_file(
+        artists_docs
+    )
+
+    new_doc = {
+        "artists": {}
+    }
+
+    artists_docs[new_path] = new_doc
+
+    print(
+        f"[ARTISTS] "
+        f"Tous les fichiers sont pleins. "
+        f"Création de {new_path.name}",
+        flush=True
+    )
+
+    save_json(
+        new_path,
+        new_doc
+    )
+
+    return (
+        new_path,
+        new_doc
+    )
+
+
+def artist_exists(
+    artist_id,
+    artists_index,
+    artists_docs
+):
+    """
+    Vérifie qu'un artiste existe dans TOUS les fichiers.
+
+    L'index permet une vérification rapide.
+
+    Une vérification des documents est également effectuée
+    comme sécurité supplémentaire.
+    """
+
+    if artist_id in artists_index:
+        return True
+
+    # Vérification complète des fichiers.
+    for path, doc in artists_docs.items():
+
+        if artist_id in doc.get(
+            "artists",
+            {}
+        ):
+
+            artists_index[
+                artist_id
+            ] = path
+
+            return True
+
+    return False
+
+
+def add_artist(
+    artist_id,
+    profile,
+    artists_docs,
+    artists_index
+):
+    """
+    Ajoute un artiste dans le fichier approprié.
+
+    Aucun doublon n'est autorisé entre les fichiers.
+
+    Retourne:
+        True  = artiste ajouté
+        False = artiste déjà présent
+    """
+
+    # --------------------------------------------------------
+    # ANTI-DOUBLON
+    # --------------------------------------------------------
+
+    if artist_exists(
+        artist_id,
+        artists_index,
+        artists_docs
+    ):
+
+        print(
+            f"[ARTISTS] "
+            f"[DUPLICATE] "
+            f"{artist_id} déjà présent",
+            flush=True
+        )
+
+        return False
+
+    # --------------------------------------------------------
+    # CHOIX DU FICHIER
+    # --------------------------------------------------------
+
+    path, doc = get_artist_storage(
+        artists_docs
+    )
+
+    # --------------------------------------------------------
+    # SÉCURITÉ
+    # --------------------------------------------------------
+
+    if len(
+        doc["artists"]
+    ) >= ARTISTS_MAX_PER_FILE:
+
+        raise RuntimeError(
+            f"Le fichier {path.name} "
+            f"est déjà plein "
+            f"({len(doc['artists'])} artistes)"
+        )
+
+    # --------------------------------------------------------
+    # AJOUT
+    # --------------------------------------------------------
+
+    doc["artists"][
+        artist_id
+    ] = profile
+
+    # Mise à jour immédiate de l'index.
+    artists_index[
+        artist_id
+    ] = path
+
+    # --------------------------------------------------------
+    # SAUVEGARDE
+    # --------------------------------------------------------
+
+    save_json(
+        path,
+        doc
+    )
+
+    print(
+        f"[ARTISTS] "
+        f"[ADDED] "
+        f"{artist_id} -> "
+        f"{path.name} "
+        f"({len(doc['artists'])}/"
+        f"{ARTISTS_MAX_PER_FILE})",
+        flush=True
+    )
+
+    return True
+
+
+# ============================================================
+# NORMALISATION ID
+# ============================================================
+
 def normalize_id(
     value
 ):
@@ -203,6 +611,7 @@ def normalize_id(
     if value.startswith(
         "spotify:artist:"
     ):
+
         value = value.rsplit(
             ":",
             1
@@ -211,6 +620,7 @@ def normalize_id(
     if ID_RE.fullmatch(
         value
     ):
+
         return value
 
     return None
@@ -253,13 +663,10 @@ def worker_for_artist(
     Retourne le numéro du worker responsable
     de cet artiste.
 
-    Le résultat est déterministe :
-    un même artist_id sera toujours attribué
+    Le résultat est déterministe:
+    le même artist_id sera toujours attribué
     au même worker tant que WORKER_COUNT
     reste identique.
-
-    Retour:
-        1..WORKER_COUNT
     """
 
     if not artist_id:
@@ -285,8 +692,7 @@ def belongs_to_worker(
     artist_id
 ):
     """
-    True si l'artiste appartient
-    au worker actuel.
+    True si l'artiste appartient au worker actuel.
     """
 
     return (
@@ -298,7 +704,7 @@ def belongs_to_worker(
 
 
 # ============================================================
-# EXTRACTION DU NOM DE L'ARTISTE
+# EXTRACTION DU NOM
 # ============================================================
 
 def clean_artist_name(
@@ -351,9 +757,8 @@ async def extract_artist_name(
     jsonld
 ):
     """
-    Spotify peut modifier régulièrement son DOM.
+    Sources utilisées:
 
-    Sources utilisées :
     1. meta og:title
     2. document.title
     3. JSON-LD
@@ -366,6 +771,7 @@ async def extract_artist_name(
     # --------------------------------------------------------
 
     try:
+
         og_title = await page.locator(
             'meta[property="og:title"]'
         ).get_attribute(
@@ -387,6 +793,7 @@ async def extract_artist_name(
     # --------------------------------------------------------
 
     try:
+
         title = await page.title()
 
         name = clean_artist_name(
@@ -544,6 +951,7 @@ def extract_monthly_listeners(
             continue
 
         try:
+
             return int(
                 digits
             )
@@ -562,7 +970,8 @@ async def accept_cookies(
     page
 ):
     """
-    Spotify changes cookie-button labels depending on locale.
+    Spotify change les textes des boutons
+    de cookies selon la langue.
     """
 
     labels = [
@@ -688,7 +1097,10 @@ async def extract_artist_links(
     page
 ):
     """
-    Extract artist IDs from rendered DOM anchors.
+    Extrait les IDs artistes du DOM.
+
+    Utilise également une extraction HTML
+    de secours.
     """
 
     links = await page.locator(
@@ -739,7 +1151,7 @@ async def extract_artist_links(
             )
 
     # --------------------------------------------------------
-    # HTML fallback
+    # HTML FALLBACK
     # --------------------------------------------------------
 
     html = await page.content()
@@ -879,6 +1291,7 @@ async def extract_artist_profile(
             src
             and src not in clean_images
         ):
+
             clean_images.append(
                 src
             )
@@ -911,30 +1324,25 @@ async def extract_artist_profile(
             "spotify": url
         },
 
-        "first_seen":
-            now_iso(),
+        "first_seen": now_iso(),
 
-        "last_seen":
-            now_iso()
+        "last_seen": now_iso()
     }
 
 
 # ============================================================
-# PREPARATION STATE
+# PREPARATION STATE WORKER
 # ============================================================
 
 def prepare_worker_state(
-    artists_doc,
+    artists_index,
     state
 ):
     """
     Construit la queue du worker à partir de l'état global.
 
-    Important :
-    - les artistes sont filtrés par worker ;
-    - les artistes appartenant aux autres workers
-      sont ignorés ;
-    - les artistes déjà traités sont ignorés.
+    Les artistes sont filtrés par worker.
+    Les artistes déjà traités sont ignorés.
     """
 
     global_queue = state.get(
@@ -982,9 +1390,7 @@ def prepare_worker_state(
     # Tous les artistes existants
     # --------------------------------------------------------
 
-    for aid in artists_doc[
-        "artists"
-    ]:
+    for aid in artists_index:
 
         if not belongs_to_worker(
             aid
@@ -1016,10 +1422,7 @@ def save_worker_state(
     stats
 ):
     """
-    Sauvegarde uniquement l'état du worker actuel.
-
-    Le merge final du workflow fusionnera
-    les états des 10 workers.
+    Sauvegarde l'état du worker actuel.
     """
 
     state[
@@ -1081,36 +1484,28 @@ async def main():
     )
 
     print(
+        f"[WORKER] "
+        f"ARTISTS_MAX_PER_FILE="
+        f"{ARTISTS_MAX_PER_FILE}",
+        flush=True
+    )
+
+    print(
         "============================================================",
         flush=True
     )
 
     # --------------------------------------------------------
-    # artistes.json
+    # TOUS LES FICHIERS ARTISTES
     # --------------------------------------------------------
 
-    artists_doc = load_json(
-        ARTISTS_FILE,
-        {
-            "artists": {}
-        }
-    )
-
-    if (
-        "artists" not in artists_doc
-        or not isinstance(
-            artists_doc[
-                "artists"
-            ],
-            dict
-        )
-    ):
-        artists_doc[
-            "artists"
-        ] = {}
+    (
+        artists_docs,
+        artists_index
+    ) = load_all_artists()
 
     # --------------------------------------------------------
-    # state.json
+    # STATE
     # --------------------------------------------------------
 
     state = load_json(
@@ -1119,12 +1514,12 @@ async def main():
     )
 
     queue, processed = prepare_worker_state(
-        artists_doc,
+        artists_index,
         state
     )
 
     # --------------------------------------------------------
-    # Stats
+    # STATS
     # --------------------------------------------------------
 
     old_stats = state.get(
@@ -1142,6 +1537,7 @@ async def main():
     for key in stats:
 
         try:
+
             stats[key] = int(
                 old_stats.get(
                     key,
@@ -1151,12 +1547,6 @@ async def main():
 
         except Exception:
             pass
-
-    # --------------------------------------------------------
-    # Reset stats processed pour ce lancement ?
-    #
-    # On conserve les statistiques cumulées.
-    # --------------------------------------------------------
 
     print(
         f"[WORKER {WORKER_ID}] "
@@ -1170,15 +1560,20 @@ async def main():
         flush=True
     )
 
+    print(
+        f"[WORKER {WORKER_ID}] "
+        f"Total artists in database: "
+        f"{len(artists_index)}",
+        flush=True
+    )
+
     # --------------------------------------------------------
-    # Distribution
+    # DISTRIBUTION
     # --------------------------------------------------------
 
     assigned_count = 0
 
-    for aid in artists_doc[
-        "artists"
-    ]:
+    for aid in artists_index:
 
         if belongs_to_worker(
             aid
@@ -1238,7 +1633,7 @@ async def main():
             aid = queue.popleft()
 
             # ------------------------------------------------
-            # Sécurité worker
+            # SÉCURITÉ WORKER
             # ------------------------------------------------
 
             if not belongs_to_worker(
@@ -1256,11 +1651,10 @@ async def main():
                 continue
 
             # ------------------------------------------------
-            # Déjà traité
+            # DÉJÀ TRAITÉ
             # ------------------------------------------------
 
             if aid in processed:
-
                 continue
 
             try:
@@ -1331,14 +1725,14 @@ async def main():
                 ) in found.items():
 
                     # ----------------------------------------
-                    # Ne pas ajouter la source
+                    # NE PAS AJOUTER LA SOURCE
                     # ----------------------------------------
 
                     if related_id == aid:
                         continue
 
                     # ----------------------------------------
-                    # Déterminer le worker responsable
+                    # DÉTERMINER LE WORKER
                     # ----------------------------------------
 
                     target_worker = worker_for_artist(
@@ -1355,15 +1749,20 @@ async def main():
                     )
 
                     # ----------------------------------------
+                    # ANTI-DOUBLON GLOBAL
+                    # ----------------------------------------
+
+                    already_exists = artist_exists(
+                        related_id,
+                        artists_index,
+                        artists_docs
+                    )
+
+                    # ----------------------------------------
                     # NOUVEL ARTISTE
                     # ----------------------------------------
 
-                    if (
-                        related_id
-                        not in artists_doc[
-                            "artists"
-                        ]
-                    ):
+                    if not already_exists:
 
                         print(
                             f"[WORKER {WORKER_ID}] "
@@ -1375,11 +1774,9 @@ async def main():
                         )
 
                         # ------------------------------------
-                        # IMPORTANT :
-                        #
-                        # On ne scrape le profil que si
-                        # cet artiste appartient au worker
-                        # actuel.
+                        # SCRAPE DU PROFIL
+                        # UNIQUEMENT SI CE WORKER
+                        # EST RESPONSABLE
                         # ------------------------------------
 
                         if belongs_to_worker(
@@ -1393,20 +1790,25 @@ async def main():
                                 )
                             )
 
-                            artists_doc[
-                                "artists"
-                            ][
-                                related_id
-                            ] = profile
+                            if add_artist(
+                                related_id,
+                                profile,
+                                artists_docs,
+                                artists_index
+                            ):
 
-                            stats[
-                                "added"
-                            ] += 1
+                                stats[
+                                    "added"
+                                ] += 1
 
-                            save_json(
-                                ARTISTS_FILE,
-                                artists_doc
-                            )
+                    else:
+
+                        print(
+                            f"[WORKER {WORKER_ID}] "
+                            f"[EXISTS] "
+                            f"{related_id}",
+                            flush=True
+                        )
 
                     # ----------------------------------------
                     # QUEUE
@@ -1416,10 +1818,8 @@ async def main():
                         belongs_to_worker(
                             related_id
                         )
-                        and related_id
-                        not in processed
-                        and related_id
-                        not in queue
+                        and related_id not in processed
+                        and related_id not in queue
                     ):
 
                         queue.append(
@@ -1485,7 +1885,7 @@ async def main():
                 )
 
                 # --------------------------------------------
-                # Remettre dans la queue
+                # REMETTRE DANS LA QUEUE
                 # --------------------------------------------
 
                 if (
@@ -1521,10 +1921,13 @@ async def main():
             stats
         )
 
-        save_json(
-            ARTISTS_FILE,
-            artists_doc
-        )
+        # Sauvegarde de sécurité de tous les fichiers.
+        for path, doc in artists_docs.items():
+
+            save_json(
+                path,
+                doc
+            )
 
         await browser.close()
 
@@ -1555,7 +1958,7 @@ async def main():
 
     print(
         f"[WORKER {WORKER_ID}] "
-        f"artists={len(artists_doc['artists'])}",
+        f"artists={len(artists_index)}",
         flush=True
     )
 
@@ -1589,6 +1992,19 @@ async def main():
         flush=True
     )
 
+    # --------------------------------------------------------
+    # RÉSUMÉ DES FICHIERS
+    # --------------------------------------------------------
+
+    for path, doc in artists_docs.items():
+
+        print(
+            f"[WORKER {WORKER_ID}] "
+            f"{path.name}="
+            f"{len(doc['artists'])} artistes",
+            flush=True
+        )
+
     print(
         "============================================================",
         flush=True
@@ -1600,6 +2016,7 @@ async def main():
 # ============================================================
 
 if __name__ == "__main__":
+
     asyncio.run(
         main()
     )
