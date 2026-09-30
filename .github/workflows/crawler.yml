@@ -3,7 +3,7 @@ name: Spotify Related Artists Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "0 8-23 * * *"
 
 permissions:
   contents: write
