@@ -8,7 +8,7 @@ IMPORTANT:
 - Il ouvre le site public Spotify avec Playwright/Chromium.
 - Il inspecte le DOM/HTML rendu des pages /related et /artist.
 - Les données sont persistées dans plusieurs fichiers JSON.
-- Chaque fichier contient au maximum 30 000 artistes.
+- Chaque fichier contient au maximum 45 000 artistes.
 - Le crawler vérifie les doublons dans TOUS les fichiers artistes*.json.
 
 MULTI-WORKER:
@@ -50,7 +50,7 @@ DATA_DIR = ROOT / "data"
 ARTISTS_PREFIX = "artistes"
 
 # Nombre maximum d'artistes par fichier.
-ARTISTS_MAX_PER_FILE = 30000
+ARTISTS_MAX_PER_FILE = 45000
 
 ARTISTS_FILE = DATA_DIR / "artistes.json"
 
@@ -405,7 +405,7 @@ def get_artist_storage(
     Trouve le premier fichier ayant encore de la place.
 
     Maximum:
-        30 000 artistes / fichier.
+        45 000 artistes / fichier.
 
     Si tous les fichiers sont pleins,
     un nouveau fichier est créé.
@@ -1227,8 +1227,6 @@ async def extract_artist_profile(
         500
     )
 
-    html = await page.content()
-
     data = await page.locator(
         "body"
     ).inner_text(
@@ -1273,31 +1271,6 @@ async def extract_artist_profile(
         flush=True
     )
 
-    images = await page.locator(
-        "img"
-    ).evaluate_all(
-        """els => els.map(i =>
-            i.src ||
-            i.getAttribute('src') ||
-            ''
-        ).filter(Boolean)"""
-    )
-
-    clean_images = []
-
-    for src in images:
-
-        if (
-            src
-            and src not in clean_images
-        ):
-
-            clean_images.append(
-                src
-            )
-
-    clean_images = clean_images[:10]
-
     return {
         "id": artist_id,
 
@@ -1308,17 +1281,10 @@ async def extract_artist_profile(
         "uri":
             f"spotify:artist:{artist_id}",
 
-        "followers": None,
-
         "monthly_listeners":
             monthly,
 
-        "popularity": None,
-
         "genres": [],
-
-        "images":
-            clean_images,
 
         "external_urls": {
             "spotify": url
